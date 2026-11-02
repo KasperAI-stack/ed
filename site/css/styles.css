@@ -1,0 +1,836 @@
+/* Bygget på hey-kasper.dk og farvet i eds marineblå (#1A1D56) og koral (#FF7456), med lyst og mørkt tema. */
+
+/* Geist ligger selv på siden (variabel skrift, vægt 400 til 700, latinske tegn inkl. æøå).
+   Licens: SIL Open Font License, se /fonts/OFL.txt. */
+@font-face {
+  font-family: "Geist";
+  font-style: normal;
+  font-weight: 400 700;
+  font-display: swap;
+  src: url("/fonts/geist-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+/* Instrument Serif: den tynde serif til fremhævningen i overskriften og citatet. Den minder om "hey" i logoet.
+   Ligger selv på siden. Licens: SIL Open Font License, se /fonts/OFL-instrument-serif.txt. */
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/instrument-serif-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+@font-face {
+  font-family: "Instrument Serif";
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/fonts/instrument-serif-italic-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+:root {
+  /* Neutrale: kølige grå toner med et strejf af eds marineblå. Lyst tema er standard. */
+  --bg: #FFFFFF;
+  --soft: #F3F4F9;
+  --ink: #16182F;
+  --muted: #555A77;
+  --line: #E2E4EE;
+  --plus: #A1A5BC;
+  --rail: #D2D5E3;
+  --field-border: #858AA3; /* feltkant, 3:1 på --soft */
+  --focus: #1A1D56;
+  --hover: rgb(22 24 47 / .04);
+  --btn-hover: #2C2F4D;
+  --tile: #FFFFFF;
+  --logo-filter: none;
+  --accent: #1A1D56;
+  --accent-fg: #FFFFFF;
+  --accent-hover: #0E1959;
+  /* Knappen "Læs ansøgning": eds koral med marineblå tekst, så den står lige så stærkt som den sorte */
+  --cta: #FF7456;
+  --cta-fg: #1A1D56;
+  --cta-hover: #FF8B71;
+  --figure-glow: #FFFFFF;
+  --figure-shadow: none;
+  --s1: #3076E7; --s2: #2F3A9E; --s3: #1A1D56; --s4: #FF7456;
+  /* Hero: agenternes toner, buen og puden i baren */
+  --g3: #E5573A; --g5: var(--s2);
+  --band-bg: #F1F2F8;
+  --pill-bg: #FFFFFF;
+  --pill-shadow: 0 8px 22px rgb(22 24 47 / .14), 0 1px 3px rgb(22 24 47 / .08);
+  color-scheme: light;
+
+  /* eds farver: dyb marineblå, den marineblå fra logoet, den lyseblå og koral */
+  --p-deep: #0E1959;
+  --p-brand: #1A1D56;
+  --p-sky: #97BAF3;
+  --p-coral: #FF7456;
+  --gradient: linear-gradient(135deg, var(--p-deep) 0%, var(--p-brand) 38%, var(--p-sky) 72%, var(--p-coral) 100%);
+
+  /* Bevægelse: stærke kurver til UI. Brug altid disse tokens, aldrig hjemmelavede kurver. */
+  --ease-out: cubic-bezier(0.23, 1, 0.32, 1);
+  --ease-in-out: cubic-bezier(0.77, 0, 0.175, 1);
+  --ease-drawer: cubic-bezier(0.32, 0.72, 0, 1);
+
+  --font: "Geist", "Helvetica Neue", Arial, sans-serif;
+  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --max: 72rem;
+  --read: 40rem;
+  --gutter: clamp(1.25rem, 4vw, 3rem);
+  --radius: 22px;
+}
+
+/* Mørkt tema: følger enhedens indstilling, indtil den besøgende vælger selv med knappen */
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+  --bg: #0B0D24;
+  --soft: #14173A;
+  --ink: #F1F2FA;
+  --muted: #A9ADC8;
+  --line: #23274B;
+  --plus: #5E6386;
+  --rail: #34396A;
+  --field-border: #6F749C; /* feltkant, 3:1 på --soft */
+  --focus: #FF7456;
+  --hover: rgb(241 242 250 / .05);
+  --btn-hover: #D9DBEA;
+  --tile: #F1F2FA;
+  --logo-filter: brightness(0) invert(1); /* eds marineblå logo bliver hvidt i mørkt tema */
+  --accent: #FF8A6E;
+  --accent-fg: #0B0D24;
+  --accent-hover: #FFA28B;
+  --figure-glow: #34396A;
+  --figure-shadow: drop-shadow(0 0 1.25rem rgb(169 173 200 / .28));
+  --s1: #97BAF3; --s2: #B7C2FF; --s3: #DCE3FA; --s4: #FFB3A1;
+  --g3: #FF8A6E; --g5: var(--s2);
+  --band-bg: #14173A;
+  --pill-bg: #34396A;
+  --pill-shadow: 0 8px 22px rgb(0 0 0 / .45);
+  color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #0B0D24;
+  --soft: #14173A;
+  --ink: #F1F2FA;
+  --muted: #A9ADC8;
+  --line: #23274B;
+  --plus: #5E6386;
+  --rail: #34396A;
+  --field-border: #6F749C; /* feltkant, 3:1 på --soft */
+  --focus: #FF7456;
+  --hover: rgb(241 242 250 / .05);
+  --btn-hover: #D9DBEA;
+  --tile: #F1F2FA;
+  --logo-filter: brightness(0) invert(1); /* eds marineblå logo bliver hvidt i mørkt tema */
+  --accent: #FF8A6E;
+  --accent-fg: #0B0D24;
+  --accent-hover: #FFA28B;
+  --figure-glow: #34396A;
+  --figure-shadow: drop-shadow(0 0 1.25rem rgb(169 173 200 / .28));
+  --s1: #97BAF3; --s2: #B7C2FF; --s3: #DCE3FA; --s4: #FFB3A1;
+  --g3: #FF8A6E; --g5: var(--s2);
+  --band-bg: #14173A;
+  --pill-bg: #34396A;
+  --pill-shadow: 0 8px 22px rgb(0 0 0 / .45);
+  color-scheme: dark;
+}
+
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; scroll-padding-top: 5.5rem; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: var(--font);
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+img { max-width: 100%; }
+a, button, input, textarea, label { touch-action: manipulation; }
+html { -webkit-tap-highlight-color: rgb(26 29 86 / .15); }
+a { color: inherit; text-underline-offset: 3px; }
+:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+p { margin: 0 0 1rem; }
+h1, h2, h3 { text-wrap: balance; letter-spacing: -.03em; }
+h2 { font-size: clamp(2rem, 5vw, 3rem); font-weight: 600; line-height: 1.08; margin: 0 0 1.25rem; }
+h3 { font-size: 1.125rem; font-weight: 600; letter-spacing: -.01em; margin: 0 0 .4rem; }
+.center { text-align: center; margin-left: auto; margin-right: auto; }
+.muted { color: var(--muted); }
+.small { font-size: .95rem; }
+.hidden, [hidden] { display: none !important; }
+.visually-hidden {
+  position: absolute !important; width: 1px; height: 1px; margin: -1px; padding: 0;
+  overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0;
+}
+
+/* Siden står frit uden ramme. Sektionerne adskilles af luft, ikke af linjer. */
+.page { max-width: 76rem; width: 100%; margin: 0 auto; min-width: 0; }
+.section { position: relative; }
+
+/* Spring til indhold (kun synlig ved tastatur) */
+.skip {
+  position: absolute; left: var(--gutter); top: -4rem; z-index: 10;
+  background: var(--ink); color: var(--bg); padding: .6rem 1rem; border-radius: 999px; text-decoration: none;
+}
+.skip:focus-visible { top: 1rem; }
+
+/* Top */
+/* Toppen står fast, så booking altid er ét klik væk */
+.topbar {
+  position: sticky; top: 0; z-index: 20; background: var(--bg);
+  display: flex; justify-content: space-between; align-items: center; gap: 1rem;
+  padding: 1rem var(--gutter);
+  /* Baggrund og streg går helt ud til skærmens kanter, så toppen ikke danner en ramme */
+  box-shadow: 0 0 0 100vmax var(--bg), 0 1px 0 100vmax var(--line);
+  clip-path: inset(0 -100vmax -1px);
+}
+.brand { display: flex; align-items: center; gap: .6rem; text-decoration: none; font-weight: 600; letter-spacing: -.01em; }
+.brand-mark { width: 28px; height: 28px; flex: none; }
+/* Kasper × ed: krydset står lille og dæmpet mellem memojien og logoet */
+.brand-x { color: var(--muted); font-size: 1rem; font-weight: 400; line-height: 1; }
+/* Logo: eds logo som vektorgrafik (SVG) i deres marineblå (#1A1D56), med gennemsigtig baggrund. Logoet er næsten
+   dobbelt så bredt som højt (260 × 151), så højden styrer, og bredden følger med. */
+.brand { min-width: 0; }
+.logo { display: block; flex: none; width: auto; height: 2.25rem; filter: var(--logo-filter); }
+@media (max-width: 30rem) { .logo { height: 1.85rem; } }
+
+/* Knapper */
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem;
+  font: inherit; font-weight: 600; font-size: 1rem; line-height: 1.2;
+  background: var(--ink); color: var(--bg); text-decoration: none;
+  padding: .95rem 1.6rem; border: 0; border-radius: 999px; cursor: pointer;
+  transition: transform 160ms var(--ease-out), background-color 150ms ease;
+}
+.btn:hover { color: var(--bg); background: var(--btn-hover); }
+@media (hover: hover) and (pointer: fine) { .btn:hover { transform: translateY(-1px); } }
+.btn:active { transform: scale(0.97); }
+.btn:disabled { opacity: .6; cursor: progress; transform: none; }
+.btn-small { font-size: .9rem; padding: .6rem 1.1rem; white-space: nowrap; }
+/* Den koralfarvede knap ved siden af den sorte: begge er primære, så de står lige stærkt */
+.btn-accent { background: var(--cta); color: var(--cta-fg); }
+.btn-accent:hover { background: var(--cta-hover); color: var(--cta-fg); }
+.hero-actions { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+.top-actions { display: flex; align-items: center; gap: .5rem; flex: none; }
+/* Små knapper i toppen får et usynligt trykområde på mindst 44 px på mobil */
+.theme-toggle, .btn-small { position: relative; }
+@media (pointer: coarse) {
+  .theme-toggle::after, .btn-small::after { content: ""; position: absolute; inset: -6px; }
+}
+@media (max-width: 26rem) {
+  .brand { gap: .45rem; }
+  .theme-toggle .t-opt { width: 1.7rem; height: 1.7rem; }
+  .brand-mark { width: 24px; height: 24px; }
+  .btn-small { font-size: .85rem; padding: .55rem .85rem; }
+}
+/* Smalle skærme: temaet følger telefonen, så kontakten skjules, og der bliver plads til sprog og knap */
+@media (max-width: 30rem) {
+  .theme-toggle:not([hidden]) { display: none; }
+  .lang-toggle a { min-width: 1.9rem; height: 1.7rem; padding: 0 .35rem; }
+}
+/* Temakontakt: sol og måne side om side, det aktive tema er markeret */
+.theme-toggle {
+  display: flex; align-items: center; gap: 2px; padding: 3px; cursor: pointer;
+  background: var(--soft); border: 1px solid var(--line); border-radius: 999px;
+}
+.theme-toggle[hidden] { display: none; }
+/* Sprogvælger: DA og EN side om side, det aktive sprog er markeret ligesom temaet */
+.lang-toggle {
+  display: flex; align-items: center; gap: 2px; padding: 3px;
+  background: var(--soft); border: 1px solid var(--line); border-radius: 999px;
+}
+.lang-toggle a {
+  display: grid; place-items: center; min-width: 2.1rem; height: 1.9rem; padding: 0 .45rem; border-radius: 999px;
+  color: var(--muted); font-size: .8rem; font-weight: 600; letter-spacing: .03em; text-decoration: none;
+  transition: background-color .15s, color .15s;
+}
+.lang-toggle a:hover { color: var(--ink); }
+.lang-toggle a[aria-current="page"] { background: var(--bg); color: var(--ink); box-shadow: 0 1px 3px rgb(22 24 47 / .15); }
+.t-opt {
+  display: grid; place-items: center; width: 1.9rem; height: 1.9rem; border-radius: 50%;
+  color: var(--muted); transition: background-color .15s, color .15s;
+}
+.theme-toggle:hover .t-opt { color: var(--ink); }
+.theme-toggle[data-active="light"] .t-sun,
+.theme-toggle[data-active="dark"] .t-moon {
+  background: var(--bg); color: var(--ink); box-shadow: 0 1px 3px rgb(22 24 47 / .15);
+}
+
+/* Gradient-rammer */
+.frame { background: var(--gradient); border-radius: var(--radius); padding: .6rem; }
+.g1 { background: linear-gradient(160deg, var(--p-deep), var(--p-brand)); }
+.g2 { background: linear-gradient(160deg, var(--p-brand), var(--p-sky)); }
+.g3 { background: linear-gradient(160deg, var(--p-sky), var(--p-coral)); }
+
+/* Hero: fælles opsætning, som tak-siden også bruger */
+.hero {
+  padding: 3.5rem var(--gutter) 5rem;
+  display: flex; flex-direction: column; align-items: center; text-align: center;
+}
+h1 {
+  font-size: clamp(2.4rem, 8vw, 5rem); font-weight: 600; line-height: 1.02; letter-spacing: -.045em;
+  margin: 0 0 1.25rem; max-width: 14ch;
+}
+.lede { font-size: clamp(1.1rem, 2.2vw, 1.25rem); color: var(--muted); max-width: 36rem; margin: 0 0 2rem; }
+.lede-small { color: var(--muted); max-width: 32rem; margin-bottom: 2rem; }
+
+/* Hero: "Hey Kasper, byg os lige …", og memojien viser den agent, man vælger i den buede bar.
+   Agentens navn kan glide fra én farve til den næste. */
+@property --glow { syntax: "<color>"; inherits: true; initial-value: #E5573A; }
+.hero-pick {
+  --glow: var(--g3);
+  position: relative; isolation: isolate; overflow: clip;
+  padding-top: 1.75rem; padding-bottom: 1.5rem;
+  transition: --glow 400ms ease;
+}
+.hero-pick[data-glow="1"] { --glow: var(--s3); }
+.hero-pick[data-glow="2"] { --glow: var(--s1); }
+.hero-pick[data-glow="3"] { --glow: var(--g3); }
+.hero-pick[data-glow="4"] { --glow: var(--s4); }
+.hero-pick[data-glow="5"] { --glow: var(--g5); }
+@media (min-width: 40rem) { .hero-pick { padding-top: 2.75rem; } }
+
+/* Overskriften: tilbuddet i Geist, med slutningen fremhævet i en tynd kursiv serif som "hey" i logoet.
+   Fremhævningen tager agentens farve, så den skifter med det, I vælger i chatfeltet. */
+.hero-title {
+  --tint: color-mix(in srgb, var(--glow) 78%, var(--ink));
+  font-size: clamp(2.25rem, 6.2vw, 4.6rem); max-width: 19ch; margin: 0 0 1.25rem;
+}
+.hero-title .accent {
+  font-family: var(--serif); font-style: italic; font-weight: 400; letter-spacing: -.01em;
+  font-size: 1.1em; line-height: .9; color: var(--tint); transition: color 200ms ease;
+}
+.hero-lede { max-width: 38rem; margin-bottom: 1.75rem; }
+.nowrap, .composer-typed { white-space: nowrap; }
+
+/* Chatfeltet: H1, underlinje og knap fører ned i feltet, og svaret står under det */
+.chat { position: relative; width: 100%; max-width: 40rem; margin-top: 3rem; display: flex; flex-direction: column; align-items: center; }
+/* Den originale glød i agentens farve bag feltet og svaret */
+.chat::before {
+  content: ""; position: absolute; z-index: -1; left: 50%; top: 4rem; width: min(140%, 52rem); height: 70%;
+  translate: -50% 0; pointer-events: none;
+  background: radial-gradient(closest-side, color-mix(in srgb, var(--glow) 16%, transparent), transparent);
+  transition: background 200ms ease;
+}
+.composer {
+  width: 100%; text-align: left;
+  background: var(--bg); border: 1px solid var(--line); border-radius: var(--radius);
+  box-shadow: 0 1px 2px rgb(22 24 47 / .04), 0 14px 36px rgb(26 29 86 / .08);
+  padding: 1rem 1rem .7rem 1.25rem;
+}
+.composer-input {
+  margin: 0; min-height: 3.6em; color: var(--ink);
+  font-size: clamp(1.05rem, 2.6vw, 1.3rem); line-height: 1.45; letter-spacing: -.01em;
+}
+.composer-caret {
+  display: inline-block; width: 2px; height: 1.15em; margin-left: 2px; vertical-align: -.2em;
+  background: var(--accent); opacity: 0;
+}
+.composer.is-typing .composer-caret { opacity: 1; }
+.composer.is-typing:not(.is-busy) .composer-caret { animation: caret 1s steps(1) infinite; }
+@keyframes caret { 50% { opacity: 0; } }
+.composer-bar { display: flex; align-items: center; justify-content: space-between; gap: .75rem; margin-top: .5rem; }
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) .composer { border-color: var(--rail); box-shadow: 0 14px 36px rgb(0 0 0 / .5); }
+}
+:root[data-theme="dark"] .composer { border-color: var(--rail); box-shadow: 0 14px 36px rgb(0 0 0 / .5); }
+/* Prikkerne er "skriver"-indikatoren i højre side, ligesom lydknappen i en chat */
+.composer-voice {
+  flex: none; display: grid; place-items: center; width: 2.6rem; height: 2.6rem; margin-left: auto;
+  border-radius: 50%; background: var(--soft); font-size: 1.6rem;
+}
+.composer-voice .hey-voice { margin: 0; }
+
+/* De fire prikker lytter og taler (scaleY, ikke height) i agenternes farver */
+.hey-voice { display: inline-flex; align-items: center; gap: .09em; height: .5em; }
+.hey-voice i {
+  display: block; width: .13em; height: .13em; border-radius: 99px;
+  animation: hey-listen 1.8s ease-in-out infinite;
+}
+.hey-voice i:nth-child(1) { background: var(--s1); animation-delay: 0s; }
+.hey-voice i:nth-child(2) { background: var(--s2); animation-delay: .14s; }
+.hey-voice i:nth-child(3) { background: var(--s3); animation-delay: .28s; }
+.hey-voice i:nth-child(4) { background: var(--s4); animation-delay: .42s; }
+.hey.is-talking .hey-voice i { animation: hey-talk 320ms ease-in-out infinite alternate; }
+.hey.is-talking .hey-voice i:nth-child(2) { animation-delay: -.12s; }
+.hey.is-talking .hey-voice i:nth-child(3) { animation-delay: -.24s; }
+.hey.is-talking .hey-voice i:nth-child(4) { animation-delay: -.06s; }
+@keyframes hey-listen { 0%, 55%, 100% { transform: translateY(0); } 25% { transform: translateY(-.14em); } }
+@keyframes hey-talk { from { transform: scaleY(1); } to { transform: scaleY(3.5); } }
+
+/* Agenterne sidder som valg i bunden af feltet, ligesom værktøjsrækken i en chat */
+.picker { display: flex; gap: .25rem; touch-action: pan-y; }
+.pick {
+  flex: none; display: grid; place-items: center; width: 2.75rem; height: 2.75rem; padding: 0; cursor: pointer;
+  background: transparent; border: 0; border-radius: 12px;
+  transition: background-color 150ms ease, box-shadow 150ms ease;
+}
+@media (min-width: 40rem) { .pick { width: 3rem; height: 3rem; } }
+.pick img {
+  width: 82%; height: 82%;
+  opacity: .62; filter: saturate(.4); scale: .9;
+  transition: opacity 150ms ease, filter 150ms ease, scale 150ms var(--ease-out), translate 150ms var(--ease-out), rotate 150ms var(--ease-out);
+}
+.pick[aria-pressed="true"] { background: var(--pill-bg); box-shadow: var(--pill-shadow); }
+.pick[aria-pressed="true"] img { opacity: 1; filter: none; scale: 1.06; }
+@media (hover: hover) and (pointer: fine) {
+  .pick:hover img { opacity: 1; filter: none; scale: 1.12; translate: 0 -3px; rotate: -5deg; }
+  .pick[aria-pressed="true"]:hover img { scale: 1.1; translate: 0 -2px; rotate: 4deg; }
+}
+.pick:active img { scale: .95; translate: 0; transition-duration: 100ms; }
+
+/* Hjælpetekst under feltet. Mobil viser "tryk", computer viser "vælg". */
+.picker-hint { margin: .85rem 0 0; color: var(--muted); font-size: .9rem; }
+.hint-mouse { display: none; }
+@media (hover: hover) and (pointer: fine) {
+  .hint-touch { display: none; }
+  .hint-mouse { display: inline; }
+}
+
+/* Svaret: memojien, agentens navn og beskrivelse */
+.scene {
+  --fig: min(52vw, 17rem, 30svh);
+  position: relative; width: 100%; max-width: 34rem; margin-top: 1.25rem;
+}
+
+/* Alle agenter ligger oven på hinanden, så højden ikke hopper, når man skifter */
+.scene-items { position: relative; z-index: 1; display: grid; touch-action: pan-y; }
+.scene-item { grid-area: 1 / 1; display: flex; flex-direction: column; align-items: center; }
+.scene-item.is-off { visibility: hidden; }
+.scene-item.is-out { pointer-events: none; }
+.scene-fig { display: block; animation: fig-float 3.6s ease-in-out infinite; }
+.scene-img {
+  display: block; width: var(--fig); height: var(--fig); object-fit: contain;
+  -webkit-user-select: none; user-select: none; -webkit-user-drag: none;
+}
+@keyframes fig-float { 0%, 100% { transform: translateY(0) rotate(0); } 50% { transform: translateY(-9px) rotate(-1deg); } }
+
+.scene-title {
+  --tint: color-mix(in srgb, var(--glow) 78%, var(--ink));
+  margin: .35rem 0 .35rem; color: var(--tint);
+  font-size: clamp(2rem, 8vw, 3rem); font-weight: 700; line-height: 1.05; letter-spacing: -.045em;
+}
+.scene-text { margin: 0 auto; max-width: 25rem; color: var(--muted); font-size: 1rem; line-height: 1.5; }
+@media (min-width: 40rem) { .scene-text { font-size: 1.1rem; max-width: 29rem; } }
+.scene-title .wd, .scene-text .wd { display: inline-block; }
+.scene-title .wd { white-space: nowrap; }
+.scene-title .ch { display: inline-block; }
+
+/* Skiftet: memojien popper ind, navnet glider ind bogstav for bogstav, og beskrivelsen kommer ord for ord */
+.scene-item.is-in .scene-img { animation: scene-pop 280ms var(--ease-out) both; }
+.scene-item.is-in .ch { animation: ch-in 220ms var(--ease-out) both; animation-delay: calc(min(var(--d), 14) * 10ms + 30ms); }
+.scene-item.is-in .scene-text .wd { animation: wd-in 220ms var(--ease-out) both; animation-delay: calc(min(var(--d), 16) * 7ms + 90ms); }
+.scene-item.is-out .scene-img,
+.scene-item.is-out .scene-title,
+.scene-item.is-out .scene-text { animation: scene-out 140ms var(--ease-out) both; }
+@keyframes scene-pop {
+  from { opacity: 0; transform: scale(.94) translateY(10px); filter: blur(4px); }
+  to { opacity: 1; transform: none; filter: none; }
+}
+@keyframes ch-in { from { opacity: 0; transform: translateY(.3em); } to { opacity: 1; transform: none; } }
+@keyframes wd-in { from { opacity: 0; transform: translateY(5px); } to { opacity: 1; transform: none; } }
+@keyframes scene-out { to { opacity: 0; transform: scale(.97); } }
+
+/* Afsløring ved scroll: overskrifter og grupper glider stille ind første gang, de ses. Kun når JavaScript kører. */
+.js-reveal [data-reveal] { opacity: 0; transform: translateY(12px); }
+.js-reveal [data-reveal].is-visible {
+  opacity: 1; transform: none;
+  transition: opacity 500ms var(--ease-out), transform 500ms var(--ease-out);
+  transition-delay: calc(var(--i, 0) * 60ms);
+}
+
+/* Sektioner */
+.section { padding: clamp(4rem, 7vw, 6rem) var(--gutter); }
+
+/* Problemet: overskrift og tekst side om side på desktop */
+.split { display: grid; gap: 1rem 4rem; }
+.split h2 { margin: 0; }
+.split-text { color: var(--muted); font-size: 1.15rem; margin: 0; max-width: var(--read); }
+.split-text p { margin: 0 0 1rem; }
+.split-text p:last-child { margin-bottom: 0; }
+@media (min-width: 56rem) {
+  .split { grid-template-columns: 1fr 1fr; align-items: start; }
+  .split-text { margin-top: .5rem; }
+}
+
+/* Sådan vil jeg arbejde: lys, cremefarvet sektion med fire kort, der stables, når man scroller. Kortene går fra lys til mørk,
+   så det sidste kort med booking står stærkest.
+   Hvert kort sætter sig fast under toppen, og det næste glider op over det. main.js skalerer kortene:
+   det kommende vokser på plads, og de dækkede krymper og bliver lidt mørkere. Uden JS stables de bare. */
+.process {
+  --pbg: #F3F4F9; --ph: var(--ink); --pintro: var(--muted); --stick: 5.25rem; --peek: 1.5rem;
+  background: var(--pbg); color: var(--ph);
+  box-shadow: 0 0 0 100vmax var(--pbg); clip-path: inset(0 -100vmax);
+}
+:root[data-theme="dark"] .process { --pbg: #10132F; --ph: #fff; --pintro: #C3C7DD; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .process { --pbg: #10132F; --ph: #fff; --pintro: #C3C7DD; } }
+.process h2 { color: var(--ph); text-align: center; }
+.process-intro { color: var(--pintro); max-width: 36rem; margin: 0 auto 3rem; font-size: 1.1rem; text-align: center; }
+.pstack { list-style: none; margin: 0 auto; padding: 0; display: grid; gap: 2rem; max-width: 64rem; }
+.pcard {
+  --card: #1A1D56; --fg: #fff; --sub: rgb(255 255 255 / .82); --blob: rgb(255 255 255 / .06);
+  --dot: #FF7456; --dot-fg: #1A1D56; --art: #2F3A9E; --s: 1; --b: 1;
+  position: sticky; top: calc(var(--stick) + var(--i) * var(--peek));
+  display: grid; gap: 1.5rem; overflow: hidden; isolation: isolate;
+  padding: clamp(1.5rem, 3vw, 2.25rem) clamp(1.5rem, 3.5vw, 2.75rem);
+  border-radius: 24px; background: var(--card); color: var(--fg);
+  border: 1px solid rgb(26 29 86 / .12);
+  box-shadow: 0 -6px 24px rgb(26 29 86 / .10), 0 1px 2px rgb(26 29 86 / .06);
+  transform: scale(var(--s)); transform-origin: 50% 0; filter: brightness(var(--b));
+}
+.pcard[data-tone="brand"] { --card: #FF7456; --fg: #1A1D56; --sub: #23265E; --dot: #1A1D56; --dot-fg: #FF7456; --art: #1A1D56; --blob: rgb(26 29 86 / .07); }
+.pcard[data-tone="light"] { --card: #97BAF3; --fg: #1A1D56; --sub: #283069; --dot: #1A1D56; --dot-fg: #FFFFFF; --art: #FFFFFF; --blob: rgb(26 29 86 / .06); }
+.pcard[data-tone="white"] { --card: #FFFFFF; --fg: #16182F; --sub: #4B5070; --dot: #1A1D56; --dot-fg: #fff; --art: #FFD5CB; --blob: rgb(26 29 86 / .05); }
+/* Den store, svage klat i baggrunden */
+.pcard::before {
+  content: ""; position: absolute; z-index: -1; left: 4%; top: -18%; width: 52%; aspect-ratio: 1.35;
+  border-radius: 46% 54% 58% 42% / 52% 44% 56% 48%; background: var(--blob);
+}
+.pcard-body { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; }
+.pcard-icon {
+  display: grid; place-items: center; width: 3.25rem; height: 3.25rem; border-radius: 50%;
+  background: var(--dot); color: var(--dot-fg); margin-bottom: clamp(1.25rem, 3vw, 2rem);
+}
+.pcard-title { font-family: var(--serif); font-weight: 400; font-size: clamp(1.9rem, 3.2vw, 2.4rem); line-height: 1.05; letter-spacing: -.01em; margin: 0 0 .9rem; color: var(--fg); }
+.pcard-text { color: var(--sub); font-size: 1rem; line-height: 1.6; max-width: 32rem; margin: 0 0 1.5rem; }
+.pcard-btn {
+  display: inline-flex; align-items: center; gap: .6rem; min-height: 3rem; padding: .7rem 1.4rem;
+  border-radius: 10px; border: 1px solid color-mix(in srgb, var(--fg) 30%, transparent);
+  color: var(--fg); font-weight: 600; text-decoration: none; transition: background 200ms ease, border-color 200ms ease;
+}
+.pcard-btn svg { transition: transform 200ms var(--ease-out); }
+@media (hover: hover) and (pointer: fine) {
+  .pcard-btn:hover { background: color-mix(in srgb, var(--fg) 8%, transparent); border-color: color-mix(in srgb, var(--fg) 55%, transparent); }
+  .pcard-btn:hover svg { transform: translateX(3px); }
+}
+.pcard-btn:focus-visible { outline: 3px solid var(--fg); outline-offset: 3px; }
+/* Memojien står på en klat i kortets kontrastfarve */
+.pcard-art { position: relative; z-index: 0; display: grid; place-items: center; justify-self: center; width: min(13rem, 100%); aspect-ratio: 1; }
+.pcard-art::before {
+  content: ""; position: absolute; inset: 8% 2% 0; z-index: -1;
+  border-radius: 58% 42% 46% 54% / 50% 60% 40% 50%; background: var(--art);
+}
+.pcard-art img { width: 100%; height: auto; }
+/* Mobil: memojien står lille i øverste højre hjørne ud for ikonet, så hvert kort kan være på skærmen */
+@media (max-width: 47.99rem) {
+  .process { --peek: .75rem; --stick: 4.75rem; }
+  .pcard { gap: 0; }
+  .pcard-icon { width: 2.75rem; height: 2.75rem; margin-bottom: 3.5rem; }
+  .pcard-text { font-size: 1rem; margin-bottom: 1.25rem; }
+  .pcard-art { position: absolute; right: .25rem; top: .5rem; width: 7rem; }
+}
+@media (min-width: 48rem) {
+  .pcard { grid-template-columns: 1.3fr .7fr; align-items: center; min-height: min(22rem, calc(100vh - var(--stick) - 6rem)); }
+}
+
+/* Om */
+.about { display: grid; gap: 2.5rem; align-items: center; }
+/* Den pegende memoji står frit uden flade, ligesom ved citatet. I mørkt tema har den samme bløde lysning bag sig. */
+.about-figure { width: min(100%, 18rem); margin-inline: auto; }
+.memoji-about { display: block; width: auto; height: 20rem; margin-inline: auto; filter: var(--figure-shadow); }
+@media (min-width: 52rem) { .about-figure { width: 22rem; margin-inline: 0; } }
+.about-text { max-width: var(--read); min-width: 0; }
+.about-text p { color: var(--muted); }
+@media (min-width: 52rem) {
+  .about { grid-template-columns: 22rem 1fr; gap: 4rem; }
+}
+
+/* Cases: bento-gitter med ét højt kort til venstre og to halvt så høje kort stablet til højre */
+.cases-head { text-align: center; }
+.cases-head h2 { margin: 0 auto .75rem; max-width: none; font-size: clamp(2.25rem, 5.5vw, 3.75rem); line-height: 1.04; letter-spacing: -.045em; }
+.cases-head p { margin: 0 auto; color: var(--muted); max-width: var(--read); }
+.case-grid { list-style: none; padding: 0; margin: 3rem 0 0; display: grid; gap: 1.25rem; }
+@media (min-width: 40rem) {
+  .case-bento { grid-template-columns: repeat(2, 1fr); grid-auto-rows: minmax(18rem, auto); }
+  .case-tall { grid-row: span 2; }
+}
+.case-card {
+  display: flex; flex-direction: column; align-items: center; text-align: center; min-width: 0;
+  min-height: 18rem; padding: 1.75rem 1.5rem 1.5rem; background: var(--soft); border-radius: 28px;
+}
+.case-title { margin: 0; font-size: 1.2rem; font-weight: 600; letter-spacing: -.02em; }
+.case-label { margin: .15rem 0 0; font-size: .9rem; color: var(--muted); }
+.case-visual { flex: 1; align-self: stretch; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .35rem; padding: 1.5rem 0; position: relative; }
+.case-num { margin: 0; font-size: clamp(3rem, 7vw, 4.25rem); font-weight: 600; line-height: 1; letter-spacing: -.05em; }
+.case-unit { margin: 0; max-width: 16rem; font-size: .95rem; color: var(--muted); }
+.case-note { margin: 0; max-width: 22rem; font-size: .85rem; color: var(--muted); }
+.case-stat { margin: 0; font-size: .95rem; font-weight: 600; letter-spacing: -.01em; }
+/* Illustrationer: rene SVG'er, der tager farverne fra temaet (stamtræet i HeyOtto, sitehierarkiet og browservinduet) */
+.case-svg { display: block; align-self: stretch; width: 100%; height: auto; max-width: 20rem; margin: 0 auto .75rem; overflow: visible; }
+.case-tall .case-svg { max-width: 30rem; }
+.cv-node { fill: var(--bg); stroke: var(--line); stroke-width: 1.5; }
+.cv-lead { fill: var(--bg); stroke: var(--accent); stroke-width: 2; }
+.cv-line { fill: none; stroke: var(--rail); stroke-width: 1.5; stroke-linecap: round; }
+.cv-face, .cv-ink { fill: var(--ink); }
+.cv-eye { fill: var(--bg); }
+.cv-accent { fill: var(--accent); }
+.cv-rail { fill: var(--rail); }
+.cv-soft { fill: var(--soft); }
+.cv-label { fill: var(--muted); font-family: var(--font); font-size: 10px; font-weight: 600; text-anchor: middle; }
+.cv-text { fill: var(--ink); font-family: var(--font); font-size: 11px; font-weight: 600; }
+
+/* Citat: stort citat i serif og memojien frit på hver side. Billederne er beskåret til overkroppen og fader ud forneden,
+   så de står på samme grundlinje under citatet. */
+.quote { display: grid; gap: 2.5rem 2rem; align-items: end; justify-items: center; padding-block: 6rem; }
+.quote-body { margin: 0; text-align: center; max-width: 36rem; align-self: center; }
+.quote-body blockquote { margin: 0; }
+.quote-body blockquote p {
+  margin: 0; font-family: var(--serif); font-weight: 400; letter-spacing: -.01em;
+  font-size: clamp(1.75rem, 3.4vw, 2.5rem); line-height: 1.18; text-wrap: balance;
+}
+.quote-body figcaption { margin-top: 1.25rem; color: var(--muted); font-size: .95rem; }
+.quote-name { color: var(--ink); font-weight: 600; }
+.quote-img img { display: block; width: 100%; height: auto; filter: var(--figure-shadow); }
+.quote-img-left { width: min(100%, 9rem); }
+.quote-img-right { width: min(100%, 7rem); }
+/* På mobil står citatet øverst og billederne side om side under det */
+@media (max-width: 55.99rem) {
+  .quote { grid-template-columns: 1fr 1fr; }
+  .quote-body { grid-column: 1 / -1; grid-row: 1; }
+  .quote-img-left { justify-self: end; }
+  .quote-img-right { justify-self: start; }
+}
+@media (min-width: 56rem) {
+  .quote { grid-template-columns: 1fr minmax(0, 36rem) 1fr; }
+  .quote-img-left { width: clamp(10rem, 16vw, 15rem); justify-self: start; }
+  .quote-img-right { width: clamp(7.5rem, 11vw, 10.5rem); justify-self: end; }
+}
+
+/* Værktøjer: prikket flade med en stablet flise i midten og værktøjerne spredt rundt om */
+.tools-stage {
+  position: relative; margin-top: 2.5rem; border-radius: var(--radius);
+  display: flex; flex-direction: column; align-items: center; gap: 2rem; padding: 2rem 1rem;
+  background-image: radial-gradient(color-mix(in srgb, var(--plus) 55%, transparent) 1px, transparent 1.6px);
+  background-size: 18px 18px;
+}
+.tools-stack { width: min(100%, 240px); height: auto; }
+.tool-list {
+  list-style: none; margin: 0; padding: 0; width: 100%;
+  display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem .5rem;
+}
+.tool { display: flex; flex-direction: column; align-items: center; gap: .45rem; min-width: 0; }
+.tool-tile {
+  display: grid; place-items: center; width: 3.6rem; height: 3.6rem; border-radius: 16px;
+  background: var(--tile); border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgb(22 24 47 / .06), 0 8px 20px rgb(22 24 47 / .08);
+  transform: rotate(var(--r, 0deg)); transition: transform 200ms var(--ease-out);
+}
+.tool-tile img { width: 55%; height: 55%; object-fit: contain; }
+@media (hover: hover) and (pointer: fine) { .tool:hover .tool-tile { transform: rotate(0deg) translateY(-3px); } }
+/* Interaktiv flade (main.js): prikkerne tegnes i et canvas og viger for musen, og fliserne reagerer på, hvor tæt musen er.
+   --p er nærhed fra 0 til 1, --px/--py er et lille træk mod musen. Uden JS eller ved reduceret bevægelse står CSS-prikkerne. */
+.tools-field { position: absolute; inset: 0; width: 100%; height: 100%; border-radius: inherit; pointer-events: none; }
+.tools-stage.has-field { background-image: none; touch-action: pan-y; }
+.tools-stage.has-field .tools-stack, .tools-stage.has-field .tool-list { position: relative; }
+@media (min-width: 52rem) { .tools-stage.has-field .tool-list { position: absolute; } }
+.has-field .tool-tile {
+  --p: 0; --px: 0; --py: 0;
+  transform: translate(calc(var(--px) * 1px), calc(var(--py) * 1px - var(--p) * 8px)) rotate(calc(var(--r, 0deg) * (1 - var(--p)))) scale(calc(1 + var(--p) * .08));
+  transition: transform 180ms var(--ease-out), box-shadow 250ms ease, border-color 250ms ease;
+  box-shadow: 0 1px 2px rgb(22 24 47 / .06), 0 calc(8px + var(--p) * 10px) calc(20px + var(--p) * 16px) color-mix(in srgb, var(--brand, var(--ink)) calc(8% + var(--p) * 22%), transparent);
+}
+.has-field .tool:hover .tool-tile { transform: translate(calc(var(--px) * 1px), calc(var(--py) * 1px - var(--p) * 8px)) rotate(calc(var(--r, 0deg) * (1 - var(--p)))) scale(calc(1 + var(--p) * .08)); }
+.has-field .tool.is-hit .tool-tile { border-color: color-mix(in srgb, var(--brand) 45%, var(--line)); animation: tool-pop 320ms var(--ease-out); }
+.has-field .tool.is-hit .tool-name { color: var(--ink); }
+.tool-name { transition: color 200ms ease; }
+@keyframes tool-pop { 40% { scale: 1.1; } }
+.tool-name { font-size: .85rem; font-weight: 500; color: var(--muted); text-align: center; }
+.t1 { --r: -6deg; } .t2 { --r: 5deg; } .t3 { --r: -3deg; } .t4 { --r: 7deg; }
+.t5 { --r: 4deg; } .t6 { --r: -7deg; } .t7 { --r: 6deg; } .t8 { --r: -4deg; }
+
+@media (min-width: 52rem) {
+  .tools-stage { min-height: 32rem; justify-content: center; padding: 3rem 2rem; }
+  .tools-stack { width: 300px; }
+  .tool-list { position: absolute; inset: 0; display: block; }
+  .tool { position: absolute; }
+  .tool-tile { width: 4.25rem; height: 4.25rem; border-radius: 18px; }
+  .t1 { left: 8%;  top: 12%; }
+  .t2 { left: 25%; top: 30%; }
+  .t3 { left: 6%;  top: 56%; }
+  .t4 { left: 23%; top: 72%; }
+  .t5 { right: 8%;  top: 10%; }
+  .t6 { right: 25%; top: 28%; }
+  .t7 { right: 6%;  top: 55%; }
+  .t8 { right: 22%; top: 73%; }
+}
+
+/* FAQ: glasagtige kort (halvgennemsigtige med sløring) på bløde, slørede farveklatter i lyseblå og koral.
+   Spørgsmålene er <details>, så de virker uden JS og kan læses af søgemaskiner. Kun ét svar er åbent ad gangen (name="faq"). */
+.faq {
+  --glass: rgb(255 255 255 / .62); --glass-line: rgb(255 255 255 / .85); --glass-shadow: 0 1px 2px rgb(26 29 86 / .05), 0 10px 30px rgb(26 29 86 / .08);
+  --faq-blob1: #97BAF3; --faq-blob2: #FFC9BC; --faq-blob3: #E3E7F7;
+  --faq-btn-fg: #fff;
+  position: relative; isolation: isolate;
+  display: grid; gap: 2.5rem; align-items: start;
+}
+:root[data-theme="dark"] .faq { --faq-btn-fg: #0B0D24; --glass: rgb(20 23 58 / .55); --glass-line: rgb(255 255 255 / .10); --glass-shadow: 0 10px 30px rgb(0 0 0 / .35); --faq-blob1: #2F3A9E; --faq-blob2: #5A2B33; --faq-blob3: #0E1959; }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .faq { --faq-btn-fg: #0B0D24; --glass: rgb(20 23 58 / .55); --glass-line: rgb(255 255 255 / .10); --glass-shadow: 0 10px 30px rgb(0 0 0 / .35); --faq-blob1: #2F3A9E; --faq-blob2: #5A2B33; --faq-blob3: #0E1959; } }
+/* De slørede klatter bag glasset */
+.faq-glow { position: absolute; inset: 0; z-index: -1; pointer-events: none; filter: blur(60px); opacity: .7; }
+.faq-glow {
+  background:
+    radial-gradient(28% 34% at 18% 62%, var(--faq-blob1), transparent 70%),
+    radial-gradient(26% 30% at 72% 22%, var(--faq-blob2), transparent 70%),
+    radial-gradient(30% 34% at 82% 82%, var(--faq-blob3), transparent 70%);
+}
+.faq-side { display: flex; flex-direction: column; align-items: flex-start; gap: 1.25rem; min-width: 0; }
+.faq-side h2 { margin: 0; }
+.faq-eyebrow { display: inline-flex; align-items: center; gap: .5rem; margin: 0; font-size: .95rem; font-weight: 500; color: var(--ink); }
+.faq-eyebrow span { width: .5rem; height: .5rem; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px color-mix(in srgb, var(--accent) 18%, transparent); }
+.faq-card, .faq-item {
+  background: var(--glass); border: 1px solid var(--glass-line); box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: blur(18px) saturate(140%); backdrop-filter: blur(18px) saturate(140%);
+}
+.faq-card { width: 100%; max-width: 26rem; border-radius: 20px; padding: 1.75rem; margin-top: .75rem; }
+.faq-avatar { width: 4rem; height: 4rem; border-radius: 50%; padding: .3rem; background: #FFE3DC; object-fit: contain; margin-bottom: 1.25rem; }
+.faq-card-title { font-size: 1.6rem; font-weight: 500; letter-spacing: -.02em; margin: 0 0 .6rem; }
+.faq-card-text { color: var(--muted); margin: 0 0 1.5rem; font-size: 1rem; }
+.faq-card-btn {
+  display: flex; align-items: center; justify-content: center; min-height: 3rem; width: 100%;
+  border-radius: 999px; background: var(--accent); color: var(--faq-btn-fg); font-weight: 600; text-decoration: none;
+  box-shadow: 0 8px 20px color-mix(in srgb, var(--accent) 30%, transparent);
+  transition: transform 150ms var(--ease-out), box-shadow 150ms ease;
+}
+@media (hover: hover) and (pointer: fine) { .faq-card-btn:hover { transform: translateY(-1px); box-shadow: 0 12px 26px color-mix(in srgb, var(--accent) 38%, transparent); } }
+.faq-card-btn:focus-visible { outline: 3px solid var(--focus); outline-offset: 3px; }
+
+.faq-list { display: grid; gap: .75rem; min-width: 0; }
+.faq-item { border-radius: 16px; overflow: hidden; }
+.faq-item summary {
+  display: flex; align-items: center; justify-content: space-between; gap: 1rem;
+  padding: 1.1rem 1.35rem; cursor: pointer; list-style: none; min-height: 3.5rem;
+}
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary:focus-visible { outline: 3px solid var(--focus); outline-offset: -3px; border-radius: 16px; }
+.faq-q { margin: 0; font-size: 1.1rem; font-weight: 500; letter-spacing: -.01em; color: var(--ink); }
+/* Plus, der drejer til et kryds, når svaret er åbent */
+.faq-icon { position: relative; flex: none; width: 1rem; height: 1rem; transition: rotate 200ms var(--ease-out); }
+.faq-icon::before, .faq-icon::after { content: ""; position: absolute; left: 50%; top: 50%; width: 100%; height: 1.75px; border-radius: 2px; background: var(--ink); translate: -50% -50%; }
+.faq-icon::after { rotate: 90deg; }
+.faq-item[open] .faq-icon { rotate: 45deg; }
+.faq-a { padding: 0 1.35rem 1.25rem; }
+.faq-a p { margin: 0; color: var(--muted); font-size: 1rem; line-height: 1.65; max-width: 44rem; }
+/* Svaret glider op og ned i browsere, der kan animere højden på details */
+@supports (interpolate-size: allow-keywords) {
+  .faq { interpolate-size: allow-keywords; }
+  .faq-item::details-content { height: 0; overflow: clip; transition: height 220ms var(--ease-out), content-visibility 220ms allow-discrete; }
+  .faq-item[open]::details-content { height: auto; }
+}
+@media (min-width: 56rem) {
+  .faq { grid-template-columns: minmax(0, .8fr) minmax(0, 1.2fr); gap: 3rem; }
+  .faq-side { position: sticky; top: 6rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-icon, .faq-card-btn { transition: none; }
+  .faq-item::details-content { transition: none; }
+}
+
+/* Kontakt: tre kort side om side (kalender, mail og telefon), under hinanden på mobil */
+.big { font-size: clamp(2.25rem, 6vw, 3.75rem); }
+.contact { position: relative; }
+/* Den mediterende memoji: over overskriften på smalle skærme, ved siden af kortene på brede */
+.memoji-contact { display: block; width: 9rem; height: auto; margin: 0 auto 1.25rem; filter: var(--figure-shadow); }
+@media (min-width: 90rem) {
+  .memoji-contact { position: absolute; right: var(--gutter); bottom: 5rem; width: 12rem; margin: 0; }
+}
+.contact-list {
+  list-style: none; margin: 0 auto; padding: 0; max-width: 36rem;
+  display: grid; gap: .9rem;
+}
+@media (min-width: 36rem) { .contact-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.contact-card {
+  display: flex; flex-direction: column; align-items: flex-start; gap: .2rem; height: 100%;
+  padding: 1.4rem 1.4rem 1.5rem; border-radius: var(--radius); text-decoration: none;
+  background: var(--bg); border: 1px solid var(--line);
+  box-shadow: 0 1px 2px rgb(22 24 47 / .04), 0 12px 32px rgb(26 29 86 / .06);
+  transition: transform 160ms var(--ease-out), border-color 150ms ease, box-shadow 150ms ease;
+}
+.contact-icon {
+  display: grid; place-items: center; width: 2.75rem; height: 2.75rem; margin-bottom: .9rem;
+  border-radius: 50%; background: var(--accent); color: #fff;
+}
+:root[data-theme="dark"] .contact-icon { color: var(--bg); }
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) .contact-icon { color: var(--bg); } }
+.contact-title { font-size: 1.15rem; font-weight: 600; letter-spacing: -.02em; color: var(--ink); }
+.contact-sub { font-size: .95rem; color: var(--muted); overflow-wrap: anywhere; }
+@media (hover: hover) and (pointer: fine) {
+  .contact-card:hover { transform: translateY(-2px); border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); box-shadow: 0 1px 2px rgb(22 24 47 / .04), 0 16px 36px rgb(26 29 86 / .12); }
+}
+.contact-card:active { transform: scale(.98); }
+
+/* Footer: eds marineblå helt ud til kanterne. En tynd linje med navn, genveje og kontakt,
+   og under den memojien og eds logo skaleret op, så de fylder hele bredden. Logoet er samme SVG som i toppen,
+   farvet hvidt med en maske. */
+.footer {
+  --fbg: #1A1D56; --ffg: #FFFFFF; --fdim: #C5C8E0;
+  position: relative; padding: 2.25rem var(--gutter) clamp(1.5rem, 3vw, 2.5rem);
+  background: var(--fbg); color: var(--fdim); font-size: .9rem;
+  box-shadow: 0 0 0 100vmax var(--fbg); clip-path: inset(0 -100vmax);
+}
+.footer p { margin: 0; }
+.footer a { color: var(--ffg); text-decoration: none; text-underline-offset: 3px; }
+@media (hover: hover) and (pointer: fine) { .footer a:hover { text-decoration: underline; } .footer .footer-mark:hover { text-decoration: none; } }
+.footer a:focus-visible { outline: 2px solid var(--ffg); outline-offset: 3px; border-radius: 4px; }
+.footer-bar { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 2.5rem; }
+@media (min-width: 64rem) { .footer-bar { flex-wrap: nowrap; } .footer-nav { margin-inline: auto; } }
+.footer-nav, .footer-contact { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1.5rem; }
+.footer-icon { display: inline-grid; place-items: center; width: 2.75rem; height: 2.75rem; margin: -.75rem; }
+/* Hovedet og logoet deler bredden, så de altid er lige høje: hoved = (100 % - mellemrum) / (1 + logoets format).
+   eds logo har formatet 260 / 151 = 1,72, så hovedet får (100 - 2) / 2,72 = 36 % af bredden. */
+.footer-mark {
+  container-type: inline-size;
+  display: flex; align-items: flex-end; gap: 2cqw; margin-top: clamp(2.5rem, 6vw, 4.5rem);
+}
+.footer-head { width: 36cqw; height: 36cqw; flex: none; object-fit: contain; }
+.footer-logo {
+  flex: 1; aspect-ratio: 260 / 151; background: var(--ffg);
+  -webkit-mask: url("/assets/ed-logo.svg") center / contain no-repeat;
+  mask: url("/assets/ed-logo.svg") center / contain no-repeat;
+}
+@media (hover: hover) and (pointer: fine) {
+  .footer-head { transition: rotate 250ms var(--ease-out), scale 250ms var(--ease-out); }
+  .footer-mark:hover .footer-head { rotate: -6deg; scale: 1.04; }
+}
+@media (max-width: 47.99rem) {
+  .footer-bar { flex-direction: column; align-items: flex-start; }
+}
+
+/* 404: lille etiket over overskriften og genveje til de mest brugte steder */
+.eyebrow-404 { font-size: .85rem; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); margin: 0 0 .5rem; }
+.links-404 { list-style: none; padding: 0; margin: 0 0 2rem; display: flex; flex-wrap: wrap; justify-content: center; gap: .5rem; }
+.links-404 a {
+  display: inline-block; padding: .5rem 1rem; border-radius: 999px; text-decoration: none; font-weight: 500;
+  background: var(--soft); border: 1px solid var(--line); transition: background-color .15s;
+}
+.links-404 a:hover { background: var(--hover); }
+
+/* Tak-siden */
+.thanks { min-height: 75vh; justify-content: center; padding-bottom: 5rem; }
+.thanks .mascot { width: 140px; height: auto; margin: 0 0 1.5rem; }
+.actions-404 { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; }
+.btn-ghost { background: transparent; color: var(--ink); box-shadow: inset 0 0 0 1.5px var(--field-border); }
+.btn-ghost:hover { color: var(--ink); background: var(--hover); }
+.thanks h1 { font-size: clamp(2.25rem, 6vw, 4rem); }
+
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  /* Det, der bevæger sig, står stille. Farver og fades bliver, fordi de hjælper med at forstå skiftet. */
+  .hey-voice i, .hey.is-talking .hey-voice i, .scene-fig { animation: none; }
+  .composer-caret, .composer.is-typing .composer-caret { animation: none; opacity: 0; }
+  .hero-title .accent, .chat::before { transition: none; }
+  .scene-item.is-in .scene-img, .scene-item.is-in .ch, .scene-item.is-in .scene-text .wd { animation: fade 200ms ease both; animation-delay: 0ms; }
+  .scene-item.is-out .scene-img, .scene-item.is-out .scene-title, .scene-item.is-out .scene-text { animation: fade-out 150ms ease both; }
+  .pick img { transition: opacity 200ms ease, filter 200ms ease; }
+  .pick:hover img, .pick[aria-pressed="true"]:hover img, .pick:active img { scale: 1.06; translate: none; rotate: none; }
+  .pick:not([aria-pressed="true"]):hover img { scale: .9; }
+  .btn, .btn:hover, .btn:active, .tool:hover .tool-tile { transform: none; }
+  .tool-tile { transition: none; }
+  .js-reveal [data-reveal] { transform: none; }
+  .js-reveal [data-reveal].is-visible { transition: opacity 300ms ease; transition-delay: 0ms; }
+  .contact-card, .contact-card:hover, .contact-card:active { transform: none; }
+}
+@keyframes fade { from { opacity: 0; } to { opacity: 1; } }
+@keyframes fade-out { to { opacity: 0; } }

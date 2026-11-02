@@ -1,0 +1,50 @@
+# Lægger site/ ud på GitHub Pages: https://kasperai-stack.github.io/ed/
+# Siden bruger stier fra roden ("/css/..."), så de får /ed foran, fordi Pages ligger i en undermappe.
+# Erstat ed med repoets navn (store og små bogstaver som på GitHub) og __GREN__ med den gren, der arbejdes på.
+name: GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Byg siden til Pages
+        env:
+          BASE: /ed
+          URL: https://kasperai-stack.github.io/ed
+        run: |
+          cp -r site _site
+          # Rodstier ("/css/...") peger på projektmappen på Pages
+          find _site -name '*.html' -exec sed -i -E "s#(href|src|action)=\"/([^/])#\1=\"$BASE/\2#g" {} +
+          sed -i "s#url(\"/#url(\"$BASE/#g" _site/css/*.css
+          # Delingsbilledet skal have den fulde adresse, ellers viser LinkedIn det ikke
+          find _site -name '*.html' -exec sed -i -E "s#content=\"/assets/(og-image[^\"]*)\"#content=\"$URL/assets/\1\"#" {} +
+          touch _site/.nojekyll
+          # Ny version ved hvert push, så browseren ikke viser gammel CSS, JS, CV, ansøgning eller PDF fra sin cache
+          V=${GITHUB_SHA::7}
+          find _site -name '*.html' -exec sed -i -E "s#(/css/styles\.css|/css/dokument\.css|/js/main\.js|/cv\.html|/ansoegning\.html|/application\.html|\.pdf)\"#\1?v=$V\"#g" {} +
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

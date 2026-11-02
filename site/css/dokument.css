@@ -1,0 +1,215 @@
+/* CV og ansøgning: de to PDF-dokumenter bygget som websider. De står altid i lyst tema, ligesom PDF'erne,
+   og bruger samme skrift som PDF'erne: Inter. Toppen og knapperne kommer fra styles.css. */
+
+/* Inter (variabel skrift, vægt 100 til 900). Licens: SIL Open Font License, se /fonts/OFL-inter.txt. */
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url("/fonts/inter-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* Farverne er aflæst direkte fra PDF'erne: Understorys mørkegrønne, den lysegule, en olivengrøn til streger
+   og punkter og den cremefarvede flade */
+:root {
+  --doc-brand: #022C12;
+  --doc-lime: #F1F97E;
+  --doc-olive: #C9D46A;
+  --doc-ink: #1D2A20;
+  --doc-muted: #55655A;
+  --doc-sub: #7C907D;
+  --doc-line: #E2E0D3;
+  --doc-tint: #EEF2D9;
+  --doc-tint-line: #DCE3B5;
+  --doc-paper: #F6F4E8;
+  --doc-desk: #ECEADC;
+  --doc-font: "Inter", Arial, "Helvetica Neue", sans-serif;
+}
+
+/* Siderne ligger på en flade i dokumentets farve, og toppen står hvid ovenpå */
+body.doc-cv-page { background: var(--doc-desk); }
+body.doc-chat-page { background: var(--doc-paper); }
+.doc-main { padding: clamp(1rem, 3vw, 2.5rem) var(--gutter) 2.5rem; }
+@media (max-width: 30rem) { .doc-pdf { display: none; } }
+
+/* Bunden: videre til det andet dokument, PDF'en og forsiden */
+.doc-nav { display: flex; flex-wrap: wrap; justify-content: center; gap: .75rem; margin: 2.5rem auto 0; }
+.doc-nav .btn-ghost { background: #fff; }
+
+/* ===== CV ===== */
+.cv {
+  max-width: 62rem; margin: 0 auto; overflow: hidden;
+  background: var(--doc-paper); color: var(--doc-ink); border-radius: 20px;
+  box-shadow: 0 1px 2px rgb(2 44 18 / .05), 0 18px 48px rgb(2 44 18 / .08);
+  font-family: var(--doc-font); font-size: 1rem; line-height: 1.5;
+}
+@media (max-width: 40rem) {
+  .doc-cv-page .doc-main { padding-inline: 0; padding-top: 0; }
+  .cv { border-radius: 0; box-shadow: none; }
+}
+.cv h1, .cv h2, .cv h3 { text-wrap: balance; }
+.cv a { color: inherit; text-decoration-color: rgb(29 42 32 / .35); text-underline-offset: 3px; }
+.cv a:hover { text-decoration-color: var(--doc-brand); }
+.cv strong { font-weight: 700; color: var(--doc-brand); }
+
+/* Toppen: konfettien går helt ud til kanten, og overskriften står ovenpå til venstre, som i PDF'en.
+   Teksten skalerer med billedet (cqw). På smalle skærme står teksten under en smal stribe konfetti. */
+.cv-hero { position: relative; container-type: inline-size; }
+.cv-hero-img { display: block; width: 100%; height: auto; }
+.cv-hero-text { position: absolute; left: 6.4%; right: 4%; top: 26%; }
+.cv-hero h1 {
+  margin: 0 0 .35em; color: var(--doc-brand); font-weight: 800; font-size: 3.7cqw; line-height: 1.09;
+  letter-spacing: -.01em; text-transform: uppercase; max-width: 14.8em; text-wrap: wrap;
+}
+.cv-hero-sub { margin: 0; color: var(--doc-muted); font-size: 1.75cqw; }
+@container (max-width: 34rem) {
+  .cv-hero-img { height: 4.5rem; object-fit: cover; object-position: left top; }
+  .cv-hero-text { position: static; padding: .25rem clamp(1.25rem, 6.4%, 4rem) 0; }
+  .cv-hero h1 { font-size: 1.75rem; }
+  .cv-hero-sub { font-size: 1rem; }
+}
+
+.cv-body { padding: 0 clamp(1.25rem, 6.4%, 4rem) clamp(2rem, 4vw, 3rem); }
+.cv-id { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem 1rem; margin-top: 1.25rem; }
+.cv-name { margin: 0; color: var(--doc-brand); font-size: clamp(1.9rem, 4.2vw, 2.4rem); font-weight: 800; line-height: 1.05; letter-spacing: -.01em; text-transform: uppercase; }
+.cv-pill { padding: .3rem .95rem; border-radius: 999px; background: var(--doc-lime); color: var(--doc-brand); font-size: .9rem; font-weight: 700; white-space: nowrap; }
+.cv-contact { display: flex; flex-wrap: wrap; align-items: baseline; gap: .4rem .9rem; margin: .9rem 0 0; font-size: .925rem; }
+.cv-contact span { color: var(--doc-sub); }
+.cv-intro {
+  margin: 1.5rem 0 0; padding: .9rem 1.1rem; max-width: none;
+  background: var(--doc-tint); border-left: 4px solid var(--doc-brand); border-radius: 0 8px 8px 0;
+  font-size: 1rem; line-height: 1.6;
+}
+
+.cv-cols { display: grid; gap: 2.25rem 2rem; margin-top: 2.25rem; }
+@media (min-width: 54rem) { .cv-cols { grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); } }
+.cv-main, .cv-side { display: grid; gap: 2.25rem; align-content: start; min-width: 0; }
+.cv h2 {
+  margin: 0 0 1.1rem; padding-bottom: .4rem; border-bottom: 3px solid var(--doc-olive);
+  color: var(--doc-brand); font-size: 1.3rem; font-weight: 800; line-height: 1.1; letter-spacing: -.01em; text-transform: uppercase;
+}
+
+/* Erfaring: firmalogo til venstre, titel og dato på én linje, firmanavn i grågrøn og olivengrønne punkter */
+.cv-jobs { display: grid; gap: 1.6rem; }
+.cv-job { display: grid; grid-template-columns: 2.9rem minmax(0, 1fr); gap: 1rem; }
+.cv-logo { display: block; width: 2.9rem; height: 2.9rem; border-radius: 9px; border: 2px solid var(--doc-line); object-fit: cover; }
+.cv-job-head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: 0 1rem; }
+.cv-job h3 { margin: 0; font-size: 1.1rem; font-weight: 700; line-height: 1.3; color: var(--doc-ink); }
+.cv-date { margin: 0; color: var(--doc-sub); font-size: .9rem; white-space: nowrap; }
+.cv-company { margin: 0 0 .45rem; color: var(--doc-sub); font-weight: 600; font-size: 1rem; }
+.cv-bullets { list-style: none; margin: 0; padding: 0; display: grid; gap: .3rem; font-size: .975rem; }
+.cv-bullets li { position: relative; padding-left: 1.25rem; }
+.cv-bullets li::before { content: ""; position: absolute; left: 0; top: .5em; width: .55rem; height: .55rem; border-radius: 2px; background: var(--doc-olive); }
+.cv-side-job { margin: 1.4rem 0 0; color: var(--doc-muted); font-size: .95rem; }
+
+.cv-project p { margin: 0; font-size: .975rem; }
+
+/* Værktøjer: logo, navn og kategori i hvide kort i et gitter med to kolonner */
+.cv-tools { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; }
+.cv-tool { display: flex; align-items: center; gap: .55rem; min-width: 0; padding: .55rem .6rem; background: #fff; border: 2px solid var(--doc-line); border-radius: 12px; }
+.cv-tool img { flex: none; width: 1.5rem; height: 1.5rem; object-fit: contain; }
+.cv-tool span { display: grid; min-width: 0; line-height: 1.25; }
+.cv-tool b { font-size: .875rem; font-weight: 700; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.cv-tool small { color: var(--doc-sub); font-size: .8rem; overflow-wrap: anywhere; }
+.cv-also { margin: .9rem 0 0; font-size: .925rem; color: var(--doc-muted); }
+
+/* Sådan arbejder jeg: nummererede trin i mørkegrønne felter med lysegule tal */
+.cv-steps { list-style: none; margin: 0; padding: 0; display: grid; gap: .85rem; font-size: .95rem; }
+.cv-steps li { display: grid; grid-template-columns: 1.5rem minmax(0, 1fr); gap: .75rem; }
+.cv-steps p, .plan p { margin: 0; }
+.cv-num { display: grid; place-items: center; width: 1.5rem; height: 1.5rem; border-radius: 5px; background: var(--doc-brand); color: var(--doc-lime); font-size: .8rem; font-weight: 700; }
+
+.cv-edu { display: grid; gap: .9rem; }
+.cv-edu p, .cv-lang { margin: 0; font-size: .95rem; }
+.cv-edu strong { color: var(--doc-ink); }
+.cv-edu .cv-date { white-space: normal; font-size: .95rem; }
+
+/* Foto og Understorys logofelt nederst i højre kolonne */
+.cv-sign { display: flex; align-items: center; justify-content: flex-end; gap: 1rem; }
+.cv-photo, .cv-firma { display: block; width: 5.5rem; height: 5.5rem; border-radius: 16px; object-fit: cover; }
+
+/* ===== Ansøgning som chat ===== */
+.chat-doc {
+  max-width: 46rem; margin: 0 auto; color: var(--doc-ink);
+  font-family: var(--doc-font); font-size: 1rem; line-height: 1.6;
+}
+.chat-doc a { color: inherit; text-decoration-color: rgb(29 42 32 / .35); text-underline-offset: 3px; }
+.chat-doc a:hover { text-decoration-color: var(--doc-brand); }
+
+/* Toppen: foto, navn, stillingen, en lysegul status og Understorys logo til højre */
+.chat-head {
+  display: flex; align-items: center; gap: 1rem;
+  padding: 1rem 1.5rem 1rem 1.25rem; background: #fff; border: 1px solid var(--doc-line); border-radius: 18px;
+}
+.chat-head-photo { flex: none; width: 3.75rem; height: 3.75rem; border-radius: 50%; object-fit: cover; }
+.chat-head > div { flex: 1; min-width: 0; }
+.chat-name { margin: 0; max-width: none; color: var(--doc-brand); font-size: 1.6rem; font-weight: 800; line-height: 1.1; letter-spacing: -.01em; }
+.chat-role { margin: .15rem 0 0; color: var(--doc-muted); font-size: .875rem; line-height: 1.4; }
+.chat-status { display: flex; align-items: center; gap: .5rem; margin: .3rem 0 0; color: var(--doc-ink); font-size: .875rem; font-weight: 600; }
+.chat-status::before { content: ""; width: .6rem; height: .6rem; border-radius: 50%; background: var(--doc-lime); box-shadow: 0 0 0 3px var(--doc-olive); }
+.chat-head-logo { flex: none; width: 6.5rem; height: auto; }
+@media (max-width: 34rem) { .chat-head-logo { display: none; } }
+
+/* Samtalen: Christian til venstre i hvide bobler, Kasper til højre i lysegrønne */
+.chat-log { list-style: none; margin: 2rem 0 0; padding: 0; display: grid; gap: 1.25rem; }
+.msg { display: flex; align-items: flex-end; gap: .75rem; }
+.msg-them { align-items: center; }
+.msg-me { justify-content: flex-end; padding-left: clamp(0rem, 6vw, 2.5rem); }
+.msg-avatar { flex: none; width: 2.4rem; height: 2.4rem; border-radius: 50%; object-fit: cover; }
+.bubble { min-width: 0; padding: .85rem 1.15rem; border-radius: 14px; }
+.msg-them .bubble { max-width: 33rem; background: #fff; border: 1px solid var(--doc-line); }
+.msg-me .bubble { background: var(--doc-tint); border: 1px solid var(--doc-tint-line); }
+.bubble p { margin: 0 0 .75rem; }
+.bubble p:last-child { margin-bottom: 0; }
+.bubble-from { margin: 0 0 .3rem !important; font-size: .72rem; font-weight: 700; line-height: 1.3; letter-spacing: .07em; text-transform: uppercase; }
+.msg-them .bubble-from { color: var(--doc-sub); }
+.msg-me .bubble-from { color: var(--doc-brand); }
+@media (max-width: 30rem) {
+  .msg { gap: .5rem; }
+  .msg-avatar { width: 1.75rem; height: 1.75rem; }
+  .bubble { padding: .75rem .9rem; }
+}
+
+/* Tallene i et hvidt kort med fire felter inde i boblen (to og to på mobil) */
+.stats { list-style: none; margin: .85rem 0 0; padding: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); background: #fff; border: 1px solid var(--doc-tint-line); border-radius: 12px; overflow: hidden; }
+.stats li { padding: .75rem .8rem; min-width: 0; }
+.stats li + li { border-left: 1px solid var(--doc-line); }
+.stats b { display: block; color: var(--doc-brand); font-size: 1.3rem; font-weight: 800; line-height: 1.2; letter-spacing: -.01em; white-space: nowrap; }
+.stats span { display: block; margin-top: .3rem; color: var(--doc-muted); font-size: .75rem; line-height: 1.35; }
+@media (max-width: 34rem) {
+  .stats { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .stats li:nth-child(3) { border-left: 0; }
+  .stats li:nth-child(n+3) { border-top: 1px solid var(--doc-line); }
+}
+.bubble .stats:last-child { margin-bottom: 0; }
+
+/* 90-dages-planen som trin i et hvidt kort inde i boblen */
+.plan { list-style: none; margin: .85rem 0; padding: .4rem 1rem; display: grid; background: #fff; border: 1px solid var(--doc-tint-line); border-radius: 12px; }
+.plan li { display: grid; grid-template-columns: 1.6rem minmax(0, 1fr); gap: .75rem; padding: .7rem 0; }
+.plan li + li { border-top: 1px solid var(--doc-line); }
+.plan-num { display: grid; place-items: center; width: 1.6rem; height: 1.6rem; border-radius: 50%; background: var(--doc-brand); color: var(--doc-lime); font-size: .8rem; font-weight: 700; }
+.plan b { display: block; color: var(--doc-brand); font-weight: 700; }
+.plan p { color: #33443A; }
+.bubble .plan p { margin: 0; }
+.bubble .plan:last-child { margin-bottom: 0; }
+
+/* Bunden: skrivefeltet med kontaktoplysninger og en mørkegrøn send-knap, der åbner en mail */
+.chat-compose { display: flex; align-items: center; gap: .75rem; margin-top: 2rem; }
+.chat-field {
+  flex: 1; min-width: 0; display: flex; flex-wrap: wrap; gap: .2rem .5rem; margin: 0;
+  padding: .8rem 1.25rem; background: #fff; border: 1px solid var(--doc-line); border-radius: 26px;
+  font-size: .875rem; color: var(--doc-muted);
+}
+.chat-field span { color: var(--doc-muted); }
+.chat-send {
+  flex: none; display: grid; place-items: center; width: 3rem; height: 3rem; border-radius: 50%;
+  background: var(--doc-brand); color: var(--doc-lime); text-decoration: none;
+  transition: transform 160ms var(--ease-out), background-color 150ms ease;
+}
+.chat-doc .chat-send, .chat-doc .chat-send:hover { color: var(--doc-lime); }
+.chat-send:hover { background: #0E3D1E; }
+@media (hover: hover) and (pointer: fine) { .chat-send:hover { transform: translateY(-1px); } }
+.chat-send:active { transform: scale(.95); }
+@media (prefers-reduced-motion: reduce) { .chat-send, .chat-send:hover, .chat-send:active { transform: none; } }
