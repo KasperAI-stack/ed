@@ -1,0 +1,82 @@
+[
+  {
+    "id": "salg",
+    "name": "Salg",
+    "shop_label": "Ledelse, finans og salg",
+    "needs": "Sælgere er meget på farten. De arbejder fra bil, tog, kundemøder og hjemmekontor og har mange opkald i løbet af dagen. De har brug for en let bærbar med lang batteritid, et trådløst headset med støjdæmpning til opkald i støjende omgivelser, en taske der beskytter udstyret og et skærmfilter mod indkig i tog og fly. På kontordagene skal de kunne sætte ét kabel i og have skærm, strøm og net.",
+    "base_bundle": {
+      "laptop": "let, helst 14 tommer, lang batteritid",
+      "dock": "USB-C eller Thunderbolt, ét kabel til skærm, strøm og net",
+      "monitor": "24 tommer Full HD er nok til kontordagene",
+      "headset": "trådløst, aktiv støjdæmpning, certificeret til Teams",
+      "mouse": "kompakt og trådløs, så den kan komme med i tasken",
+      "keyboard": "valgfrit, trådløst til kontordagen",
+      "bag": "rygsæk eller slim taske, der passer til skærmstørrelsen",
+      "screen_protection": "skærmfilter mod indkig på farten"
+    }
+  },
+  {
+    "id": "administration",
+    "name": "Administration, kundeservice og HR",
+    "shop_label": "Administration, kundeservice og HR",
+    "needs": "Medarbejdere i administration, kundeservice og HR sidder mest ved det samme skrivebord. De arbejder i mange vinduer på én gang, har mange opkald og bruger tastatur og mus hele dagen. De har brug for enkelt og stabilt udstyr, god plads på skærmen, et behageligt headset til mange opkald og ergonomisk mus og tastatur.",
+    "base_bundle": {
+      "laptop": "almindelig erhvervsbærbar, 14 eller 16 tommer",
+      "dock": "USB-C dock, der giver plads til to skærme",
+      "monitor": "24 eller 27 tommer, gerne to skærme",
+      "headset": "komfortabelt til mange timer, god mikrofon, certificeret til Teams",
+      "mouse": "ergonomisk",
+      "keyboard": "fuldt tastatur, gerne sæt med mus",
+      "bag": "ikke nødvendig",
+      "screen_protection": "ikke nødvendig"
+    }
+  },
+  {
+    "id": "design",
+    "name": "Design, grafik og marketing",
+    "shop_label": "Design, grafik og marketing",
+    "needs": "Grafikere og marketingfolk arbejder i tunge programmer som Adobe og video. De har brug for en kraftig bærbar med meget RAM, en stor skærm i høj opløsning med gode farver, en præcis mus og et headset til møder med kunder og bureauer.",
+    "base_bundle": {
+      "laptop": "kraftig, mindst 32 GB RAM, god processor eller Apple-chip",
+      "dock": "Thunderbolt eller USB-C med høj opløsning",
+      "monitor": "27 tommer eller større, 4K eller QHD, gode farver",
+      "headset": "trådløst med god lyd",
+      "mouse": "præcis mus med ekstra knapper, fx til Adobe",
+      "keyboard": "trådløst, gerne bagbelyst",
+      "bag": "taske eller rygsæk, der beskytter en dyr maskine",
+      "screen_protection": "ikke nødvendig"
+    }
+  },
+  {
+    "id": "it",
+    "name": "IT, udvikling og drift",
+    "shop_label": "IT, udvikling og drift",
+    "needs": "Udviklere og IT-folk kører mange programmer, virtuelle maskiner og terminaler på én gang. De har brug for en kraftig bærbar med mange kerner og meget RAM, en dock med mange porte, to skærme og et godt tastatur.",
+    "base_bundle": {
+      "laptop": "kraftig, mindst 32 GB RAM, mange kerner",
+      "dock": "Thunderbolt med mange porte og to skærmudgange",
+      "monitor": "to skærme, 27 tommer QHD eller 4K",
+      "headset": "trådløst med støjdæmpning til fokus i åbent kontor",
+      "mouse": "ergonomisk og præcis",
+      "keyboard": "godt tastatur til mange timers skrivning",
+      "bag": "rygsæk til on call og hjemmearbejde",
+      "screen_protection": "ikke nødvendig"
+    }
+  },
+  {
+    "id": "ledelse",
+    "name": "Ledelse og finans",
+    "shop_label": "Ledelse, finans og salg",
+    "needs": "Ledere og økonomifolk har mange møder, rejser en del og arbejder med fortrolige tal. De har brug for en let og robust bærbar, et headset med god støjdæmpning, skærmfilter mod indkig og en skærm til regneark på kontoret.",
+    "base_bundle": {
+      "laptop": "let og robust premium bærbar",
+      "dock": "Thunderbolt eller USB-C, ét kabel",
+      "monitor": "27 tommer til regneark og rapporter",
+      "headset": "premium trådløst med aktiv støjdæmpning",
+      "mouse": "trådløs og kompakt",
+      "keyboard": "trådløst",
+      "bag": "professionel taske",
+      "screen_protection": "skærmfilter mod indkig, fordi tallene er fortrolige"
+    }
+  }
+]

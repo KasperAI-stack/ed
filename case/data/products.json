@@ -1,0 +1,2052 @@
+[
+  {
+    "id": "64A4MATXEU",
+    "name": "Lenovo ThinkVision T24-40",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 24\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 500,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt76mtqH6EFnOmOz6pfX3AB0_cfidmlBcmVk3IMzjGSXoqfWi-pY8FNC-GsnnK8eQ7gHjcLoeTIofEYWyv_DjFJEo9QM6CCH3Ii56ttN-eEdw==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T24-40---LED-skrm---Full-HD-1?prodid=11847003",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "40AY0090MX",
+    "name": "Lenovo - Dockingstation",
+    "brand": "Lenovo",
+    "category": "dock",
+    "raw_spec": "USB-C - HDMI, 2 x DP - 1GbE - 90 Watt - nordiske",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 654,
+    "incoming_date": "2026-11-23",
+    "demo_price": 1500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvCT93Pdf8Zwg9QPPpcxK6KUNyiH9NSC0yeZevQ-9MOSKBSevUdSWwkwjd-kwwDJAjP0j7JBoRPjtrcfdQJtM4d3q3zvqhVJHRoah45xc_Gkw==",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo---Dockingstation---USB-C---HDMI-2-x-DP---1?prodid=12510602",
+    "tags": [
+      "forside",
+      "rolle:administration"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "40B00300EU",
+    "name": "Lenovo ThinkPad Thunderbolt 4 WorkStation Dock",
+    "brand": "Lenovo",
+    "category": "dock",
+    "raw_spec": "Portreplikator - Thunderbolt 4 - 2 x DP, HDMI, 2 x Thunderbolt - 1GbE - 230 watt - Campus - for ThinkPad T16 Gen 4 21QN",
+    "description_da": null,
+    "compatible_with": [
+      "ThinkPad T16 Gen 4 21QN"
+    ],
+    "stock_qty": 340,
+    "incoming_date": null,
+    "demo_price": 3500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvqcsGcCJAShSHz6PdR6p2oihYywtdbwQW1bm2yetBbz6gAK_KRstTxm86vrRoXDNpy7KBllkYvnmVYB9FCxHu4TKraLkWajCE7LbPyO8gnDA==",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-ThinkPad-Thunderbolt-4-WorkStation-Dock---P?prodid=3766746",
+    "tags": [
+      "forside",
+      "rolle:it"
+    ],
+    "model_key": null,
+    "ports": [
+      "Thunderbolt 4"
+    ]
+  },
+  {
+    "id": "36699-999-899",
+    "name": "Jabra Evolve3 65 Flex MS",
+    "brand": "Jabra",
+    "category": "headset",
+    "raw_spec": "Headset - på øret - Bluetooth - trådløs, kablet - aktiv støjfjerning - USB-C via Bluetooth adapter, USB-C - sort - Certified for Microsoft Teams, Zoom Certified, Works With Google Meet, MFi Certified",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 817,
+    "incoming_date": null,
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv-yMgwbbChdRD5ZQr8QPh6QtRPp7p__YO0vkxcoPakCWG6HgDt3vHmfZGcT0mAOf6wkGdP8YUGEzg_lsxyNqrrYBt0orwgK73aPI3X_X3kcg==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Jabra/Jabra-Evolve3-65-Flex-MS---Headset---pa-ret---Blu?prodid=13273764",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "WKNRK",
+    "name": "Dell XPS 16 DA16260 - AI PC",
+    "brand": "Dell",
+    "category": "laptop",
+    "raw_spec": "16\" - Intel Core Ultra X7 - 358H - 32 GB RAM - 1 TB SSD - Nordisk",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 73,
+    "incoming_date": null,
+    "demo_price": 14500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvv21yOLPYUuVDIBPqWicBgX4-KMOpo83VsFRVWg7VkMEktUAj_5CJGSam2iBH5_U8tQmYiPDP3-iKNZi9xWj_WxhozpMflUvvIwquvtftxQQ==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-XPS-16-DA16260---AI-PC---16---Intel-Core-Ult?prodid=13280205",
+    "tags": [
+      "forside"
+    ],
+    "model_key": "XPS 16",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "920-010931",
+    "name": "Logitech MX Keys Combo for Business",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "raw_spec": "Sæt med mus og tastatur - bagbelyst - trådløs - Bluetooth LE - QWERTY - Pan Nordic - grafit",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 999,
+    "incoming_date": "2026-12-01",
+    "demo_price": 1200,
+    "image_url": "https://shop.ed.dk/imgr/b17c3cd8-3a9e-4cc9-b0d4-4bce456b450c/274/274",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Logitech/Logitech-MX-Keys-Combo-for-Business---St-med-mus-?prodid=4751757",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "910-006034",
+    "name": "Logitech Marathon M705",
+    "brand": "Logitech",
+    "category": "mouse",
+    "raw_spec": "Mus - højrehåndet - laser - trådløs - 2.4 GHz - trådløs modtager (USB)",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 999,
+    "incoming_date": null,
+    "demo_price": 400,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsyLtt68gbottV3_Dww5kbCBDamt4_sMPWKNduJrJPL0UloDPOKk1xxVW0UQK8xoxavJoxRjjHeb9TqD-hmNhL9oo9aqUfsmmuNqFjtsfl7ww==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Marathon-M705---Mus---hjrehandet---laser?prodid=3244465",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "920-008683",
+    "name": "Logitech MK540 Advanced",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "raw_spec": "Sæt med mus og tastatur - trådløs - 2.4 GHz - Nordisk",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 999,
+    "incoming_date": "2027-02-16",
+    "demo_price": 500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtn9mUZcUBvqFIPhfr2RdQC5Lh-dWQ_l68TnKPvivb1o2-Q1hx8Y06TZyTDsotCfFJChIO_XvxwN1ZeqSBwPo4h8IDBKAsQukGUqX0pIpUThQ==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Logitech/Logitech-MK540-Advanced---St-med-mus-og-tastatur-?prodid=1773254",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "920-010249",
+    "name": "Logitech MX Keys for Business",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "raw_spec": "Tastatur - bagbelyst - trådløs - Bluetooth, 2.4 GHz - QWERTY - Pan Nordic - grafit",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 642,
+    "incoming_date": null,
+    "demo_price": 800,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt4qywVu-9msJlsKpFK3jfSvyO9FsqdPqg3y8sTpJhEbcnXfBH4I8AuwvSAMVkkbl03wDI0d01jVZxBowEaetrk7YfH_xfnTCsuDWosHFNyJw==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Logitech/Logitech-MX-Keys-for-Business---Tastatur---bagbely?prodid=3907076",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "CDKBBALPN21600",
+    "name": "Contour Balance - Tastatur",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "raw_spec": "mellemstørrelse - USB-C - QWERTY - Pan Nordic",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 41,
+    "incoming_date": null,
+    "demo_price": 1200,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuW817BuEacshLIrPEQP9EjEuSdh8_We7Uq4wglTGpwKEJn09m78m_8haNhXPMjzT6cBfXElAf6RvtyiWx6tPetYobCTs3c2QKef1BlmKKzuw==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Kabel/Contour-Design/Contour-Balance---Tastatur---mellemstrrelse---USB?prodid=12793796",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "910-006582",
+    "name": "Logitech Master Series MX Master 3S for Business",
+    "brand": "Logitech",
+    "category": "mouse",
+    "raw_spec": "Mus - ergonomisk - højrehåndet - optisk - 7 knapper - trådløs - Bluetooth - Logitech Logi Bolt USB-modtager - grafit",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 588,
+    "incoming_date": "2027-02-16",
+    "demo_price": 700,
+    "image_url": "https://shop.ed.dk/cache/files3/402560_97519565.png",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Master-Series-MX-Master-3S-for-Business--?prodid=4830124",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "CDRMPRO20210",
+    "name": "Contour RollerMouse Pro",
+    "brand": "Contour Design",
+    "category": "mouse",
+    "raw_spec": "Centreret mus - ergonomisk - almindelig - 6 knapper - kablet - USB",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 43,
+    "incoming_date": null,
+    "demo_price": 2500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTunVvkhA7V-9y6R0fO2ShM-eInLYTAuhEVW8XjviLSPIjNZdooZK_ToHAlMZtuUkFW9Bmy51P75fBIoaJbEBI43cUWL8sHGQ4B7Di24DVHYtA==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/vrige/Contour-Design/Contour-RollerMouse-Pro---Centreret-mus---ergonomi?prodid=6999759",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "27599-999-999",
+    "name": "Jabra Evolve2 75 - Headset",
+    "brand": "Jabra",
+    "category": "headset",
+    "raw_spec": "på øret - Bluetooth - trådløs - aktiv støjfjerning - USB-A - støjisolerende - sort - Certified for Microsoft Teams",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 999,
+    "incoming_date": null,
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt2kgXEtVwRkxJ9FCsxZstHPD15WykJWSN_o6lo8wbbOC7a4-UKS4nzLoEpumZFUgseEeHKII2WFsxyHm-sO6dc05Z-V2Rg5yCU4SMhcZ4hIQ==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Jabra/Jabra-Evolve2-75---Headset---pa-ret---Bluetooth--?prodid=3962032",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "28599-999-899",
+    "name": "Jabra Evolve2 85 MS Stereo",
+    "brand": "Jabra",
+    "category": "headset",
+    "raw_spec": "Headset - fuld størrelse - Bluetooth - trådløs - aktiv støjfjerning - 3,5 mm jackstik - støjisolerende - sort - Certified for Microsoft Teams",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 530,
+    "incoming_date": null,
+    "demo_price": 2500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuJrwcP7QTQTIe3Oyk6CN1NiXQf0xyQQbFICn7CTc5oQWKSkj212LEt6z1iqWCtjSe3qvP5JP7AwBWyVfpNYlMj1D6MoOMnCQEtUpHxCxm7YQ==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Jabra/Jabra-Evolve2-85-MS-Stereo---Headset---fuld-strre?prodid=2637525",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "AV4P1AA#ABB",
+    "name": "HP Poly Voyager Legend 50",
+    "brand": "HP",
+    "category": "headset",
+    "raw_spec": "Headset - i øret - Bluetooth - trådløs - sort",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 854,
+    "incoming_date": "2026-11-10",
+    "demo_price": 1500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv6A1DVTBsDaIUbWFtiAV2Ar0UMt2PgxM2tCSBcyBIw4283xPtyom8eI0U1z-UIsHxPY4iM7vVHoQ-vgRV17pMYbVxRYynEkHWhZUzCOxivDg==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Voyager-Legend-50---Headset---i-ret---Blu?prodid=11457982",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "1208699",
+    "name": "Yealink BH76 Plus - Headset",
+    "brand": "Yealink",
+    "category": "headset",
+    "raw_spec": "på øret/fuld størrelse - Bluetooth - trådløs - aktiv støjfjerning - USB-A via Bluetooth adapter - sort - Certified for Microsoft Teams",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 116,
+    "incoming_date": null,
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTurpBiJSviDVA-TSnTP24Voe5OThdaOTQHrxmPkLhqZYza8EmZHTQ7D9o_ppGLBM3PjdlTokbafT9PatP-QCJnwlkjEzkn3KvkJ1AZc66LLGQ==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Yealink/Yealink-BH76-Plus---Headset---pa-ret-fuld-strrel?prodid=10994489",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "64AFZAT2EU",
+    "name": "Lenovo ThinkVision T27UD-40",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - 4K - 27\" - HDR - med ThinkVision MC 60 monitor webcam",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 50,
+    "incoming_date": null,
+    "demo_price": 4000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvOXdd7jlojR0-_lIezUBSOmY_8sb46JikfZ_ZIFDO3xuJpvvLR8tZMQhQaZdqVpn7aOzfkSoIjXzspctJ1J1eEEQ5WeYWJXoooJCrxJPgfmg==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T27UD-40---LED-skrm---4K---27-?prodid=12996775",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "WL5024-DEMEA",
+    "name": "Dell Pro Wireless ANC Headset WL5024",
+    "brand": "Dell",
+    "category": "headset",
+    "raw_spec": "Headset - på øret - Bluetooth - trådløs - aktiv støjfjerning - Zoom Certified, Certified for Microsoft Teams",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 92,
+    "incoming_date": "2026-11-12",
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTurHdmlhasEWNj6bAErRvzz9nYqUUeMCGL_dgTPxsg92oo-Ce1Ui3qjMYZ9_7d0vofE5AuAuq9wzGTc_U2De8HfmdkhZ40yOZtSRUqlLuJyCg==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Dell/Dell-Pro-Wireless-ANC-Headset-WL5024---Headset---p?prodid=9542895",
+    "tags": [
+      "forside"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "21X20047MX",
+    "name": "Lenovo Thinkpad L14 Gen 7",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "Copilot+ PC - 14\" - Intel Core Ultra 5 - 325 - 24 GB RAM - 512 GB SSD - nordisk (dansk/finsk/norsk/svensk)",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 84,
+    "incoming_date": "2026-11-09",
+    "demo_price": 9000,
+    "image_url": "https://shop.ed.dk/imgr/d9695e94-4aed-4769-89ea-8edbc77b27b5/400/400",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-Thinkpad-L14-Gen-7---Copilot-PC---14---In?prodid=13253958",
+    "tags": [
+      "rolle:administration"
+    ],
+    "model_key": "Thinkpad L14 Gen 7",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "21WN004QMX",
+    "name": "Lenovo ThinkPad T14 Gen 7",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "5G-opgraderbar - 14\" - Intel Core Ultra 5 - 8-core - 16 GB RAM - 512 GB SSD - Copilot+ PC - nordisk (dansk/finsk/norsk/svensk)",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 960,
+    "incoming_date": null,
+    "demo_price": 10000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvNGZt09MRNcNtWuKwWiX9wpFdihIER6VYY3eSdRsRBKoNcnu0_1yZNV9um3_dOtK79GpIgAonF_XiKRL-dSezkpH_KOZPZq8SjKlusDqEcgA==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-T14-Gen-7---5G-opgraderbar---14--?prodid=13121441",
+    "tags": [
+      "rolle:administration"
+    ],
+    "model_key": "ThinkPad T14 Gen 7",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "64A5MAT6EU",
+    "name": "Lenovo ThinkVision T27-40",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 27\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 500,
+    "incoming_date": null,
+    "demo_price": 2500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTs_zMi_6fmg3Valdtjk_oH9gbnYZbh0_lCdq0uon5Iz9UNN17cDPceH3xfnFEG7dZ7WRCZ-ZaMU85Ub-lDV4tSLzcoDYA1SwjvBzWjRkas6GA==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T27-40---LED-skrm---Full-HD-1?prodid=11882679",
+    "tags": [
+      "rolle:administration"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "64AEGAT1EU",
+    "name": "Lenovo ThinkVision T34WD-40",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - kurvet - 34\" - HDR",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 87,
+    "incoming_date": null,
+    "demo_price": 5000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvqOXGseqGtd9LY9dCrHGzlfgUHTriw_2veyDEFxE0S8q5Wan4RULvm57-sMY6a9XNhL4hNPNPSFO1TZXAOdymmJZvPZHweyIgydD3JLozkHg==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T34WD-40---LED-skrm---kurvet--?prodid=11921058",
+    "tags": [
+      "rolle:administration"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4X31R64497",
+    "name": "Lenovo Essential Wireless Combo Gen 2",
+    "brand": "Lenovo",
+    "category": "keyboard",
+    "raw_spec": "Sæt med mus og tastatur - trådløs - 2.4 GHz - QWERTY - Nordisk - sort - brun kasse",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 496,
+    "incoming_date": "2026-11-10",
+    "demo_price": 500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvpLJzMlOX85UkihEqNtdetXiK925vQ8AYDU3u7-_dXhC992n8sbl10zAELVlDUKwfZRigUABqn4td1j_zYnkMA19n7-Tm1-us3fpK3c2Z3ew==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Lenovo/Lenovo-Essential-Wireless-Combo-Gen-2---St-med-mu?prodid=12739120",
+    "tags": [
+      "rolle:administration"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4X31S04854",
+    "name": "Lenovo Pro Combo 6000",
+    "brand": "Lenovo",
+    "category": "keyboard",
+    "raw_spec": "Sæt med mus og tastatur - trådløs - 2.4 GHz, Bluetooth 5.3 - QWERTY - Nordisk - formørkelsessort - brun kasse",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 32,
+    "incoming_date": "2026-11-12",
+    "demo_price": 500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuvNOr43D55pXjrW_YxKpBGyVskoT56HAboxHYWMdweirQ8dHd8LDUEK4PMJpldSeEN5Duq7wSYeMI7qk3TQ6G-Mj4W5FKLrNnY5mIsnYeJ5w==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Lenovo/Lenovo-Pro-Combo-6000---St-med-mus-og-tastatur---?prodid=12889880",
+    "tags": [
+      "rolle:administration"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4XD1T60925",
+    "name": "Lenovo ThinkPad 8550",
+    "brand": "Lenovo",
+    "category": "headset",
+    "raw_spec": "Aura Edition - headset - på øret - Bluetooth - trådløs - aktiv støjfjerning - tordenvejrsgrå - Certified for Microsoft Teams",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 55,
+    "incoming_date": "2026-11-16",
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsHLIN4atQhW2Qot7DJlyWgg2ci_V_9QXCo683hmg3EgHYOGfnd6vinCrarPTS355pPY5rODcvdJyp6UnbYxFqZl1k9k9RveYEZfTenrDZH7g==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Lenovo/Lenovo-ThinkPad-8550---Aura-Edition---headset---pa?prodid=13093134",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "2VG4F",
+    "name": "Dell Pro 14 Plus PB14250",
+    "brand": "Dell",
+    "category": "laptop",
+    "raw_spec": "AI PC - 14\" - Intel Core Ultra 5 - 235U - vPro Enterprise - 16 GB RAM - 512 GB SSD",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 9000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv9YqbDf1ePIP-XGH0HDfjOrj0Ans-xtTJzQvpzzM6E66q2ZNCtcK73JJTEpDPUIPgfalbZR4ve-DuwCDIj-79be0hZMqQLeHiyjKgn9F5noA==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-Pro-14-Plus-PB14250---AI-PC---14---Intel-Cor?prodid=13071990",
+    "tags": [
+      "rolle:administration"
+    ],
+    "model_key": "Dell Pro 14 Plus",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "CY14H",
+    "name": "Dell Pro 14 Plus PB14250",
+    "brand": "Dell",
+    "category": "laptop",
+    "raw_spec": "AI PC - 14\" - Intel Core Ultra 5 - 236V - vPro Enterprise - 16 GB RAM - 512 GB SSD - 5G-opgraderbar",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 596,
+    "incoming_date": null,
+    "demo_price": 10000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv9YqbDf1ePIP-XGH0HDfjOrj0Ans-xtTJzQvpzzM6E66q2ZNCtcK73JJTEpDPUIPgfalbZR4ve-DuwCDIj-79be0hZMqQLeHiyjKgn9F5noA==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-Pro-14-Plus-PB14250---AI-PC---14---Intel-Cor?prodid=13232406",
+    "tags": [
+      "rolle:administration",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": "Dell Pro 14 Plus",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "DELL-P2425HHF",
+    "name": "Dell P2425H - LED-skærm",
+    "brand": "Dell",
+    "category": "monitor",
+    "raw_spec": "Full HD (1080p) - 24\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 107,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvtk8iXH6JT8DeVLfrjQO-9FKxtevgbV0nUmuVjcsozgP6SoOr_vy3sdB-flkLna5XxSY-oLtR0oPxsHmrG0ysM8-3Vgo4i4JGjy5aQCDUC_g==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Dell/Dell-P2425H---LED-skrm---Full-HD-1080p---24-?prodid=12608128",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "KM5221WBKB-NOR",
+    "name": "Dell Pro KM5221W - Sæt med mus og tastatur",
+    "brand": "Dell",
+    "category": "keyboard",
+    "raw_spec": "trådløs - 2.4 GHz - QWERTY - Pan Nordic - sort - med 3 years NBD Advance Exchange - for Latitude 3320, 3520, 7320 Detachable; Vostro 15 3515; XPS 17 9710",
+    "description_da": null,
+    "compatible_with": [
+      "Latitude 3320",
+      "7320 Detachable",
+      "Vostro 15 3515",
+      "XPS 17 9710"
+    ],
+    "stock_qty": 483,
+    "incoming_date": "2026-11-23",
+    "demo_price": 500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvEOD0vsZGVCdDw9S3MWTYH6y_noHL3QCDGJzWyo5u1Q-cbPC_8S_R1PYph2waRJMqBWsnCi-XcqmmOylUwLe5UB9czn74vZ9fD-FRPuGeY5Q==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Dell/Dell-Pro-KM5221W---St-med-mus-og-tastatur---tradl?prodid=3559574",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "DELL-WD25Z",
+    "name": "Dell Pro Dock WD25Z - Dockingstation",
+    "brand": "Dell",
+    "category": "dock",
+    "raw_spec": "USB-C - HDMI, 2 x DP, USB-C - 1GbE, 2.5GbE - 180 Watt - BTO - med 3 års Basic Hardware Service with Advanced Exchange efter fjerndiagnose - Disti SNS",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 545,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuBs9g2U7XkxK4sfGL4KZUtd-4ssRtG8ktx7oeVExcon5cle7RoQelxk19SBnQdvxRzjPofDeacIJ53UEwKQ7JiAlmRJFTMxFUbzQMhwtXL6w==",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Dell/Dell-Pro-Dock-WD25Z---Dockingstation---USB-C---HDM?prodid=12963311",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "DELL-WD25",
+    "name": "Dell Pro Dock WD25 - Dockingstation",
+    "brand": "Dell",
+    "category": "dock",
+    "raw_spec": "USB-C - HDMI, 2 x DP, USB-C - 1GbE, 2.5GbE - 130 Watt - BTO - med 3 års Basic Hardware Service with Advanced Exchange efter fjerndiagnose",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 723,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtLbentpun0bFesdwXv88WVeHldxbt9jVxr_cWaoM1RdVDuOKPFQhizTEzNXb7NQq0fz0axvrd2E8xJjF8OqT1kDwjPNVAXyDCZHBHhKZYNeA==",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Dell/Dell-Pro-Dock-WD25---Dockingstation---USB-C---HDMI?prodid=12507453",
+    "tags": [
+      "rolle:administration",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "MDHE4DK/A",
+    "name": "Apple MacBook Air - 13.6\"",
+    "brand": "Apple",
+    "category": "laptop",
+    "raw_spec": "Apple M5 - 16 GB RAM - 512 GB SSD - dansk",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 9000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvNePVktuBEMtD5S87bfRnT0hDqRpOpPkopYHnFIMVMpMUuUF4EHcmU1JuX3PUjAiubFGkohCp10f2cBHY90Yd_MoqMGmtZynjXlfjmAeV_zw==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Apple/Apple-MacBook-Air---13-6---Apple-M5---16-GB-RAM--?prodid=13117699",
+    "tags": [
+      "rolle:administration"
+    ],
+    "model_key": "MacBook Air",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "MFEW4DK/A",
+    "name": "Apple Studio Display Standard glass",
+    "brand": "Apple",
+    "category": "monitor",
+    "raw_spec": "LCD-skærm - 5K - 27\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 3500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvoHn4gstYCuyaXs__SMcbKgGeSRie3z4HTcHnKeeqjlRW-BFDfPW60SOiReaRNMbU5jY6qBmz-VbEcsVejoQW8VpvaQVJQVlNk9D0yDxnFjw==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Apple/Apple-Studio-Display-Standard-glass---LCD-skrm---?prodid=13117757",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "MXK83DK/A",
+    "name": "Apple Magic Keyboard with Touch ID and Numeric Keypad",
+    "brand": "Apple",
+    "category": "keyboard",
+    "raw_spec": "Tastatur - USB-C - trådløs - Bluetooth - QWERTY - dansk - sorte taster",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 400,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsciBs3k4J9enLZH-kDmOHaD6_8Aexcl-xwlQxyM-edq703dzF-sRvh79M_jvo-tkPc1xWH_GP39tZghaeaTuTEzWPHgnhPKBVVpHz2mY_wRQ==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Apple/Apple-Magic-Keyboard-with-Touch-ID-and-Numeric-Key?prodid=11028700",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "MXKA3Z/A",
+    "name": "Apple Magic Trackpad",
+    "brand": "Apple",
+    "category": "mouse",
+    "raw_spec": "Trackpad - multi-touch - trådløs - Bluetooth - sort",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 400,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtj0ngCbCNf_Q6p5F5LKB_Vt-q75xxqxo2gYz1RutVwi5RsACN8IhUwAwTEVbbSwG5NwFLrQZ51S_-L1j1UKU_ICQqDXtBqYxq1e58gCfLiew==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/vrige/Apple/Apple-Magic-Trackpad---Trackpad---multi-touch---tr?prodid=11028612",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "MHWK4DN/A",
+    "name": "Apple AirPods Max 2 - Hovedtelefoner med mik.",
+    "brand": "Apple",
+    "category": "headset",
+    "raw_spec": "fuld størrelse - Bluetooth - trådløs - aktiv støjfjerning - midnat",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 337,
+    "incoming_date": "2026-12-30",
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsB80Yq7rvqOlG0HjjD6A9lYVg1UJBuQEhllq34q2Vwj2Qkp9wL8BZD5OnvERE-Ix8Pt-TeMyrCg5B3qtjHpv6lh4g6Lb_AxEpYNcPAmkOAeg==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Apple/Apple-AirPods-Max-2---Hovedtelefoner-med-mik---fu?prodid=13188226",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "DELL-P2725HHF",
+    "name": "Dell P2725H - LED-skærm",
+    "brand": "Dell",
+    "category": "monitor",
+    "raw_spec": "Full HD (1080p) - 27\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 2500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtste_1UdlElh0xUvomwqZCiSdYyVfFvM5MC_4i45GBYh8jfdZdPcKuXYjwYDh_AxXR5ZyOi5KZj7glkBarxV_JhMMTl-b8P7UX2Qn0vegCYA==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Dell/Dell-P2725H---LED-skrm---Full-HD-1080p---27-?prodid=12608113",
+    "tags": [
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "DELL-WD25TB4",
+    "name": "Dell Pro Thunderbolt 4 Dock WD25TB4",
+    "brand": "Dell",
+    "category": "dock",
+    "raw_spec": "Dockingstation - Thunderbolt 4 - HDMI, 2 x DP, USB-C, 2 x Thunderbolt 4 - 1GbE, 2.5GbE - 180 Watt - BTO - med 3 års Advanced Exchange Service",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 265,
+    "incoming_date": "2026-11-12",
+    "demo_price": 2500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtbNS4VdEYIi2Bnuw-NwMd5OR6lun0Y_-yURtF9tm4_IEzId5e-cu8To3p1IVG_lAPse2mNZE2a1AbzwPSlnbeQ59YNOzk8qFBmv08mMQ-Rog==",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Dell/Dell-Pro-Thunderbolt-4-Dock-WD25TB4---Dockingstati?prodid=12963310",
+    "tags": [
+      "rolle:design"
+    ],
+    "model_key": null,
+    "ports": [
+      "Thunderbolt 4",
+      "USB-C"
+    ]
+  },
+  {
+    "id": "MGEE4DK/A",
+    "name": "Apple MacBook Pro - 16.2\"",
+    "brand": "Apple",
+    "category": "laptop",
+    "raw_spec": "Apple M5 Max - 48 GB RAM - 2 TB SSD - dansk",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 5,
+    "incoming_date": null,
+    "demo_price": 15000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTslXqwTyxVthWYvdlirETlR6LkLaAJeJtJrst0QexbOWxTuwk7P7jbbBY7Qjrk_6-PZe0ERgDA54uAw0dfoJQhsJpoCJxjAUintRk9HEm8WZw==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Apple/Apple-MacBook-Pro---16-2---Apple-M5-Max---48-GB-R?prodid=13117656",
+    "tags": [
+      "rolle:design",
+      "rolle:it"
+    ],
+    "model_key": "MacBook Pro",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "21XJ001SMX",
+    "name": "Lenovo ThinkPad P14s Gen 7",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "5G-opgraderbar - 14.5\" - Intel Core Ultra 7 - 16-core - 32 GB RAM - 1 TB SSD - Copilot+ PC, AI Workstation - nordisk (dansk/finsk/norsk/svensk)",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 110,
+    "incoming_date": null,
+    "demo_price": 15500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtLbentpun0bFesdwXv88WVMt_eCs_AjlYDsQ9RmIs7BwyFGeq_Oj26wGyX2tpJCquCJWGDPflQ1fjiYZdvL9PNARTQeMPYT-SSPkZlVe_ihA==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-P14s-Gen-7---5G-opgraderbar---14-5?prodid=13121452",
+    "tags": [
+      "rolle:design"
+    ],
+    "model_key": "ThinkPad P14s Gen 7",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "64ADGAT1EU",
+    "name": "Lenovo ThinkVision P34WD-40",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - kurvet - 34\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 88,
+    "incoming_date": null,
+    "demo_price": 5000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv9YqbDf1ePIP-XGH0HDfjO1JB6nqdDRoXvkRh7V_2Qrby7bXNHC6_gynVBEW_kl_sNoMlGV4LcFJgIga200hBSteVi2liwU6-eydbMchnS3A==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-P34WD-40---LED-skrm---kurvet--?prodid=12563568",
+    "tags": [
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "63DBRAT1EU",
+    "name": "Lenovo ThinkVision P49w-30",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - kurvet - 49\" - HDR",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 510,
+    "incoming_date": null,
+    "demo_price": 5000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuzFjaWZYp7DCVqS6ArIZh73TnhPpt3THTKfDMyrgR5KFRnLvSnLwsidpNDSJPltUukrU8ODJbzc6T8zKlZkvNUhSXUQzgrYsqLByZdq5dasw==",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-P49w-30---LED-skrm---kurvet---?prodid=6838550",
+    "tags": [
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "40BF0100EU",
+    "name": "Lenovo ThinkPad 5000",
+    "brand": "Lenovo",
+    "category": "dock",
+    "raw_spec": "Dockingstation - USB4 - HDMI, DP, USB-C - 1GbE - 100 Watt - Europa - for ThinkPad T14 Gen 6; T14s Gen 6; T16 Gen 4; X1 2-in-1 Gen 10; X1 Carbon Gen 13; X13 Gen 6",
+    "description_da": null,
+    "compatible_with": [
+      "ThinkPad T14 Gen 6",
+      "T14s Gen 6",
+      "T16 Gen 4",
+      "X1 2-in-1 Gen 10",
+      "X1 Carbon Gen 13",
+      "X13 Gen 6"
+    ],
+    "stock_qty": 435,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsciBs3k4J9enLZH-kDmOHa2Fh3eMoXgGa5ICKqeIp7-BfvJTVVLkIoRTcPaPhw8zcCim_R5aPy--m14OPb6tv9sWFHzeFSq0_Htwnqt59cQw==",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-ThinkPad-5000---Dockingstation---USB4---HDM?prodid=12958979",
+    "tags": [
+      "rolle:design",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "4X31R64357",
+    "name": "Lenovo Professional - Sæt med mus og tastatur",
+    "brand": "Lenovo",
+    "category": "keyboard",
+    "raw_spec": "full size - trådløs - Bluetooth, 2.4 GHz - QWERTY - Nordisk - grå - brun kasse",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 500,
+    "incoming_date": "2026-11-12",
+    "demo_price": 500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvNGZt09MRNcNtWuKwWiX9wAigeSMZuxHFo5CPygv62WbDBHyjb77p_WYZk_FdBFcWdwTJ72Fz-4dRHJ4X6W1vGaQawnbbu9d7JJo2KUCRlKQ==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Lenovo/Lenovo-Professional---St-med-mus-og-tastatur---fu?prodid=12690243",
+    "tags": [
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "21XE000SMX",
+    "name": "Lenovo ThinkPad P16s Gen 5",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "5G-opgraderbar - 16\" - Intel Core Ultra 7 - 16-core - vPro Enterprise - 64 GB RAM - 1 TB SSD - Copilot+ PC, AI Workstation - nordisk (dansk/finsk/norsk/svensk)",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 44,
+    "incoming_date": null,
+    "demo_price": 17500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuW-pW5cz9iievy8Y4bGkBF79_9PTPiiXdJpLxtUnSNkLlGAKbIeAss14jw3V4ecxmF8LP4fRyqbtwmm-TjsiojLwWHWZNSpSqXSwjU9XJglg==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-P16s-Gen-5---5G-opgraderbar---16-?prodid=13121451",
+    "tags": [
+      "rolle:it"
+    ],
+    "model_key": "ThinkPad P16s Gen 5",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "21RQ000JMX",
+    "name": "Lenovo ThinkPad P16 Gen 3",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "16\" - Intel Core Ultra 9 - 24-core - 64 GB RAM - 1 TB SSD - AI Workstation - Nordisk",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 1,
+    "incoming_date": null,
+    "demo_price": 16500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTss55rquVhax6kzpoHko0Qfp_vlPHypePHYEdg4s2XgZb8EcWrvhlBCI3reKcZYZlsqGdK2c0ci1F44A0Y01w_s1OTzoSpafyqIo2iXr8q2WQ==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-P16-Gen-3---16---Intel-Core-Ultra?prodid=12751187",
+    "tags": [
+      "rolle:it"
+    ],
+    "model_key": "ThinkPad P16 Gen 3",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "40BA0265EU",
+    "name": "Lenovo ThinkPad Smart Dock 7500",
+    "brand": "Lenovo",
+    "category": "dock",
+    "raw_spec": "Dockingstation - Thunderbolt 5 - Thunderbolt 5, HDMI, DP - 2.5GbE - 265 watt - for ThinkPad T16 Gen 4 21QN",
+    "description_da": null,
+    "compatible_with": [
+      "ThinkPad T16 Gen 4 21QN"
+    ],
+    "stock_qty": 526,
+    "incoming_date": "2026-11-10",
+    "demo_price": 3500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtMblmNQmYnRrzYjad6gMIfQ-ITN74hNywXNRgIF5vMRoVTVViVHLY3Sl2kkyei8CQ3IJND3tJEvcMd-G02i46I0T4IOGMvRS-YUZB3snkQ_A==",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-ThinkPad-Smart-Dock-7500---Dockingstation--?prodid=12736838",
+    "tags": [
+      "rolle:it"
+    ],
+    "model_key": null,
+    "ports": [
+      "Thunderbolt 5"
+    ]
+  },
+  {
+    "id": "86H55",
+    "name": "Dell Pro 14 Premium PA14250",
+    "brand": "Dell",
+    "category": "laptop",
+    "raw_spec": "Copilot+ PC - 14\" - Intel Core Ultra 5 - 236V - vPro Enterprise - 16 GB RAM - 512 GB SSD",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 11500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvRlvQU9tFeM_NpPzSfHk5JhGvC4k48Tmc-wYqXJOIn4SxlBdb8GCVSuePJZaoMMBG83DqaTi8dZi4DuPoVpsMq90sbjTDQF-imMHzzVcx5Bg==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-Pro-14-Premium-PA14250---Copilot-PC---14---?prodid=13096808",
+    "tags": [
+      "rolle:ledelse-salg"
+    ],
+    "model_key": "Dell Pro 14 Premium",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "MDHG4DK/A",
+    "name": "Apple MacBook Air - 13.6\"",
+    "brand": "Apple",
+    "category": "laptop",
+    "raw_spec": "Apple M5 - 24 GB RAM - 1 TB SSD - dansk",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 10000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvNePVktuBEMtD5S87bfRnT0hDqRpOpPkopYHnFIMVMpMUuUF4EHcmU1JuX3PUjAiubFGkohCp10f2cBHY90Yd_MoqMGmtZynjXlfjmAeV_zw==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Apple/Apple-MacBook-Air---13-6---Apple-M5---24-GB-RAM--?prodid=13117766",
+    "tags": [
+      "rolle:ledelse-salg"
+    ],
+    "model_key": "MacBook Air",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "21QX00N1MX",
+    "name": "Lenovo ThinkPad T14s Gen 6",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "14\" - Intel Core Ultra 5 - 226V - 16 GB RAM - 512 GB SSD - 5G-opgraderbar - nordisk (dansk/finsk/norsk/svensk)",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 500,
+    "incoming_date": null,
+    "demo_price": 10000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtXXMsdwAJkyCMriIYMZbjlLB0p4KziIVXtqIZgLkjYapA0l8qMetY53Eftr8eYA-57HiaXXB_Jtd7AEIE3T3CkQdmsvdquXBlrAPMYks0BxQ==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-T14s-Gen-6---14---Intel-Core-Ultr?prodid=13037028",
+    "tags": [
+      "rolle:ledelse-salg"
+    ],
+    "model_key": "ThinkPad T14s Gen 6",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "21V70075MX",
+    "name": "Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "4G/5G opgraderbar - 14\" - Intel Core Ultra 5 - 8-core - Evo - 32 GB RAM - 512 GB SSD - Copilot+ PC - Nordisk",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 168,
+    "incoming_date": "2026-11-10",
+    "demo_price": 14500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTu2QpPJeTGHB_UPrT6DR_t5xyBkRj59TwTPk0zic2j7SZhQUL4be3cLfe-fTvm9uRnfSsEru8-ClLfhotPBmw7nl6ckfWz6qqghFVxeWREFzQ==",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-X1-Carbon-Gen-14-Aura-Edition---4G?prodid=13097324",
+    "tags": [
+      "rolle:ledelse-salg"
+    ],
+    "model_key": "ThinkPad X1 Carbon Gen 14",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "CDKBBALPN11600",
+    "name": "Contour Balance - Tastatur",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "raw_spec": "mellemstørrelse - trådløs - Bluetooth 5.1 - QWERTY - Pan Nordic",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 268,
+    "incoming_date": null,
+    "demo_price": 1200,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtYQDUYlOeVdETClnR3TV5iHj0YWJgvxiWZvs7k3T9dGak8RLYK7X59BLIKIcTLDAr1OJTaXpxY5A6hrBeYf-e9EZzk-zmXs3P2va5AMwcYTQ==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Contour-Design/Contour-Balance---Tastatur---mellemstrrelse---tra?prodid=12793795",
+    "tags": [
+      "kampagne:contour-ergonomi"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "CDKBBALPN11500",
+    "name": "Contour Balance - Tastatur",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "raw_spec": "full size - trådløs - Bluetooth 5.1 - QWERTY - Pan Nordic",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 177,
+    "incoming_date": null,
+    "demo_price": 1200,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsJ2XdLKa2ZGQp56VdBV52lveiAfjeyqrHPZE2Qt_y3aaObGHx_x5tirtac4cVGGO1bYr7bCPSo2jrlFTcM1cjOhO--8hVPFVZzk2nfuxUYBg==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Contour-Design/Contour-Balance---Tastatur---full-size---tradls--?prodid=12793797",
+    "tags": [
+      "kampagne:contour-ergonomi"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "CDRMRED10210",
+    "name": "Contour RollerMouse Red Plus",
+    "brand": "Contour Design",
+    "category": "mouse",
+    "raw_spec": "Centreret mus - ergonomisk - 7 knapper - trådløs - Bluetooth",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 357,
+    "incoming_date": null,
+    "demo_price": 2500,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTumsttB4GnmdFtI7mI7DtPkk6OVbrDitJlK6iSsmFeWrbhJ08g0fF-as00u1R8qgxEYTwLfL156a_-D253i-H0eR04jWpTieYzWw2S5DWSmmA==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Contour-Design/Contour-RollerMouse-Red-Plus---Centreret-mus---erg?prodid=10031980",
+    "tags": [
+      "kampagne:contour-ergonomi"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "CDRED1021BALPN1160",
+    "name": "Contour RollerMouse Red Plus & Balance Mid-Size",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "raw_spec": "Sæt med mus og tastatur - trådløs - Bluetooth 5.1 - QWERTY - Pan Nordic",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 286,
+    "incoming_date": null,
+    "demo_price": 1200,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtUMOEPw-rOdbw4c22JXFDps6-dbJNIwUKDoeuvZaeyNL6xzNSAdqI7f4UlLDEMMWx2gJIEDblhH-FP1dbhk3n1fwteC1RGdfGIFmJyCuH7Sw==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Contour-Design/Contour-RollerMouse-Red-Plus-Balance-Mid-Size---?prodid=12793799",
+    "tags": [
+      "kampagne:contour-ergonomi"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "9T5B2AA#UUW",
+    "name": "HP 725 - Tastatur - multi-enhed, genopladelig, drevet af superkondensator",
+    "brand": "HP",
+    "category": "keyboard",
+    "raw_spec": "full size - trådløs - Bluetooth, 2.4 GHz - QWERTY - Pan Nordic - nattesort",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 6,
+    "incoming_date": "2026-11-17",
+    "demo_price": 400,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt0ySU-Ug164BLOTLaxuQmsvDQz1OIHAJF1niKvgLMs6aIISMFYYwgAyQ_fn9kLA6pkr3itRGAs8WssUv9QnpQxAf5yfRu5O99f-AwzGb7Rsg==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/HP/HP-725---Tastatur---multi-enhed-genopladelig-dre?prodid=11050281",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "9T5B0UT#UUW",
+    "name": "HP 725 - Sæt med mus og tastatur",
+    "brand": "HP",
+    "category": "keyboard",
+    "raw_spec": "multi-enhed, genopladelig, drevet af superkondensator - full size - trådløs - Bluetooth, 2.4 GHz - Pan Nordic - nattesort - Smart Buy",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 435,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": "https://shop.ed.dk/imgr/599ea847-2840-421f-af45-f6c6e49f479b/400/400",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/HP/HP-725---St-med-mus-og-tastatur---multi-enhed-ge?prodid=11033131",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "C56XXAA#AC3",
+    "name": "HP Poly Focus 625 - Headset",
+    "brand": "HP",
+    "category": "headset",
+    "raw_spec": "på øret - Bluetooth - trådløs - aktiv støjfjerning - USB-C via Bluetooth adapter - sort - med HP Poly Focus Wireless Charge Stand - Certified for Microsoft Teams Open Office, Certified for Microsoft Teams, Google Meet Certified, Zoom Workplace Headset Certified, Zoom Workplace Contact Center Headset Certificeret, Microsoft Teams Native Bluetooth Certified",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 596,
+    "incoming_date": null,
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuviiyF9muFAeicWsSMgMoRBeuzsbzCCoMJnZ5-GuDr_Cx6TivenESwYQ67YcvbIdJ2qOowritpW4QItciZukIltWLtUBAJJY29_VolxThYGQ==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Focus-625---Headset---pa-ret---Bluetooth-?prodid=13261432",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "C56XSAA",
+    "name": "HP Poly Focus 625 Fold",
+    "brand": "HP",
+    "category": "headset",
+    "raw_spec": "Headset - på øret - Bluetooth - trådløs, kablet - aktiv støjfjerning - USB-C via Bluetooth adapter, USB-C - sort - Certified for Microsoft Teams Open Office, Certified for Microsoft Teams, Google Meet Certified, Zoom Workplace Headset Certified, Zoom Workplace Contact Center Headset Certificeret, Microsoft Teams Native Bluetooth Certified",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 40,
+    "incoming_date": null,
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt1LRxhCtdPKhkctwDszGk1MN8neeJE71tf7SLVM_-jcb_Kv6GNCqVAajcLgIArtjRHEcUViG52Y5WMohGe3fRmXx55FqINTuYCEwFDY-t7eg==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Focus-625-Fold---Headset---pa-ret---Bluet?prodid=13511801",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "C56XPAA",
+    "name": "HP Poly Focus 625 - Headset",
+    "brand": "HP",
+    "category": "headset",
+    "raw_spec": "på øret - Bluetooth - trådløs - aktiv støjfjerning - USB-C via Bluetooth adapter - sort - Certified for Microsoft Teams Open Office, Certified for Microsoft Teams, Google Meet Certified, Zoom Workplace Headset Certified, Zoom Workplace Contact Center Headset Certificeret, Microsoft Teams Native Bluetooth Certified",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 39,
+    "incoming_date": null,
+    "demo_price": 2000,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsfRlTIh_qxwcbziVoZk82WB55i-v8P-Ce_UUzFCX6myulXq5fU5rUhXhXQihBNKiIMixGi8_z_THpHded60sRHGNBoqO138H4Zm9XazaE4sw==",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Focus-625---Headset---pa-ret---Bluetooth-?prodid=13511802",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "B8YX4AA",
+    "name": "HP 785M - Mus - højrehåndet",
+    "brand": "HP",
+    "category": "mouse",
+    "raw_spec": "optisk - 6 knapper - trådløs - Bluetooth, 2.4 GHz - trådløs modtager (USB) - sort",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 400,
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvXM0n07FZYWp9jXVz6L1A2yqGNK-xw_t7pMh3Iu29mjiOG_Mwiqd7Bv54ynPc0tKox4iTImTWi1x5k0TaoQjVYyR31B7K12UqOi6XdUk5Iqw==",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/HP/HP-785M---Mus---hjrehandet---optisk---6-knapper--?prodid=12968909",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "22AW005EMX",
+    "name": "Lenovo ThinkPad T16 Gen 4",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "Copilot+ PC - 16\" - Intel Core Ultra 5 - 228V - 32 GB RAM - 512 GB SSD - nordisk (dansk/finsk/norsk/svensk)",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 503,
+    "incoming_date": null,
+    "demo_price": 11000,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-T16-Gen-4---Copilot-PC---16---In?prodid=13121434",
+    "tags": [],
+    "model_key": "ThinkPad T16 Gen 4",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "E84P3AT#UUW",
+    "name": "HP EliteBook 8 G2a Next Gen Notebook",
+    "brand": "HP",
+    "category": "laptop",
+    "raw_spec": "14\" - AMD Ryzen AI 7 - 8-core - 32 GB RAM - 512 GB SSD - Copilot+ PC - Pan Nordic",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 16000,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/HP/HP-EliteBook-8-G2a-Next-Gen-Notebook---14---AMD-R?prodid=13632579",
+    "tags": [],
+    "model_key": "EliteBook 8 G2a",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "21ST006MPB",
+    "name": "Lenovo ThinkPad E16 Gen 3",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "16\" - AMD Ryzen 5 - 6-core - 16 GB RAM - 512 GB SSD - engelsk - Europa",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 9000,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-E16-Gen-3---16---AMD-Ryzen-5---6-?prodid=13630816",
+    "tags": [],
+    "model_key": "ThinkPad E16 Gen 3",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "21U2007SPB",
+    "name": "Lenovo ThinkPad E14 Gen 7",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "raw_spec": "14\" - Intel Core Ultra 5 - 8-core - 16 GB RAM - 512 GB SSD - Copilot+ PC - engelsk - Europa",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 9000,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-E14-Gen-7---14---Intel-Core-Ultra?prodid=13577311",
+    "tags": [],
+    "model_key": "ThinkPad E14 Gen 7",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "BTO108_PC16250_EMEA",
+    "name": "Dell Pro 16 PC16250 - 16\"",
+    "brand": "Dell",
+    "category": "laptop",
+    "raw_spec": "Intel Core Ultra 7 - 12-core - 32 GB RAM - 1 TB SSD - AI PC",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 14500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-Pro-16-PC16250---16---Intel-Core-Ultra-7---1?prodid=13577114",
+    "tags": [],
+    "model_key": "Dell Pro 16",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "AD3L0ET#ABD",
+    "name": "HP EliteBook 6 G1i Notebook",
+    "brand": "HP",
+    "category": "laptop",
+    "raw_spec": "AI PC - 14\" - Intel Core Ultra 7 - 255U - 16 GB RAM - 512 GB SSD - 4G LTE-A - tysk",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 12500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/HP/HP-EliteBook-6-G1i-Notebook---AI-PC---14---Intel-?prodid=13576363",
+    "tags": [],
+    "model_key": "EliteBook 6 G1i",
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "HDM1H-GL",
+    "name": "HyperDrive - Dockingstation",
+    "brand": "Targus",
+    "category": "dock",
+    "raw_spec": "USB-C - 2 x HDMI - 1GbE",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Targus/HyperDrive---Dockingstation---USB-C---2-x-HDMI---1?prodid=13632782",
+    "tags": [],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "DA326-BK-DAO",
+    "name": "Dell Pro 7-in-1 USB-C Travel Hub",
+    "brand": "Dell",
+    "category": "dock",
+    "raw_spec": "DA326 - Dockingstation - USB-C - HDMI, DP, USB-C - 2.5GbE",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Dell/Dell-Pro-7-in-1-USB-C-Travel-Hub---DA326---Docking?prodid=13632612",
+    "tags": [],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "AVC004BTBK",
+    "name": "Belkin - Multimedie og opladningsadapter",
+    "brand": "Belkin",
+    "category": "dock",
+    "raw_spec": "USB-C - VGA, HDMI - 1GbE",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Belkin/Belkin---Multimedie-og-opladningsadapter---USB-C--?prodid=13585536",
+    "tags": [],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "26D32AA#ABZ",
+    "name": "HP USB-C Dock G5 - Dockingstation",
+    "brand": "HP",
+    "category": "dock",
+    "raw_spec": "USB-C - 1GbE - 100 watt - Italien",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/HP/HP-USB-C-Dock-G5---Dockingstation---USB-C---1GbE--?prodid=13581915",
+    "tags": [],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "4X90M60789",
+    "name": "Lenovo USB-C Travel Hub",
+    "brand": "Lenovo",
+    "category": "dock",
+    "raw_spec": "Dockingstation - USB-C - VGA, HDMI - Global",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 3,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-USB-C-Travel-Hub---Dockingstation---USB-C--?prodid=13578881",
+    "tags": [],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "4X10A06688",
+    "name": "Lenovo ThinkPad Basic USB 3.0 Dock",
+    "brand": "Lenovo",
+    "category": "dock",
+    "raw_spec": "Dockingstation - USB - DVI - 1GbE - 40 watt - Europa",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 6,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-ThinkPad-Basic-USB-3-0-Dock---Dockingstatio?prodid=13576538",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "63A2GAT1EU",
+    "name": "Lenovo ThinkVision P27q-30",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - QHD - 27\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 2500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-P27q-30---LED-skrm---QHD---27-?prodid=13626918",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "64D2GAT2EU",
+    "name": "Lenovo ThinkVision T24D-4t",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 24\" - HDR",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T24D-4t---LED-skrm---Full-HD-?prodid=13571488",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "64D0GAT1EU",
+    "name": "Lenovo ThinkVision T27D-40",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 27\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 2500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T27D-40---LED-skrm---Full-HD-?prodid=13570353",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "60G1MAR2EU",
+    "name": "Lenovo ThinkVision T2054p",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - 19.5\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T2054p---LED-skrm---19-5-?prodid=13570294",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "D33DFUT#ABB",
+    "name": "HP 527fd G2 - Series 5 Pro",
+    "brand": "HP",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 27\" - Smart Buy",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 2500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/HP/HP-527fd-G2---Series-5-Pro---LED-skrm---Full-HD-?prodid=13569982",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "61FEMAT6EU",
+    "name": "Lenovo ThinkVision T22i-20",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 22\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 4,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T22i-20---LED-skrm---Full-HD-?prodid=13552014",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "87300-05",
+    "name": "Poly Voyager Legend - Headset",
+    "brand": "HP",
+    "category": "headset",
+    "raw_spec": "i øret - over øret-montering - Bluetooth - trådløs",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/Poly-Voyager-Legend---Headset---i-ret---over-ret?prodid=13626744",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "8R711AA#ABB",
+    "name": "HP Poly Voyager 5200 Office",
+    "brand": "HP",
+    "category": "headset",
+    "raw_spec": "Voyager 5200 series - headset - i øret - Bluetooth - trådløs - sort - Certified for Skype for Business, Certified for Microsoft Teams, Zoom Certified, Cisco Jabber Certified, Avaya Certified, Works With Chromebook Certified",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Voyager-5200-Office---Voyager-5200-series-?prodid=13566641",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "206110-01",
+    "name": "Poly Voyager 5200 UC",
+    "brand": "HP",
+    "category": "headset",
+    "raw_spec": "Headset - ørespids - over øret-montering - Bluetooth - trådløs - Certified for Microsoft Teams",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 1,
+    "incoming_date": null,
+    "demo_price": 1500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/Poly-Voyager-5200-UC---Headset---respids---over-?prodid=13566598",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "981-001732",
+    "name": "Logitech Zone Vibe Pro for Business",
+    "brand": "Logitech",
+    "category": "headset",
+    "raw_spec": "Headset - fuld størrelse - Bluetooth - trådløs, kablet - aktiv støjfjerning - USB-C - grafit - Certified for Microsoft Teams, Google Fast Pair Certified",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 2000,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Logitech/Logitech-Zone-Vibe-Pro-for-Business---Headset---fu?prodid=13553119",
+    "tags": [],
+    "model_key": null,
+    "ports": [
+      "USB-C"
+    ]
+  },
+  {
+    "id": "910-005988",
+    "name": "Logitech MX Anywhere 3",
+    "brand": "Logitech",
+    "category": "mouse",
+    "raw_spec": "Mus - laser - 6 knapper - trådløs - 2.4 GHz, Bluetooth - trådløs modtager (USB) - grafit",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 400,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-MX-Anywhere-3---Mus---laser---6-knapper--?prodid=13507560",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "910-007187",
+    "name": "Logitech Signature M550 L",
+    "brand": "Logitech",
+    "category": "mouse",
+    "raw_spec": "Mus - optisk - 3 knapper - trådløs - Bluetooth - Logitech Logi Bolt USB-modtager - grafit",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 41,
+    "incoming_date": null,
+    "demo_price": 400,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Signature-M550-L---Mus---optisk---3-knapp?prodid=13309288",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "910-007716",
+    "name": "Logitech Signature Comfort Plus M850 L",
+    "brand": "Logitech",
+    "category": "mouse",
+    "raw_spec": "Mus - højrehåndet - optisk - 6 knapper - trådløs - Bluetooth 5.2 LE - off-white",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 35,
+    "incoming_date": null,
+    "demo_price": 400,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Signature-Comfort-Plus-M850-L---Mus---hj?prodid=13244306",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "910-007594",
+    "name": "Logitech MX Master 4",
+    "brand": "Logitech",
+    "category": "mouse",
+    "raw_spec": "Mus - 8 knapper - trådløs - Bluetooth, 2.4 GHz - trådløs modtager (USB) - grafit",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 14,
+    "incoming_date": null,
+    "demo_price": 700,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-MX-Master-4---Mus---8-knapper---tradls--?prodid=13199478",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "910-007509",
+    "name": "Logitech Signature M750",
+    "brand": "Logitech",
+    "category": "mouse",
+    "raw_spec": "Mus - optisk - 6 knapper - trådløs - 2.4 GHz, Bluetooth - Logitech Logi Bolt USB-modtager - grafit",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 42,
+    "incoming_date": null,
+    "demo_price": 400,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Signature-M750---Mus---optisk---6-knapper?prodid=12650748",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4X40Q26384",
+    "name": "Lenovo ThinkPad Professional Topload Case",
+    "brand": "Lenovo",
+    "category": "bag",
+    "raw_spec": "Bæretaske til notebook - 15.6\" - sort - Campus - for IdeaPad Flex 5 14ALC7 82R9",
+    "description_da": null,
+    "compatible_with": [
+      "IdeaPad Flex 5 14ALC7 82R9"
+    ],
+    "stock_qty": 50,
+    "incoming_date": null,
+    "demo_price": 900,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Lenovo/Lenovo-ThinkPad-Professional-Topload-Case---Breta?prodid=13577170",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4X40E77328",
+    "name": "Lenovo ThinkPad Essential Topload Case",
+    "brand": "Lenovo",
+    "category": "bag",
+    "raw_spec": "Bæretaske til notebook - 15.6\" - Campus",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Lenovo/Lenovo-ThinkPad-Essential-Topload-Case---Bretaske?prodid=13577031",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4X40E77325",
+    "name": "Lenovo ThinkPad Professional Slim Topload Case",
+    "brand": "Lenovo",
+    "category": "bag",
+    "raw_spec": "Bæretaske til notebook - 15.6\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 18,
+    "incoming_date": null,
+    "demo_price": 900,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Lenovo/Lenovo-ThinkPad-Professional-Slim-Topload-Case---B?prodid=13577030",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "653888",
+    "name": "Wenger UrbanOne - Rygsæk til notebook",
+    "brand": "Wenger",
+    "category": "bag",
+    "raw_spec": "op til 15,6\" - sort",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Wenger/Wenger-UrbanOne---Rygsk-til-notebook---op-til-15-?prodid=13575976",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4X40E48910",
+    "name": "Lenovo ThinkPad Fitted Reversible Sleeve",
+    "brand": "Lenovo",
+    "category": "bag",
+    "raw_spec": "Hylster til notebook - 14\" - sort, rød",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Lenovo/Lenovo-ThinkPad-Fitted-Reversible-Sleeve---Hylster?prodid=13518276",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "653499",
+    "name": "Wenger MX Light - Rygsæk til notebook",
+    "brand": "Wenger",
+    "category": "bag",
+    "raw_spec": "med tabletlomme - 16\" - sand",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 2,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Wenger/Wenger-MX-Light---Rygsk-til-notebook---med-tablet?prodid=13297237",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "170402",
+    "name": "PORT Designs Pro Montreal",
+    "brand": "PORT Designs",
+    "category": "bag",
+    "raw_spec": "Rygsæk til notebook - 15.6\" - 16\" - grå",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 1,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/PORT-Designs/PORT-Designs-Pro-Montreal---Rygsk-til-notebook---?prodid=13230358",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "HS5561GL",
+    "name": "Targus Hypershield - Notebook-skaletui",
+    "brand": "Targus",
+    "category": "bag",
+    "raw_spec": "klar, grå - for Apple MacBook Neo (13 tommer, A18 Pro)",
+    "description_da": null,
+    "compatible_with": [
+      "Apple MacBook Neo (13 tommer· A18 Pro)"
+    ],
+    "stock_qty": 12,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Targus/Targus-Hypershield---Notebook-skaletui---klar-gra?prodid=13216588",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "D32116-RPET",
+    "name": "DICOTA Companion - Rygsæk til notebook",
+    "brand": "DICOTA",
+    "category": "bag",
+    "raw_spec": "13\" - 16\" - sort",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 1,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/DICOTA/DICOTA-Companion---Rygsk-til-notebook---13---16-?prodid=13215855",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "D30113",
+    "name": "DICOTA - Notebook privacy-filter",
+    "brand": "DICOTA",
+    "category": "screen_protection",
+    "raw_spec": "2-vejs - stik i/klæbemiddel - 13,3\" bred - sort",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/DICOTA/DICOTA---Notebook-privacy-filter---2-vejs---stik-i?prodid=13584663",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4XJ1M77972",
+    "name": "3M - Notebook privacy-filter",
+    "brand": "Lenovo",
+    "category": "screen_protection",
+    "raw_spec": "lys skærm - 14\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 0,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/Lenovo/3M---Notebook-privacy-filter---lys-skrm---14-?prodid=13577988",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "ASM156W9GL",
+    "name": "Targus 4Vu - Notebook privacy-filter",
+    "brand": "Targus",
+    "category": "screen_protection",
+    "raw_spec": "aftagelig - magnetisk - 15.6\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 3,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/Targus/Targus-4Vu---Notebook-privacy-filter---aftagelig--?prodid=13507528",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "K54372WW",
+    "name": "Kensington MagPro Elite",
+    "brand": "Kensington",
+    "category": "screen_protection",
+    "raw_spec": "Notebook privacy-filter - aftagelig - magnetisk - TAA-kompatibel",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 1,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/Kensington/Kensington-MagPro-Elite---Notebook-privacy-filter-?prodid=13308860",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "7100405233",
+    "name": "3M PF240W9EM - Privacy-filter for skærm",
+    "brand": "3M",
+    "category": "screen_protection",
+    "raw_spec": "16:9 - aftagelig - magnetisk - 24\" - sort - TAA-kompatibel",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 12,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/3M/3M-PF240W9EM---Privacy-filter-for-skrm---169---a?prodid=13290379",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "PG49662",
+    "name": "PanzerGlass - Notebook privacy-filter",
+    "brand": "PanzerGlass",
+    "category": "screen_protection",
+    "raw_spec": "2-vejs - aftagelig - magnetisk - 14.2\"",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 7,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/PanzerGlass/PanzerGlass---Notebook-privacy-filter---2-vejs---a?prodid=13267583",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "GLBMMB13-NEO",
+    "name": "eSTUFF - Notebook privacy-filter",
+    "brand": "eSTUFF",
+    "category": "screen_protection",
+    "raw_spec": "16:10 - 2-vejs - aftagelig - magnetisk - 13\" - sort",
+    "description_da": null,
+    "compatible_with": [],
+    "stock_qty": 53,
+    "incoming_date": null,
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/eSTUFF/eSTUFF---Notebook-privacy-filter---1610---2-vejs-?prodid=13217446",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  },
+  {
+    "id": "4XJ1U03944",
+    "name": "Lenovo - Notebook privacy-filter",
+    "brand": "Lenovo",
+    "category": "screen_protection",
+    "raw_spec": "14\" - for ThinkBook 14 G8 IRL; ThinkPad E14 Gen 7; L14 Gen 6; T14 Gen 6; T14s Gen 6",
+    "description_da": null,
+    "compatible_with": [
+      "ThinkBook 14 G8 IRL",
+      "ThinkPad E14 Gen 7",
+      "L14 Gen 6",
+      "T14 Gen 6",
+      "T14s Gen 6"
+    ],
+    "stock_qty": 390,
+    "incoming_date": "2026-11-12",
+    "demo_price": 500,
+    "image_url": null,
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/Lenovo/Lenovo---Notebook-privacy-filter---14---for-Think?prodid=12965803",
+    "tags": [],
+    "model_key": null,
+    "ports": []
+  }
+]

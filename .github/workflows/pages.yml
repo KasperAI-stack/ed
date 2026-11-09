@@ -42,6 +42,23 @@ jobs:
           V=${GITHUB_SHA::7}
           find _site -name '*.html' -exec sed -i -E "s#(/css/styles\.css|/css/dokument\.css|/js/main\.js|/cv\.html|/ansoegning\.html|/application\.html|\.pdf)\"#\1?v=$V\"#g" {} +
 
+      # Casen "Én hjerne, tre agenter" (Next.js i mappen case/) lægges på /ed/case/
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+          cache-dependency-path: case/package-lock.json
+
+      - name: Byg casen til Pages
+        working-directory: case
+        env:
+          PAGES_BASE_PATH: /ed/case
+          NEXT_TELEMETRY_DISABLED: 1
+        run: |
+          npm ci
+          npm run build
+          cp -r out ../_site/case
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: _site

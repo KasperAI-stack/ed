@@ -1,0 +1,3806 @@
+[
+  {
+    "prodid": 11847003,
+    "part_no": "64A4MATXEU",
+    "name": "Lenovo ThinkVision T24-40",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 24\"",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0198155418754",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T24-40---LED-skrm---Full-HD-1?prodid=11847003",
+    "fetched_at": "2026-11-09T19:12:02.125Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt76mtqH6EFnOmOz6pfX3AB0_cfidmlBcmVk3IMzjGSXoqfWi-pY8FNC-GsnnK8eQ7gHjcLoeTIofEYWyv_DjFJEo9QM6CCH3Ii56ttN-eEdw==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 12510602,
+    "part_no": "40AY0090MX",
+    "name": "Lenovo - Dockingstation",
+    "raw_spec": "USB-C - HDMI, 2 x DP - 1GbE - 90 Watt - nordiske",
+    "brand": "Lenovo",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "154",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "200",
+        "isInStock": false,
+        "isIncomingStock": true,
+        "isNotInStock": false,
+        "incomingDate": "23-11-26",
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": null,
+        "incoming": {
+          "items": [
+            {
+              "qty": 200,
+              "eta": "23-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 200,
+            "eta": "23-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "0195892127390",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo---Dockingstation---USB-C---HDMI-2-x-DP---1?prodid=12510602",
+    "fetched_at": "2026-11-09T19:12:02.126Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvCT93Pdf8Zwg9QPPpcxK6KUNyiH9NSC0yeZevQ-9MOSKBSevUdSWwkwjd-kwwDJAjP0j7JBoRPjtrcfdQJtM4d3q3zvqhVJHRoah45xc_Gkw==",
+    "tags": [
+      "forside",
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 3766746,
+    "part_no": "40B00300EU",
+    "name": "Lenovo ThinkPad Thunderbolt 4 WorkStation Dock",
+    "raw_spec": "Portreplikator - Thunderbolt 4 - 2 x DP, HDMI, 2 x Thunderbolt - 1GbE - 230 watt - Campus - for ThinkPad T16 Gen 4 21QN",
+    "brand": "Lenovo",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "323",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "17",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 1,
+              "eta": ""
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 1,
+            "eta": ""
+          }
+        }
+      }
+    ],
+    "ean": "0195348677295",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-ThinkPad-Thunderbolt-4-WorkStation-Dock---P?prodid=3766746",
+    "fetched_at": "2026-11-09T19:12:02.128Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvqcsGcCJAShSHz6PdR6p2oihYywtdbwQW1bm2yetBbz6gAK_KRstTxm86vrRoXDNpy7KBllkYvnmVYB9FCxHu4TKraLkWajCE7LbPyO8gnDA==",
+    "tags": [
+      "forside",
+      "rolle:it"
+    ]
+  },
+  {
+    "prodid": 13273764,
+    "part_no": "36699-999-899",
+    "name": "Jabra Evolve3 65 Flex MS",
+    "raw_spec": "Headset - på øret - Bluetooth - trådløs, kablet - aktiv støjfjerning - USB-C via Bluetooth adapter, USB-C - sort - Certified for Microsoft Teams, Zoom Certified, Works With Google Meet, MFi Certified",
+    "brand": "Jabra",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "317",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5706991037234",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Jabra/Jabra-Evolve3-65-Flex-MS---Headset---pa-ret---Blu?prodid=13273764",
+    "fetched_at": "2026-11-09T19:12:02.129Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv-yMgwbbChdRD5ZQr8QPh6QtRPp7p__YO0vkxcoPakCWG6HgDt3vHmfZGcT0mAOf6wkGdP8YUGEzg_lsxyNqrrYBt0orwgK73aPI3X_X3kcg==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 13280205,
+    "part_no": "WKNRK",
+    "name": "Dell XPS 16 DA16260 - AI PC",
+    "raw_spec": "16\" - Intel Core Ultra X7 - 358H - 32 GB RAM - 1 TB SSD - Nordisk",
+    "brand": "Dell",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "56",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "17",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5397321037835",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-XPS-16-DA16260---AI-PC---16---Intel-Core-Ult?prodid=13280205",
+    "fetched_at": "2026-11-09T19:12:02.130Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvv21yOLPYUuVDIBPqWicBgX4-KMOpo83VsFRVWg7VkMEktUAj_5CJGSam2iBH5_U8tQmYiPDP3-iKNZi9xWj_WxhozpMflUvvIwquvtftxQQ==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 4751757,
+    "part_no": "920-010931",
+    "name": "Logitech MX Keys Combo for Business",
+    "raw_spec": "Sæt med mus og tastatur - bagbelyst - trådløs - Bluetooth LE - QWERTY - Pan Nordic - grafit",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\x26 tastaturpakke",
+    "stock": [
+      {
+        "stockText": "49",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 6932,
+              "eta": "01-12-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 6932,
+            "eta": "01-12-26"
+          }
+        }
+      }
+    ],
+    "ean": "5099206104464",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Logitech/Logitech-MX-Keys-Combo-for-Business---St-med-mus-?prodid=4751757",
+    "fetched_at": "2026-11-09T19:12:02.134Z",
+    "image_url": "https://shop.ed.dk/imgr/b17c3cd8-3a9e-4cc9-b0d4-4bce456b450c/274/274",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 3244465,
+    "part_no": "910-006034",
+    "name": "Logitech Marathon M705",
+    "raw_spec": "Mus - højrehåndet - laser - trådløs - 2.4 GHz - trådløs modtager (USB)",
+    "brand": "Logitech",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "61",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 600,
+              "eta": ""
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 600,
+            "eta": ""
+          }
+        }
+      }
+    ],
+    "ean": "5099206093065",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Marathon-M705---Mus---hjrehandet---laser?prodid=3244465",
+    "fetched_at": "2026-11-09T19:12:02.134Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsyLtt68gbottV3_Dww5kbCBDamt4_sMPWKNduJrJPL0UloDPOKk1xxVW0UQK8xoxavJoxRjjHeb9TqD-hmNhL9oo9aqUfsmmuNqFjtsfl7ww==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 1773254,
+    "part_no": "920-008683",
+    "name": "Logitech MK540 Advanced",
+    "raw_spec": "Sæt med mus og tastatur - trådløs - 2.4 GHz - Nordisk",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\x26 tastaturpakke",
+    "stock": [
+      {
+        "stockText": "6",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 4900,
+              "eta": "16-02-27"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 4900,
+            "eta": "16-02-27"
+          }
+        }
+      }
+    ],
+    "ean": "5099206077447",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Logitech/Logitech-MK540-Advanced---St-med-mus-og-tastatur-?prodid=1773254",
+    "fetched_at": "2026-11-09T19:12:02.135Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtn9mUZcUBvqFIPhfr2RdQC5Lh-dWQ_l68TnKPvivb1o2-Q1hx8Y06TZyTDsotCfFJChIO_XvxwN1ZeqSBwPo4h8IDBKAsQukGUqX0pIpUThQ==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 3907076,
+    "part_no": "920-010249",
+    "name": "Logitech MX Keys for Business",
+    "raw_spec": "Tastatur - bagbelyst - trådløs - Bluetooth, 2.4 GHz - QWERTY - Pan Nordic - grafit",
+    "brand": "Logitech",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Tastatur \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "142",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5099206096806",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Logitech/Logitech-MX-Keys-for-Business---Tastatur---bagbely?prodid=3907076",
+    "fetched_at": "2026-11-09T19:12:02.136Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt4qywVu-9msJlsKpFK3jfSvyO9FsqdPqg3y8sTpJhEbcnXfBH4I8AuwvSAMVkkbl03wDI0d01jVZxBowEaetrk7YfH_xfnTCsuDWosHFNyJw==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 12793796,
+    "part_no": "CDKBBALPN21600",
+    "name": "Contour Balance - Tastatur",
+    "raw_spec": "mellemstørrelse - USB-C - QWERTY - Pan Nordic",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Tastatur \\- Kabel",
+    "stock": [
+      {
+        "stockText": "41",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0743870052556",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Kabel/Contour-Design/Contour-Balance---Tastatur---mellemstrrelse---USB?prodid=12793796",
+    "fetched_at": "2026-11-09T19:12:02.137Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuW817BuEacshLIrPEQP9EjEuSdh8_We7Uq4wglTGpwKEJn09m78m_8haNhXPMjzT6cBfXElAf6RvtyiWx6tPetYobCTs3c2QKef1BlmKKzuw==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 4830124,
+    "part_no": "910-006582",
+    "name": "Logitech Master Series MX Master 3S for Business",
+    "raw_spec": "Mus - ergonomisk - højrehåndet - optisk - 7 knapper - trådløs - Bluetooth - Logitech Logi Bolt USB-modtager - grafit",
+    "brand": "Logitech",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "88",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": false,
+        "isIncomingStock": true,
+        "isNotInStock": false,
+        "incomingDate": "16-02-27",
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": null,
+        "incoming": {
+          "items": [
+            {
+              "qty": 2580,
+              "eta": "16-02-27"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 2580,
+            "eta": "16-02-27"
+          }
+        }
+      }
+    ],
+    "ean": "5099206107885",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Master-Series-MX-Master-3S-for-Business--?prodid=4830124",
+    "fetched_at": "2026-11-09T19:12:02.138Z",
+    "image_url": "https://shop.ed.dk/cache/files3/402560_97519565.png",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 6999759,
+    "part_no": "CDRMPRO20210",
+    "name": "Contour RollerMouse Pro",
+    "raw_spec": "Centreret mus - ergonomisk - almindelig - 6 knapper - kablet - USB",
+    "brand": "Contour Design",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Øvrige",
+    "stock": [
+      {
+        "stockText": "1",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "42",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0743870052006",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/vrige/Contour-Design/Contour-RollerMouse-Pro---Centreret-mus---ergonomi?prodid=6999759",
+    "fetched_at": "2026-11-09T19:12:02.139Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTunVvkhA7V-9y6R0fO2ShM-eInLYTAuhEVW8XjviLSPIjNZdooZK_ToHAlMZtuUkFW9Bmy51P75fBIoaJbEBI43cUWL8sHGQ4B7Di24DVHYtA==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 3962032,
+    "part_no": "27599-999-999",
+    "name": "Jabra Evolve2 75 - Headset",
+    "raw_spec": "på øret - Bluetooth - trådløs - aktiv støjfjerning - USB-A - støjisolerende - sort - Certified for Microsoft Teams",
+    "brand": "Jabra",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0706487021438",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Jabra/Jabra-Evolve2-75---Headset---pa-ret---Bluetooth--?prodid=3962032",
+    "fetched_at": "2026-11-09T19:12:02.140Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt2kgXEtVwRkxJ9FCsxZstHPD15WykJWSN_o6lo8wbbOC7a4-UKS4nzLoEpumZFUgseEeHKII2WFsxyHm-sO6dc05Z-V2Rg5yCU4SMhcZ4hIQ==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 2637525,
+    "part_no": "28599-999-899",
+    "name": "Jabra Evolve2 85 MS Stereo",
+    "raw_spec": "Headset - fuld størrelse - Bluetooth - trådløs - aktiv støjfjerning - 3,5 mm jackstik - støjisolerende - sort - Certified for Microsoft Teams",
+    "brand": "Jabra",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "145",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "385",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0706487020523",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Jabra/Jabra-Evolve2-85-MS-Stereo---Headset---fuld-strre?prodid=2637525",
+    "fetched_at": "2026-11-09T19:12:02.142Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuJrwcP7QTQTIe3Oyk6CN1NiXQf0xyQQbFICn7CTc5oQWKSkj212LEt6z1iqWCtjSe3qvP5JP7AwBWyVfpNYlMj1D6MoOMnCQEtUpHxCxm7YQ==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 11457982,
+    "part_no": "AV4P1AA#ABB",
+    "name": "HP Poly Voyager Legend 50",
+    "raw_spec": "Headset - i øret - Bluetooth - trådløs - sort",
+    "brand": "HP",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "354",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 2400,
+              "eta": "10-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 2400,
+            "eta": "10-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "0198701663195",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Voyager-Legend-50---Headset---i-ret---Blu?prodid=11457982",
+    "fetched_at": "2026-11-09T19:12:02.143Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv6A1DVTBsDaIUbWFtiAV2Ar0UMt2PgxM2tCSBcyBIw4283xPtyom8eI0U1z-UIsHxPY4iM7vVHoQ-vgRV17pMYbVxRYynEkHWhZUzCOxivDg==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 10994489,
+    "part_no": "1208699",
+    "name": "Yealink BH76 Plus - Headset",
+    "raw_spec": "på øret/fuld størrelse - Bluetooth - trådløs - aktiv støjfjerning - USB-A via Bluetooth adapter - sort - Certified for Microsoft Teams",
+    "brand": "Yealink",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "116",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "6938818321557",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Yealink/Yealink-BH76-Plus---Headset---pa-ret-fuld-strrel?prodid=10994489",
+    "fetched_at": "2026-11-09T19:12:02.144Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTurpBiJSviDVA-TSnTP24Voe5OThdaOTQHrxmPkLhqZYza8EmZHTQ7D9o_ppGLBM3PjdlTokbafT9PatP-QCJnwlkjEzkn3KvkJ1AZc66LLGQ==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 12996775,
+    "part_no": "64AFZAT2EU",
+    "name": "Lenovo ThinkVision T27UD-40",
+    "raw_spec": "LED-skærm - 4K - 27\" - HDR - med ThinkVision MC 60 monitor webcam",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "50",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0198156754189",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T27UD-40---LED-skrm---4K---27-?prodid=12996775",
+    "fetched_at": "2026-11-09T19:12:02.148Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvOXdd7jlojR0-_lIezUBSOmY_8sb46JikfZ_ZIFDO3xuJpvvLR8tZMQhQaZdqVpn7aOzfkSoIjXzspctJ1J1eEEQ5WeYWJXoooJCrxJPgfmg==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 9542895,
+    "part_no": "WL5024-DEMEA",
+    "name": "Dell Pro Wireless ANC Headset WL5024",
+    "raw_spec": "Headset - på øret - Bluetooth - trådløs - aktiv støjfjerning - Zoom Certified, Certified for Microsoft Teams",
+    "brand": "Dell",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "79",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 8,
+              "eta": "08-12-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 8,
+            "eta": "08-12-26"
+          }
+        }
+      },
+      {
+        "stockText": "13",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 10,
+              "eta": "12-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 10,
+            "eta": "12-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "5397184820421",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Dell/Dell-Pro-Wireless-ANC-Headset-WL5024---Headset---p?prodid=9542895",
+    "fetched_at": "2026-11-09T19:12:02.149Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTurHdmlhasEWNj6bAErRvzz9nYqUUeMCGL_dgTPxsg92oo-Ce1Ui3qjMYZ9_7d0vofE5AuAuq9wzGTc_U2De8HfmdkhZ40yOZtSRUqlLuJyCg==",
+    "tags": [
+      "forside"
+    ]
+  },
+  {
+    "prodid": 13253958,
+    "part_no": "21X20047MX",
+    "name": "Lenovo Thinkpad L14 Gen 7",
+    "raw_spec": "Copilot+ PC - 14\" - Intel Core Ultra 5 - 325 - 24 GB RAM - 512 GB SSD - nordisk (dansk/finsk/norsk/svensk)",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "53",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "31",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 137,
+              "eta": "09-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 137,
+            "eta": "09-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "0828132173849",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-Thinkpad-L14-Gen-7---Copilot-PC---14---In?prodid=13253958",
+    "fetched_at": "2026-11-09T19:12:02.161Z",
+    "image_url": "https://shop.ed.dk/imgr/d9695e94-4aed-4769-89ea-8edbc77b27b5/400/400",
+    "tags": [
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 13121441,
+    "part_no": "21WN004QMX",
+    "name": "Lenovo ThinkPad T14 Gen 7",
+    "raw_spec": "5G-opgraderbar - 14\" - Intel Core Ultra 5 - 8-core - 16 GB RAM - 512 GB SSD - Copilot+ PC - nordisk (dansk/finsk/norsk/svensk)",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "460",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0199275421518",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-T14-Gen-7---5G-opgraderbar---14--?prodid=13121441",
+    "fetched_at": "2026-11-09T19:12:02.171Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvNGZt09MRNcNtWuKwWiX9wpFdihIER6VYY3eSdRsRBKoNcnu0_1yZNV9um3_dOtK79GpIgAonF_XiKRL-dSezkpH_KOZPZq8SjKlusDqEcgA==",
+    "tags": [
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 11882679,
+    "part_no": "64A5MAT6EU",
+    "name": "Lenovo ThinkVision T27-40",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 27\"",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0198155815652",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T27-40---LED-skrm---Full-HD-1?prodid=11882679",
+    "fetched_at": "2026-11-09T19:12:02.172Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTs_zMi_6fmg3Valdtjk_oH9gbnYZbh0_lCdq0uon5Iz9UNN17cDPceH3xfnFEG7dZ7WRCZ-ZaMU85Ub-lDV4tSLzcoDYA1SwjvBzWjRkas6GA==",
+    "tags": [
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 11921058,
+    "part_no": "64AEGAT1EU",
+    "name": "Lenovo ThinkVision T34WD-40",
+    "raw_spec": "LED-skærm - kurvet - 34\" - HDR",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "87",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0198155878633",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T34WD-40---LED-skrm---kurvet--?prodid=11921058",
+    "fetched_at": "2026-11-09T19:12:02.172Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvqOXGseqGtd9LY9dCrHGzlfgUHTriw_2veyDEFxE0S8q5Wan4RULvm57-sMY6a9XNhL4hNPNPSFO1TZXAOdymmJZvPZHweyIgydD3JLozkHg==",
+    "tags": [
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 12739120,
+    "part_no": "4X31R64497",
+    "name": "Lenovo Essential Wireless Combo Gen 2",
+    "raw_spec": "Sæt med mus og tastatur - trådløs - 2.4 GHz - QWERTY - Nordisk - sort - brun kasse",
+    "brand": "Lenovo",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\x26 tastaturpakke",
+    "stock": [
+      {
+        "stockText": "496",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "120",
+        "isInStock": false,
+        "isIncomingStock": true,
+        "isNotInStock": false,
+        "incomingDate": "10-11-26",
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": null,
+        "incoming": {
+          "items": [
+            {
+              "qty": 120,
+              "eta": "10-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 120,
+            "eta": "10-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "4582764200347",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Lenovo/Lenovo-Essential-Wireless-Combo-Gen-2---St-med-mu?prodid=12739120",
+    "fetched_at": "2026-11-09T19:12:02.174Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvpLJzMlOX85UkihEqNtdetXiK925vQ8AYDU3u7-_dXhC992n8sbl10zAELVlDUKwfZRigUABqn4td1j_zYnkMA19n7-Tm1-us3fpK3c2Z3ew==",
+    "tags": [
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 12889880,
+    "part_no": "4X31S04854",
+    "name": "Lenovo Pro Combo 6000",
+    "raw_spec": "Sæt med mus og tastatur - trådløs - 2.4 GHz, Bluetooth 5.3 - QWERTY - Nordisk - formørkelsessort - brun kasse",
+    "brand": "Lenovo",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\x26 tastaturpakke",
+    "stock": [
+      {
+        "stockText": "32",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "25",
+        "isInStock": false,
+        "isIncomingStock": true,
+        "isNotInStock": false,
+        "incomingDate": "12-11-26",
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": null,
+        "incoming": {
+          "items": [
+            {
+              "qty": 25,
+              "eta": "12-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 25,
+            "eta": "12-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "0195892125488",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Lenovo/Lenovo-Pro-Combo-6000---St-med-mus-og-tastatur---?prodid=12889880",
+    "fetched_at": "2026-11-09T19:12:02.174Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuvNOr43D55pXjrW_YxKpBGyVskoT56HAboxHYWMdweirQ8dHd8LDUEK4PMJpldSeEN5Duq7wSYeMI7qk3TQ6G-Mj4W5FKLrNnY5mIsnYeJ5w==",
+    "tags": [
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 13093134,
+    "part_no": "4XD1T60925",
+    "name": "Lenovo ThinkPad 8550",
+    "raw_spec": "Aura Edition - headset - på øret - Bluetooth - trådløs - aktiv støjfjerning - tordenvejrsgrå - Certified for Microsoft Teams",
+    "brand": "Lenovo",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "3",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 95,
+              "eta": "16-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 95,
+            "eta": "16-11-26"
+          }
+        }
+      },
+      {
+        "stockText": "52",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0195892129882",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Lenovo/Lenovo-ThinkPad-8550---Aura-Edition---headset---pa?prodid=13093134",
+    "fetched_at": "2026-11-09T19:12:02.174Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsHLIN4atQhW2Qot7DJlyWgg2ci_V_9QXCo683hmg3EgHYOGfnd6vinCrarPTS355pPY5rODcvdJyp6UnbYxFqZl1k9k9RveYEZfTenrDZH7g==",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 13071990,
+    "part_no": "2VG4F",
+    "name": "Dell Pro 14 Plus PB14250",
+    "raw_spec": "AI PC - 14\" - Intel Core Ultra 5 - 235U - vPro Enterprise - 16 GB RAM - 512 GB SSD",
+    "brand": "Dell",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "5397184961117",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-Pro-14-Plus-PB14250---AI-PC---14---Intel-Cor?prodid=13071990",
+    "fetched_at": "2026-11-09T19:12:02.177Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv9YqbDf1ePIP-XGH0HDfjOrj0Ans-xtTJzQvpzzM6E66q2ZNCtcK73JJTEpDPUIPgfalbZR4ve-DuwCDIj-79be0hZMqQLeHiyjKgn9F5noA==",
+    "tags": [
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 13232406,
+    "part_no": "CY14H",
+    "name": "Dell Pro 14 Plus PB14250",
+    "raw_spec": "AI PC - 14\" - Intel Core Ultra 5 - 236V - vPro Enterprise - 16 GB RAM - 512 GB SSD - 5G-opgraderbar",
+    "brand": "Dell",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "96",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5397184981337",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-Pro-14-Plus-PB14250---AI-PC---14---Intel-Cor?prodid=13232406",
+    "fetched_at": "2026-11-09T19:12:02.179Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv9YqbDf1ePIP-XGH0HDfjOrj0Ans-xtTJzQvpzzM6E66q2ZNCtcK73JJTEpDPUIPgfalbZR4ve-DuwCDIj-79be0hZMqQLeHiyjKgn9F5noA==",
+    "tags": [
+      "rolle:administration",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 12608128,
+    "part_no": "DELL-P2425HHF",
+    "name": "Dell P2425H - LED-skærm",
+    "raw_spec": "Full HD (1080p) - 24\"",
+    "brand": "Dell",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "30",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "77",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5397184962787",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Dell/Dell-P2425H---LED-skrm---Full-HD-1080p---24-?prodid=12608128",
+    "fetched_at": "2026-11-09T19:12:02.180Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvtk8iXH6JT8DeVLfrjQO-9FKxtevgbV0nUmuVjcsozgP6SoOr_vy3sdB-flkLna5XxSY-oLtR0oPxsHmrG0ysM8-3Vgo4i4JGjy5aQCDUC_g==",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 3559574,
+    "part_no": "KM5221WBKB-NOR",
+    "name": "Dell Pro KM5221W - Sæt med mus og tastatur",
+    "raw_spec": "trådløs - 2.4 GHz - QWERTY - Pan Nordic - sort - med 3 years NBD Advance Exchange - for Latitude 3320, 3520, 7320 Detachable; Vostro 15 3515; XPS 17 9710",
+    "brand": "Dell",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\x26 tastaturpakke",
+    "stock": [
+      {
+        "stockText": "274",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "209",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 90,
+              "eta": "23-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 90,
+            "eta": "23-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "5397184495612",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Dell/Dell-Pro-KM5221W---St-med-mus-og-tastatur---tradl?prodid=3559574",
+    "fetched_at": "2026-11-09T19:12:02.181Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvEOD0vsZGVCdDw9S3MWTYH6y_noHL3QCDGJzWyo5u1Q-cbPC_8S_R1PYph2waRJMqBWsnCi-XcqmmOylUwLe5UB9czn74vZ9fD-FRPuGeY5Q==",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 12963311,
+    "part_no": "DELL-WD25Z",
+    "name": "Dell Pro Dock WD25Z - Dockingstation",
+    "raw_spec": "USB-C - HDMI, 2 x DP, USB-C - 1GbE, 2.5GbE - 180 Watt - BTO - med 3 års Basic Hardware Service with Advanced Exchange efter fjerndiagnose - Disti SNS",
+    "brand": "Dell",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "267",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "278",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5397321029045",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Dell/Dell-Pro-Dock-WD25Z---Dockingstation---USB-C---HDM?prodid=12963311",
+    "fetched_at": "2026-11-09T19:12:02.181Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuBs9g2U7XkxK4sfGL4KZUtd-4ssRtG8ktx7oeVExcon5cle7RoQelxk19SBnQdvxRzjPofDeacIJ53UEwKQ7JiAlmRJFTMxFUbzQMhwtXL6w==",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 12507453,
+    "part_no": "DELL-WD25",
+    "name": "Dell Pro Dock WD25 - Dockingstation",
+    "raw_spec": "USB-C - HDMI, 2 x DP, USB-C - 1GbE, 2.5GbE - 130 Watt - BTO - med 3 års Basic Hardware Service with Advanced Exchange efter fjerndiagnose",
+    "brand": "Dell",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "223",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5397184961735",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Dell/Dell-Pro-Dock-WD25---Dockingstation---USB-C---HDMI?prodid=12507453",
+    "fetched_at": "2026-11-09T19:12:02.182Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtLbentpun0bFesdwXv88WVeHldxbt9jVxr_cWaoM1RdVDuOKPFQhizTEzNXb7NQq0fz0axvrd2E8xJjF8OqT1kDwjPNVAXyDCZHBHhKZYNeA==",
+    "tags": [
+      "rolle:administration",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 13117699,
+    "part_no": "MDHE4DK/A",
+    "name": "Apple MacBook Air - 13.6\"",
+    "raw_spec": "Apple M5 - 16 GB RAM - 512 GB SSD - dansk",
+    "brand": "Apple",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0195950690071",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Apple/Apple-MacBook-Air---13-6---Apple-M5---16-GB-RAM--?prodid=13117699",
+    "fetched_at": "2026-11-09T19:12:02.183Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvNePVktuBEMtD5S87bfRnT0hDqRpOpPkopYHnFIMVMpMUuUF4EHcmU1JuX3PUjAiubFGkohCp10f2cBHY90Yd_MoqMGmtZynjXlfjmAeV_zw==",
+    "tags": [
+      "rolle:administration"
+    ]
+  },
+  {
+    "prodid": 13117757,
+    "part_no": "MFEW4DK/A",
+    "name": "Apple Studio Display Standard glass",
+    "raw_spec": "LCD-skærm - 5K - 27\"",
+    "brand": "Apple",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0195951064680",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Apple/Apple-Studio-Display-Standard-glass---LCD-skrm---?prodid=13117757",
+    "fetched_at": "2026-11-09T19:12:02.184Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvoHn4gstYCuyaXs__SMcbKgGeSRie3z4HTcHnKeeqjlRW-BFDfPW60SOiReaRNMbU5jY6qBmz-VbEcsVejoQW8VpvaQVJQVlNk9D0yDxnFjw==",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 11028700,
+    "part_no": "MXK83DK/A",
+    "name": "Apple Magic Keyboard with Touch ID and Numeric Keypad",
+    "raw_spec": "Tastatur - USB-C - trådløs - Bluetooth - QWERTY - dansk - sorte taster",
+    "brand": "Apple",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Tastatur \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0195949655418",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Apple/Apple-Magic-Keyboard-with-Touch-ID-and-Numeric-Key?prodid=11028700",
+    "fetched_at": "2026-11-09T19:12:02.184Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsciBs3k4J9enLZH-kDmOHaD6_8Aexcl-xwlQxyM-edq703dzF-sRvh79M_jvo-tkPc1xWH_GP39tZghaeaTuTEzWPHgnhPKBVVpHz2mY_wRQ==",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 11028612,
+    "part_no": "MXKA3Z/A",
+    "name": "Apple Magic Trackpad",
+    "raw_spec": "Trackpad - multi-touch - trådløs - Bluetooth - sort",
+    "brand": "Apple",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Øvrige",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0195949654480",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/vrige/Apple/Apple-Magic-Trackpad---Trackpad---multi-touch---tr?prodid=11028612",
+    "fetched_at": "2026-11-09T19:12:02.185Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtj0ngCbCNf_Q6p5F5LKB_Vt-q75xxqxo2gYz1RutVwi5RsACN8IhUwAwTEVbbSwG5NwFLrQZ51S_-L1j1UKU_ICQqDXtBqYxq1e58gCfLiew==",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 13188226,
+    "part_no": "MHWK4DN/A",
+    "name": "Apple AirPods Max 2 - Hovedtelefoner med mik.",
+    "raw_spec": "fuld størrelse - Bluetooth - trådløs - aktiv støjfjerning - midnat",
+    "brand": "Apple",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "317",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "20",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 5,
+              "eta": "30-12-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 5,
+            "eta": "30-12-26"
+          }
+        }
+      }
+    ],
+    "ean": "0195951039091",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Apple/Apple-AirPods-Max-2---Hovedtelefoner-med-mik---fu?prodid=13188226",
+    "fetched_at": "2026-11-09T19:12:02.185Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsB80Yq7rvqOlG0HjjD6A9lYVg1UJBuQEhllq34q2Vwj2Qkp9wL8BZD5OnvERE-Ix8Pt-TeMyrCg5B3qtjHpv6lh4g6Lb_AxEpYNcPAmkOAeg==",
+    "tags": [
+      "rolle:administration",
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 12608113,
+    "part_no": "DELL-P2725HHF",
+    "name": "Dell P2725H - LED-skærm",
+    "raw_spec": "Full HD (1080p) - 27\"",
+    "brand": "Dell",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "5397184962817",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Dell/Dell-P2725H---LED-skrm---Full-HD-1080p---27-?prodid=12608113",
+    "fetched_at": "2026-11-09T19:12:02.186Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtste_1UdlElh0xUvomwqZCiSdYyVfFvM5MC_4i45GBYh8jfdZdPcKuXYjwYDh_AxXR5ZyOi5KZj7glkBarxV_JhMMTl-b8P7UX2Qn0vegCYA==",
+    "tags": [
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 12963310,
+    "part_no": "DELL-WD25TB4",
+    "name": "Dell Pro Thunderbolt 4 Dock WD25TB4",
+    "raw_spec": "Dockingstation - Thunderbolt 4 - HDMI, 2 x DP, USB-C, 2 x Thunderbolt 4 - 1GbE, 2.5GbE - 180 Watt - BTO - med 3 års Advanced Exchange Service",
+    "brand": "Dell",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "226",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "39",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 40,
+              "eta": "12-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 40,
+            "eta": "12-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "5397321029052",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Dell/Dell-Pro-Thunderbolt-4-Dock-WD25TB4---Dockingstati?prodid=12963310",
+    "fetched_at": "2026-11-09T19:12:02.186Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtbNS4VdEYIi2Bnuw-NwMd5OR6lun0Y_-yURtF9tm4_IEzId5e-cu8To3p1IVG_lAPse2mNZE2a1AbzwPSlnbeQ59YNOzk8qFBmv08mMQ-Rog==",
+    "tags": [
+      "rolle:design"
+    ]
+  },
+  {
+    "prodid": 13117656,
+    "part_no": "MGEE4DK/A",
+    "name": "Apple MacBook Pro - 16.2\"",
+    "raw_spec": "Apple M5 Max - 48 GB RAM - 2 TB SSD - dansk",
+    "brand": "Apple",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "5",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0195950716023",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Apple/Apple-MacBook-Pro---16-2---Apple-M5-Max---48-GB-R?prodid=13117656",
+    "fetched_at": "2026-11-09T19:12:02.188Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTslXqwTyxVthWYvdlirETlR6LkLaAJeJtJrst0QexbOWxTuwk7P7jbbBY7Qjrk_6-PZe0ERgDA54uAw0dfoJQhsJpoCJxjAUintRk9HEm8WZw==",
+    "tags": [
+      "rolle:design",
+      "rolle:it"
+    ]
+  },
+  {
+    "prodid": 13121452,
+    "part_no": "21XJ001SMX",
+    "name": "Lenovo ThinkPad P14s Gen 7",
+    "raw_spec": "5G-opgraderbar - 14.5\" - Intel Core Ultra 7 - 16-core - 32 GB RAM - 1 TB SSD - Copilot+ PC, AI Workstation - nordisk (dansk/finsk/norsk/svensk)",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "79",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "31",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 6,
+              "eta": ""
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 6,
+            "eta": ""
+          }
+        }
+      }
+    ],
+    "ean": "0199275473371",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-P14s-Gen-7---5G-opgraderbar---14-5?prodid=13121452",
+    "fetched_at": "2026-11-09T19:12:02.195Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtLbentpun0bFesdwXv88WVMt_eCs_AjlYDsQ9RmIs7BwyFGeq_Oj26wGyX2tpJCquCJWGDPflQ1fjiYZdvL9PNARTQeMPYT-SSPkZlVe_ihA==",
+    "tags": [
+      "rolle:design"
+    ]
+  },
+  {
+    "prodid": 12563568,
+    "part_no": "64ADGAT1EU",
+    "name": "Lenovo ThinkVision P34WD-40",
+    "raw_spec": "LED-skærm - kurvet - 34\"",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "84",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "4",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0198156243645",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-P34WD-40---LED-skrm---kurvet--?prodid=12563568",
+    "fetched_at": "2026-11-09T19:12:02.195Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTv9YqbDf1ePIP-XGH0HDfjO1JB6nqdDRoXvkRh7V_2Qrby7bXNHC6_gynVBEW_kl_sNoMlGV4LcFJgIga200hBSteVi2liwU6-eydbMchnS3A==",
+    "tags": [
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 6838550,
+    "part_no": "63DBRAT1EU",
+    "name": "Lenovo ThinkVision P49w-30",
+    "raw_spec": "LED-skærm - kurvet - 49\" - HDR",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "10",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0196802362085",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-P49w-30---LED-skrm---kurvet---?prodid=6838550",
+    "fetched_at": "2026-11-09T19:12:02.196Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuzFjaWZYp7DCVqS6ArIZh73TnhPpt3THTKfDMyrgR5KFRnLvSnLwsidpNDSJPltUukrU8ODJbzc6T8zKlZkvNUhSXUQzgrYsqLByZdq5dasw==",
+    "tags": [
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 12958979,
+    "part_no": "40BF0100EU",
+    "name": "Lenovo ThinkPad 5000",
+    "raw_spec": "Dockingstation - USB4 - HDMI, DP, USB-C - 1GbE - 100 Watt - Europa - for ThinkPad T14 Gen 6; T14s Gen 6; T16 Gen 4; X1 2-in-1 Gen 10; X1 Carbon Gen 13; X13 Gen 6",
+    "brand": "Lenovo",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "435",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0195892132486",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-ThinkPad-5000---Dockingstation---USB4---HDM?prodid=12958979",
+    "fetched_at": "2026-11-09T19:12:02.196Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsciBs3k4J9enLZH-kDmOHa2Fh3eMoXgGa5ICKqeIp7-BfvJTVVLkIoRTcPaPhw8zcCim_R5aPy--m14OPb6tv9sWFHzeFSq0_Htwnqt59cQw==",
+    "tags": [
+      "rolle:design",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 12690243,
+    "part_no": "4X31R64357",
+    "name": "Lenovo Professional - Sæt med mus og tastatur",
+    "raw_spec": "full size - trådløs - Bluetooth, 2.4 GHz - QWERTY - Nordisk - grå - brun kasse",
+    "brand": "Lenovo",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\x26 tastaturpakke",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "45",
+        "isInStock": false,
+        "isIncomingStock": true,
+        "isNotInStock": false,
+        "incomingDate": "12-11-26",
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": null,
+        "incoming": {
+          "items": [
+            {
+              "qty": 45,
+              "eta": "12-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 45,
+            "eta": "12-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "4582764191331",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Lenovo/Lenovo-Professional---St-med-mus-og-tastatur---fu?prodid=12690243",
+    "fetched_at": "2026-11-09T19:12:02.197Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvNGZt09MRNcNtWuKwWiX9wAigeSMZuxHFo5CPygv62WbDBHyjb77p_WYZk_FdBFcWdwTJ72Fz-4dRHJ4X6W1vGaQawnbbu9d7JJo2KUCRlKQ==",
+    "tags": [
+      "rolle:design",
+      "rolle:it",
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 13121451,
+    "part_no": "21XE000SMX",
+    "name": "Lenovo ThinkPad P16s Gen 5",
+    "raw_spec": "5G-opgraderbar - 16\" - Intel Core Ultra 7 - 16-core - vPro Enterprise - 64 GB RAM - 1 TB SSD - Copilot+ PC, AI Workstation - nordisk (dansk/finsk/norsk/svensk)",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "39",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "5",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0199275468520",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-P16s-Gen-5---5G-opgraderbar---16-?prodid=13121451",
+    "fetched_at": "2026-11-09T19:12:02.204Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuW-pW5cz9iievy8Y4bGkBF79_9PTPiiXdJpLxtUnSNkLlGAKbIeAss14jw3V4ecxmF8LP4fRyqbtwmm-TjsiojLwWHWZNSpSqXSwjU9XJglg==",
+    "tags": [
+      "rolle:it"
+    ]
+  },
+  {
+    "prodid": 12751187,
+    "part_no": "21RQ000JMX",
+    "name": "Lenovo ThinkPad P16 Gen 3",
+    "raw_spec": "16\" - Intel Core Ultra 9 - 24-core - 64 GB RAM - 1 TB SSD - AI Workstation - Nordisk",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "1",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0199271681541",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-P16-Gen-3---16---Intel-Core-Ultra?prodid=12751187",
+    "fetched_at": "2026-11-09T19:12:02.211Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTss55rquVhax6kzpoHko0Qfp_vlPHypePHYEdg4s2XgZb8EcWrvhlBCI3reKcZYZlsqGdK2c0ci1F44A0Y01w_s1OTzoSpafyqIo2iXr8q2WQ==",
+    "tags": [
+      "rolle:it"
+    ]
+  },
+  {
+    "prodid": 12736838,
+    "part_no": "40BA0265EU",
+    "name": "Lenovo ThinkPad Smart Dock 7500",
+    "raw_spec": "Dockingstation - Thunderbolt 5 - Thunderbolt 5, HDMI, DP - 2.5GbE - 265 watt - for ThinkPad T16 Gen 4 21QN",
+    "brand": "Lenovo",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "14",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "ed-lager",
+        "onStockText": "",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 112,
+              "eta": "16-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 112,
+            "eta": "16-11-26"
+          }
+        }
+      },
+      {
+        "stockText": "12",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": {
+          "items": [
+            {
+              "qty": 110,
+              "eta": "10-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 110,
+            "eta": "10-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "0195892112907",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-ThinkPad-Smart-Dock-7500---Dockingstation--?prodid=12736838",
+    "fetched_at": "2026-11-09T19:12:02.211Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtMblmNQmYnRrzYjad6gMIfQ-ITN74hNywXNRgIF5vMRoVTVViVHLY3Sl2kkyei8CQ3IJND3tJEvcMd-G02i46I0T4IOGMvRS-YUZB3snkQ_A==",
+    "tags": [
+      "rolle:it"
+    ]
+  },
+  {
+    "prodid": 13096808,
+    "part_no": "86H55",
+    "name": "Dell Pro 14 Premium PA14250",
+    "raw_spec": "Copilot+ PC - 14\" - Intel Core Ultra 5 - 236V - vPro Enterprise - 16 GB RAM - 512 GB SSD",
+    "brand": "Dell",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "5397184930106",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-Pro-14-Premium-PA14250---Copilot-PC---14---?prodid=13096808",
+    "fetched_at": "2026-11-09T19:12:02.214Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvRlvQU9tFeM_NpPzSfHk5JhGvC4k48Tmc-wYqXJOIn4SxlBdb8GCVSuePJZaoMMBG83DqaTi8dZi4DuPoVpsMq90sbjTDQF-imMHzzVcx5Bg==",
+    "tags": [
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 13117766,
+    "part_no": "MDHG4DK/A",
+    "name": "Apple MacBook Air - 13.6\"",
+    "raw_spec": "Apple M5 - 24 GB RAM - 1 TB SSD - dansk",
+    "brand": "Apple",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0195950691016",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Apple/Apple-MacBook-Air---13-6---Apple-M5---24-GB-RAM--?prodid=13117766",
+    "fetched_at": "2026-11-09T19:12:02.215Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvNePVktuBEMtD5S87bfRnT0hDqRpOpPkopYHnFIMVMpMUuUF4EHcmU1JuX3PUjAiubFGkohCp10f2cBHY90Yd_MoqMGmtZynjXlfjmAeV_zw==",
+    "tags": [
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 13037028,
+    "part_no": "21QX00N1MX",
+    "name": "Lenovo ThinkPad T14s Gen 6",
+    "raw_spec": "14\" - Intel Core Ultra 5 - 226V - 16 GB RAM - 512 GB SSD - 5G-opgraderbar - nordisk (dansk/finsk/norsk/svensk)",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0199273940325",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-T14s-Gen-6---14---Intel-Core-Ultr?prodid=13037028",
+    "fetched_at": "2026-11-09T19:12:02.223Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtXXMsdwAJkyCMriIYMZbjlLB0p4KziIVXtqIZgLkjYapA0l8qMetY53Eftr8eYA-57HiaXXB_Jtd7AEIE3T3CkQdmsvdquXBlrAPMYks0BxQ==",
+    "tags": [
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 13097324,
+    "part_no": "21V70075MX",
+    "name": "Lenovo ThinkPad X1 Carbon Gen 14 Aura Edition",
+    "raw_spec": "4G/5G opgraderbar - 14\" - Intel Core Ultra 5 - 8-core - Evo - 32 GB RAM - 512 GB SSD - Copilot+ PC - Nordisk",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "168",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "55",
+        "isInStock": false,
+        "isIncomingStock": true,
+        "isNotInStock": false,
+        "incomingDate": "10-11-26",
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": null,
+        "incoming": {
+          "items": [
+            {
+              "qty": 55,
+              "eta": "10-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 55,
+            "eta": "10-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "0199275074547",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-X1-Carbon-Gen-14-Aura-Edition---4G?prodid=13097324",
+    "fetched_at": "2026-11-09T19:12:02.231Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTu2QpPJeTGHB_UPrT6DR_t5xyBkRj59TwTPk0zic2j7SZhQUL4be3cLfe-fTvm9uRnfSsEru8-ClLfhotPBmw7nl6ckfWz6qqghFVxeWREFzQ==",
+    "tags": [
+      "rolle:ledelse-salg"
+    ]
+  },
+  {
+    "prodid": 12793795,
+    "part_no": "CDKBBALPN11600",
+    "name": "Contour Balance - Tastatur",
+    "raw_spec": "mellemstørrelse - trådløs - Bluetooth 5.1 - QWERTY - Pan Nordic",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Tastatur \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "268",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0743870052532",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Contour-Design/Contour-Balance---Tastatur---mellemstrrelse---tra?prodid=12793795",
+    "fetched_at": "2026-11-09T19:12:02.232Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtYQDUYlOeVdETClnR3TV5iHj0YWJgvxiWZvs7k3T9dGak8RLYK7X59BLIKIcTLDAr1OJTaXpxY5A6hrBeYf-e9EZzk-zmXs3P2va5AMwcYTQ==",
+    "tags": [
+      "kampagne:contour-ergonomi"
+    ]
+  },
+  {
+    "prodid": 12793797,
+    "part_no": "CDKBBALPN11500",
+    "name": "Contour Balance - Tastatur",
+    "raw_spec": "full size - trådløs - Bluetooth 5.1 - QWERTY - Pan Nordic",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Tastatur \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "177",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0743870052525",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Contour-Design/Contour-Balance---Tastatur---full-size---tradls--?prodid=12793797",
+    "fetched_at": "2026-11-09T19:12:02.233Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsJ2XdLKa2ZGQp56VdBV52lveiAfjeyqrHPZE2Qt_y3aaObGHx_x5tirtac4cVGGO1bYr7bCPSo2jrlFTcM1cjOhO--8hVPFVZzk2nfuxUYBg==",
+    "tags": [
+      "kampagne:contour-ergonomi"
+    ]
+  },
+  {
+    "prodid": 10031980,
+    "part_no": "CDRMRED10210",
+    "name": "Contour RollerMouse Red Plus",
+    "raw_spec": "Centreret mus - ergonomisk - 7 knapper - trådløs - Bluetooth",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Tastatur \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "357",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0743870003923",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/Contour-Design/Contour-RollerMouse-Red-Plus---Centreret-mus---erg?prodid=10031980",
+    "fetched_at": "2026-11-09T19:12:02.233Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTumsttB4GnmdFtI7mI7DtPkk6OVbrDitJlK6iSsmFeWrbhJ08g0fF-as00u1R8qgxEYTwLfL156a_-D253i-H0eR04jWpTieYzWw2S5DWSmmA==",
+    "tags": [
+      "kampagne:contour-ergonomi"
+    ]
+  },
+  {
+    "prodid": 12793799,
+    "part_no": "CDRED1021BALPN1160",
+    "name": "Contour RollerMouse Red Plus & Balance Mid-Size",
+    "raw_spec": "Sæt med mus og tastatur - trådløs - Bluetooth 5.1 - QWERTY - Pan Nordic",
+    "brand": "Contour Design",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\x26 tastaturpakke",
+    "stock": [
+      {
+        "stockText": "286",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0743870052549",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/Contour-Design/Contour-RollerMouse-Red-Plus-Balance-Mid-Size---?prodid=12793799",
+    "fetched_at": "2026-11-09T19:12:02.234Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTtUMOEPw-rOdbw4c22JXFDps6-dbJNIwUKDoeuvZaeyNL6xzNSAdqI7f4UlLDEMMWx2gJIEDblhH-FP1dbhk3n1fwteC1RGdfGIFmJyCuH7Sw==",
+    "tags": [
+      "kampagne:contour-ergonomi"
+    ]
+  },
+  {
+    "prodid": 11050281,
+    "part_no": "9T5B2AA#UUW",
+    "name": "HP 725 - Tastatur - multi-enhed, genopladelig, drevet af superkondensator",
+    "raw_spec": "full size - trådløs - Bluetooth, 2.4 GHz - QWERTY - Pan Nordic - nattesort",
+    "brand": "HP",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Tastatur \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "254",
+        "isInStock": false,
+        "isIncomingStock": true,
+        "isNotInStock": false,
+        "incomingDate": "17-11-26",
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": {
+          "items": [
+            {
+              "qty": 254,
+              "eta": "17-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 254,
+            "eta": "17-11-26"
+          }
+        }
+      },
+      {
+        "stockText": "6",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0198122141692",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Tastatur---Tradls/HP/HP-725---Tastatur---multi-enhed-genopladelig-dre?prodid=11050281",
+    "fetched_at": "2026-11-09T19:12:02.234Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt0ySU-Ug164BLOTLaxuQmsvDQz1OIHAJF1niKvgLMs6aIISMFYYwgAyQ_fn9kLA6pkr3itRGAs8WssUv9QnpQxAf5yfRu5O99f-AwzGb7Rsg==",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ]
+  },
+  {
+    "prodid": 11033131,
+    "part_no": "9T5B0UT#UUW",
+    "name": "HP 725 - Sæt med mus og tastatur",
+    "raw_spec": "multi-enhed, genopladelig, drevet af superkondensator - full size - trådløs - Bluetooth, 2.4 GHz - Pan Nordic - nattesort - Smart Buy",
+    "brand": "HP",
+    "category": "keyboard",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\x26 tastaturpakke",
+    "stock": [
+      {
+        "stockText": "401",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "34",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0198122955336",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus-tastaturpakke/HP/HP-725---St-med-mus-og-tastatur---multi-enhed-ge?prodid=11033131",
+    "fetched_at": "2026-11-09T19:12:02.235Z",
+    "image_url": "https://shop.ed.dk/imgr/599ea847-2840-421f-af45-f6c6e49f479b/400/400",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ]
+  },
+  {
+    "prodid": 13261432,
+    "part_no": "C56XXAA#AC3",
+    "name": "HP Poly Focus 625 - Headset",
+    "raw_spec": "på øret - Bluetooth - trådløs - aktiv støjfjerning - USB-C via Bluetooth adapter - sort - med HP Poly Focus Wireless Charge Stand - Certified for Microsoft Teams Open Office, Certified for Microsoft Teams, Google Meet Certified, Zoom Workplace Headset Certified, Zoom Workplace Contact Center Headset Certificeret, Microsoft Teams Native Bluetooth Certified",
+    "brand": "HP",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "96",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0199485858050",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Focus-625---Headset---pa-ret---Bluetooth-?prodid=13261432",
+    "fetched_at": "2026-11-09T19:12:02.235Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTuviiyF9muFAeicWsSMgMoRBeuzsbzCCoMJnZ5-GuDr_Cx6TivenESwYQ67YcvbIdJ2qOowritpW4QItciZukIltWLtUBAJJY29_VolxThYGQ==",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ]
+  },
+  {
+    "prodid": 13511801,
+    "part_no": "C56XSAA",
+    "name": "HP Poly Focus 625 Fold",
+    "raw_spec": "Headset - på øret - Bluetooth - trådløs, kablet - aktiv støjfjerning - USB-C via Bluetooth adapter, USB-C - sort - Certified for Microsoft Teams Open Office, Certified for Microsoft Teams, Google Meet Certified, Zoom Workplace Headset Certified, Zoom Workplace Contact Center Headset Certificeret, Microsoft Teams Native Bluetooth Certified",
+    "brand": "HP",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      },
+      {
+        "stockText": "40",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0199485857978",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Focus-625-Fold---Headset---pa-ret---Bluet?prodid=13511801",
+    "fetched_at": "2026-11-09T19:12:02.236Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTt1LRxhCtdPKhkctwDszGk1MN8neeJE71tf7SLVM_-jcb_Kv6GNCqVAajcLgIArtjRHEcUViG52Y5WMohGe3fRmXx55FqINTuYCEwFDY-t7eg==",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ]
+  },
+  {
+    "prodid": 13511802,
+    "part_no": "C56XPAA",
+    "name": "HP Poly Focus 625 - Headset",
+    "raw_spec": "på øret - Bluetooth - trådløs - aktiv støjfjerning - USB-C via Bluetooth adapter - sort - Certified for Microsoft Teams Open Office, Certified for Microsoft Teams, Google Meet Certified, Zoom Workplace Headset Certified, Zoom Workplace Contact Center Headset Certificeret, Microsoft Teams Native Bluetooth Certified",
+    "brand": "HP",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      },
+      {
+        "stockText": "39",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0199485857916",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Focus-625---Headset---pa-ret---Bluetooth-?prodid=13511802",
+    "fetched_at": "2026-11-09T19:12:02.237Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTsfRlTIh_qxwcbziVoZk82WB55i-v8P-Ce_UUzFCX6myulXq5fU5rUhXhXQihBNKiIMixGi8_z_THpHded60sRHGNBoqO138H4Zm9XazaE4sw==",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ]
+  },
+  {
+    "prodid": 12968909,
+    "part_no": "B8YX4AA",
+    "name": "HP 785M - Mus - højrehåndet",
+    "raw_spec": "optisk - 6 knapper - trådløs - Bluetooth, 2.4 GHz - trådløs modtager (USB) - sort",
+    "brand": "HP",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0198990573557",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/HP/HP-785M---Mus---hjrehandet---optisk---6-knapper--?prodid=12968909",
+    "fetched_at": "2026-11-09T19:12:02.237Z",
+    "image_url": "https://cdn.nettailer.com/image/ZipCbT9SO0luSl1ZNitLPBr3KxpLw0YXn6Fd7S83ZTvXM0n07FZYWp9jXVz6L1A2yqGNK-xw_t7pMh3Iu29mjiOG_Mwiqd7Bv54ynPc0tKox4iTImTWi1x5k0TaoQjVYyR31B7K12UqOi6XdUk5Iqw==",
+    "tags": [
+      "kampagne:hp-tilbehoer"
+    ]
+  },
+  {
+    "prodid": 13121434,
+    "part_no": "22AW005EMX",
+    "name": "Lenovo ThinkPad T16 Gen 4",
+    "raw_spec": "Copilot+ PC - 16\" - Intel Core Ultra 5 - 228V - 32 GB RAM - 512 GB SSD - nordisk (dansk/finsk/norsk/svensk)",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "500+",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "3",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0199275565618",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-T16-Gen-4---Copilot-PC---16---In?prodid=13121434",
+    "fetched_at": "2026-11-09T19:12:04.422Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13632579,
+    "part_no": "E84P3AT#UUW",
+    "name": "HP EliteBook 8 G2a Next Gen Notebook",
+    "raw_spec": "14\" - AMD Ryzen AI 7 - 8-core - 32 GB RAM - 512 GB SSD - Copilot+ PC - Pan Nordic",
+    "brand": "HP",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0704683151089",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/HP/HP-EliteBook-8-G2a-Next-Gen-Notebook---14---AMD-R?prodid=13632579",
+    "fetched_at": "2026-11-09T19:12:04.440Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13630816,
+    "part_no": "21ST006MPB",
+    "name": "Lenovo ThinkPad E16 Gen 3",
+    "raw_spec": "16\" - AMD Ryzen 5 - 6-core - 16 GB RAM - 512 GB SSD - engelsk - Europa",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0199276765673",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-E16-Gen-3---16---AMD-Ryzen-5---6-?prodid=13630816",
+    "fetched_at": "2026-11-09T19:12:04.441Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13577311,
+    "part_no": "21U2007SPB",
+    "name": "Lenovo ThinkPad E14 Gen 7",
+    "raw_spec": "14\" - Intel Core Ultra 5 - 8-core - 16 GB RAM - 512 GB SSD - Copilot+ PC - engelsk - Europa",
+    "brand": "Lenovo",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0199274756574",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Lenovo/Lenovo-ThinkPad-E14-Gen-7---14---Intel-Core-Ultra?prodid=13577311",
+    "fetched_at": "2026-11-09T19:12:04.443Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13577114,
+    "part_no": "BTO108_PC16250_EMEA",
+    "name": "Dell Pro 16 PC16250 - 16\"",
+    "raw_spec": "Intel Core Ultra 7 - 12-core - 32 GB RAM - 1 TB SSD - AI PC",
+    "brand": "Dell",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/Dell/Dell-Pro-16-PC16250---16---Intel-Core-Ultra-7---1?prodid=13577114",
+    "fetched_at": "2026-11-09T19:12:04.444Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13576363,
+    "part_no": "AD3L0ET#ABD",
+    "name": "HP EliteBook 6 G1i Notebook",
+    "raw_spec": "AI PC - 14\" - Intel Core Ultra 7 - 255U - 16 GB RAM - 512 GB SSD - 4G LTE-A - tysk",
+    "brand": "HP",
+    "category": "laptop",
+    "shop_main_category": "Computere",
+    "shop_sub_category": "Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0199251511639",
+    "product_url": "https://shop.ed.dk/product/Computere/Brbare/HP/HP-EliteBook-6-G1i-Notebook---AI-PC---14---Intel-?prodid=13576363",
+    "fetched_at": "2026-11-09T19:12:04.467Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13632782,
+    "part_no": "HDM1H-GL",
+    "name": "HyperDrive - Dockingstation",
+    "raw_spec": "USB-C - 2 x HDMI - 1GbE",
+    "brand": "Targus",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "6941921147907",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Targus/HyperDrive---Dockingstation---USB-C---2-x-HDMI---1?prodid=13632782",
+    "fetched_at": "2026-11-09T19:12:04.470Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13632612,
+    "part_no": "DA326-BK-DAO",
+    "name": "Dell Pro 7-in-1 USB-C Travel Hub",
+    "raw_spec": "DA326 - Dockingstation - USB-C - HDMI, DP, USB-C - 2.5GbE",
+    "brand": "Dell",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "5397321025160",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Dell/Dell-Pro-7-in-1-USB-C-Travel-Hub---DA326---Docking?prodid=13632612",
+    "fetched_at": "2026-11-09T19:12:04.471Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13585536,
+    "part_no": "AVC004BTBK",
+    "name": "Belkin - Multimedie og opladningsadapter",
+    "raw_spec": "USB-C - VGA, HDMI - 1GbE",
+    "brand": "Belkin",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0745883799107",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Belkin/Belkin---Multimedie-og-opladningsadapter---USB-C--?prodid=13585536",
+    "fetched_at": "2026-11-09T19:12:04.471Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13581915,
+    "part_no": "26D32AA#ABZ",
+    "name": "HP USB-C Dock G5 - Dockingstation",
+    "raw_spec": "USB-C - 1GbE - 100 watt - Italien",
+    "brand": "HP",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0195161120930",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/HP/HP-USB-C-Dock-G5---Dockingstation---USB-C---1GbE--?prodid=13581915",
+    "fetched_at": "2026-11-09T19:12:04.472Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13578881,
+    "part_no": "4X90M60789",
+    "name": "Lenovo USB-C Travel Hub",
+    "raw_spec": "Dockingstation - USB-C - VGA, HDMI - Global",
+    "brand": "Lenovo",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "3",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0190940388099",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-USB-C-Travel-Hub---Dockingstation---USB-C--?prodid=13578881",
+    "fetched_at": "2026-11-09T19:12:04.472Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13576538,
+    "part_no": "4X10A06688",
+    "name": "Lenovo ThinkPad Basic USB 3.0 Dock",
+    "raw_spec": "Dockingstation - USB - DVI - 1GbE - 40 watt - Europa",
+    "brand": "Lenovo",
+    "category": "dock",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Dockingløsninger",
+    "stock": [
+      {
+        "stockText": "6",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0887770616293",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Dockinglsninger/Lenovo/Lenovo-ThinkPad-Basic-USB-3-0-Dock---Dockingstatio?prodid=13576538",
+    "fetched_at": "2026-11-09T19:12:04.473Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13626918,
+    "part_no": "63A2GAT1EU",
+    "name": "Lenovo ThinkVision P27q-30",
+    "raw_spec": "LED-skærm - QHD - 27\"",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0196379715482",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-P27q-30---LED-skrm---QHD---27-?prodid=13626918",
+    "fetched_at": "2026-11-09T19:12:04.482Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13571488,
+    "part_no": "64D2GAT2EU",
+    "name": "Lenovo ThinkVision T24D-4t",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 24\" - HDR",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0199273359837",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T24D-4t---LED-skrm---Full-HD-?prodid=13571488",
+    "fetched_at": "2026-11-09T19:12:04.484Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13570353,
+    "part_no": "64D0GAT1EU",
+    "name": "Lenovo ThinkVision T27D-40",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 27\"",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0199276037688",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T27D-40---LED-skrm---Full-HD-?prodid=13570353",
+    "fetched_at": "2026-11-09T19:12:04.484Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13570294,
+    "part_no": "60G1MAR2EU",
+    "name": "Lenovo ThinkVision T2054p",
+    "raw_spec": "LED-skærm - 19.5\"",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0190404485852",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T2054p---LED-skrm---19-5-?prodid=13570294",
+    "fetched_at": "2026-11-09T19:12:04.485Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13569982,
+    "part_no": "D33DFUT#ABB",
+    "name": "HP 527fd G2 - Series 5 Pro",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 27\" - Smart Buy",
+    "brand": "HP",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0199896436090",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/HP/HP-527fd-G2---Series-5-Pro---LED-skrm---Full-HD-?prodid=13569982",
+    "fetched_at": "2026-11-09T19:12:04.487Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13552014,
+    "part_no": "61FEMAT6EU",
+    "name": "Lenovo ThinkVision T22i-20",
+    "raw_spec": "LED-skærm - Full HD (1080p) - 22\"",
+    "brand": "Lenovo",
+    "category": "monitor",
+    "shop_main_category": "Monitorer \\x26 TV",
+    "shop_sub_category": "Monitorer",
+    "stock": [
+      {
+        "stockText": "4",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0194632399080",
+    "product_url": "https://shop.ed.dk/product/Monitorer-TV/Monitorer/Lenovo/Lenovo-ThinkVision-T22i-20---LED-skrm---Full-HD-?prodid=13552014",
+    "fetched_at": "2026-11-09T19:12:04.498Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13626744,
+    "part_no": "87300-05",
+    "name": "Poly Voyager Legend - Headset",
+    "raw_spec": "i øret - over øret-montering - Bluetooth - trådløs",
+    "brand": "HP",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "5033588039341",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/Poly-Voyager-Legend---Headset---i-ret---over-ret?prodid=13626744",
+    "fetched_at": "2026-11-09T19:12:04.501Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13566641,
+    "part_no": "8R711AA#ABB",
+    "name": "HP Poly Voyager 5200 Office",
+    "raw_spec": "Voyager 5200 series - headset - i øret - Bluetooth - trådløs - sort - Certified for Skype for Business, Certified for Microsoft Teams, Zoom Certified, Cisco Jabber Certified, Avaya Certified, Works With Chromebook Certified",
+    "brand": "HP",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "197498152493",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/HP-Poly-Voyager-5200-Office---Voyager-5200-series-?prodid=13566641",
+    "fetched_at": "2026-11-09T19:12:04.502Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13566598,
+    "part_no": "206110-01",
+    "name": "Poly Voyager 5200 UC",
+    "raw_spec": "Headset - ørespids - over øret-montering - Bluetooth - trådløs - Certified for Microsoft Teams",
+    "brand": "HP",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "1",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0017229151888",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/HP/Poly-Voyager-5200-UC---Headset---respids---over-?prodid=13566598",
+    "fetched_at": "2026-11-09T19:12:04.503Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13553119,
+    "part_no": "981-001732",
+    "name": "Logitech Zone Vibe Pro for Business",
+    "raw_spec": "Headset - fuld størrelse - Bluetooth - trådløs, kablet - aktiv støjfjerning - USB-C - grafit - Certified for Microsoft Teams, Google Fast Pair Certified",
+    "brand": "Logitech",
+    "category": "headset",
+    "shop_main_category": "Multimedia \\x26 Audio",
+    "shop_sub_category": "Headset \\x26 mikrofoner",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "5099206136762",
+    "product_url": "https://shop.ed.dk/product/Multimedia-Audio/Headset-mikrofoner/Logitech/Logitech-Zone-Vibe-Pro-for-Business---Headset---fu?prodid=13553119",
+    "fetched_at": "2026-11-09T19:12:04.504Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13507560,
+    "part_no": "910-005988",
+    "name": "Logitech MX Anywhere 3",
+    "raw_spec": "Mus - laser - 6 knapper - trådløs - 2.4 GHz, Bluetooth - trådløs modtager (USB) - grafit",
+    "brand": "Logitech",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "5099206092938",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-MX-Anywhere-3---Mus---laser---6-knapper--?prodid=13507560",
+    "fetched_at": "2026-11-09T19:12:04.507Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13309288,
+    "part_no": "910-007187",
+    "name": "Logitech Signature M550 L",
+    "raw_spec": "Mus - optisk - 3 knapper - trådløs - Bluetooth - Logitech Logi Bolt USB-modtager - grafit",
+    "brand": "Logitech",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "41",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5099206117716",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Signature-M550-L---Mus---optisk---3-knapp?prodid=13309288",
+    "fetched_at": "2026-11-09T19:12:04.507Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13244306,
+    "part_no": "910-007716",
+    "name": "Logitech Signature Comfort Plus M850 L",
+    "raw_spec": "Mus - højrehåndet - optisk - 6 knapper - trådløs - Bluetooth 5.2 LE - off-white",
+    "brand": "Logitech",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "35",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5099206134669",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Signature-Comfort-Plus-M850-L---Mus---hj?prodid=13244306",
+    "fetched_at": "2026-11-09T19:12:04.508Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13199478,
+    "part_no": "910-007594",
+    "name": "Logitech MX Master 4",
+    "raw_spec": "Mus - 8 knapper - trådløs - Bluetooth, 2.4 GHz - trådløs modtager (USB) - grafit",
+    "brand": "Logitech",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "7",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "7",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5099206133129",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-MX-Master-4---Mus---8-knapper---tradls--?prodid=13199478",
+    "fetched_at": "2026-11-09T19:12:04.509Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 12650748,
+    "part_no": "910-007509",
+    "name": "Logitech Signature M750",
+    "raw_spec": "Mus - optisk - 6 knapper - trådløs - 2.4 GHz, Bluetooth - Logitech Logi Bolt USB-modtager - grafit",
+    "brand": "Logitech",
+    "category": "mouse",
+    "shop_main_category": "Tastatur \\x26 mus",
+    "shop_sub_category": "Mus \\- Trådløs",
+    "stock": [
+      {
+        "stockText": "2",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "40",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5099206129467",
+    "product_url": "https://shop.ed.dk/product/Tastatur-mus/Mus---Tradls/Logitech/Logitech-Signature-M750---Mus---optisk---6-knapper?prodid=12650748",
+    "fetched_at": "2026-11-09T19:12:04.509Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13577170,
+    "part_no": "4X40Q26384",
+    "name": "Lenovo ThinkPad Professional Topload Case",
+    "raw_spec": "Bæretaske til notebook - 15.6\" - sort - Campus - for IdeaPad Flex 5 14ALC7 82R9",
+    "brand": "Lenovo",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "50",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0192330023184",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Lenovo/Lenovo-ThinkPad-Professional-Topload-Case---Breta?prodid=13577170",
+    "fetched_at": "2026-11-09T19:12:04.527Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13577031,
+    "part_no": "4X40E77328",
+    "name": "Lenovo ThinkPad Essential Topload Case",
+    "raw_spec": "Bæretaske til notebook - 15.6\" - Campus",
+    "brand": "Lenovo",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0888440404851",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Lenovo/Lenovo-ThinkPad-Essential-Topload-Case---Bretaske?prodid=13577031",
+    "fetched_at": "2026-11-09T19:12:04.527Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13577030,
+    "part_no": "4X40E77325",
+    "name": "Lenovo ThinkPad Professional Slim Topload Case",
+    "raw_spec": "Bæretaske til notebook - 15.6\"",
+    "brand": "Lenovo",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "18",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0888440404783",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Lenovo/Lenovo-ThinkPad-Professional-Slim-Topload-Case---B?prodid=13577030",
+    "fetched_at": "2026-11-09T19:12:04.528Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13575976,
+    "part_no": "653888",
+    "name": "Wenger UrbanOne - Rygsæk til notebook",
+    "raw_spec": "op til 15,6\" - sort",
+    "brand": "Wenger",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "7611160338471",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Wenger/Wenger-UrbanOne---Rygsk-til-notebook---op-til-15-?prodid=13575976",
+    "fetched_at": "2026-11-09T19:12:04.529Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13518276,
+    "part_no": "4X40E48910",
+    "name": "Lenovo ThinkPad Fitted Reversible Sleeve",
+    "raw_spec": "Hylster til notebook - 14\" - sort, rød",
+    "brand": "Lenovo",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "0887942877477",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Lenovo/Lenovo-ThinkPad-Fitted-Reversible-Sleeve---Hylster?prodid=13518276",
+    "fetched_at": "2026-11-09T19:12:04.530Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13297237,
+    "part_no": "653499",
+    "name": "Wenger MX Light - Rygsæk til notebook",
+    "raw_spec": "med tabletlomme - 16\" - sand",
+    "brand": "Wenger",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "2",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "7611160287915",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Wenger/Wenger-MX-Light---Rygsk-til-notebook---med-tablet?prodid=13297237",
+    "fetched_at": "2026-11-09T19:12:04.530Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13230358,
+    "part_no": "170402",
+    "name": "PORT Designs Pro Montreal",
+    "raw_spec": "Rygsæk til notebook - 15.6\" - 16\" - grå",
+    "brand": "PORT Designs",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "1",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "3567041704023",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/PORT-Designs/PORT-Designs-Pro-Montreal---Rygsk-til-notebook---?prodid=13230358",
+    "fetched_at": "2026-11-09T19:12:04.542Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13216588,
+    "part_no": "HS5561GL",
+    "name": "Targus Hypershield - Notebook-skaletui",
+    "raw_spec": "klar, grå - for Apple MacBook Neo (13 tommer, A18 Pro)",
+    "brand": "Targus",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "9",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "3",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "1220000631281",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/Targus/Targus-Hypershield---Notebook-skaletui---klar-gra?prodid=13216588",
+    "fetched_at": "2026-11-09T19:12:04.543Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13215855,
+    "part_no": "D32116-RPET",
+    "name": "DICOTA Companion - Rygsæk til notebook",
+    "raw_spec": "13\" - 16\" - sort",
+    "brand": "DICOTA",
+    "category": "bag",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Tasker \\x26 cover \\- Bærbare",
+    "stock": [
+      {
+        "stockText": "1",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "7640239422148",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Tasker-cover---Brbare/DICOTA/DICOTA-Companion---Rygsk-til-notebook---13---16-?prodid=13215855",
+    "fetched_at": "2026-11-09T19:12:04.545Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13584663,
+    "part_no": "D30113",
+    "name": "DICOTA - Notebook privacy-filter",
+    "raw_spec": "2-vejs - stik i/klæbemiddel - 13,3\" bred - sort",
+    "brand": "DICOTA",
+    "category": "screen_protection",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Skærm \\x26 privatlivsfiltre",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "7332752000384",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/DICOTA/DICOTA---Notebook-privacy-filter---2-vejs---stik-i?prodid=13584663",
+    "fetched_at": "2026-11-09T19:12:07.087Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13577988,
+    "part_no": "4XJ1M77972",
+    "name": "3M - Notebook privacy-filter",
+    "raw_spec": "lys skærm - 14\"",
+    "brand": "Lenovo",
+    "category": "screen_protection",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Skærm \\x26 privatlivsfiltre",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      }
+    ],
+    "ean": "4571591197067",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/Lenovo/3M---Notebook-privacy-filter---lys-skrm---14-?prodid=13577988",
+    "fetched_at": "2026-11-09T19:12:08.544Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13507528,
+    "part_no": "ASM156W9GL",
+    "name": "Targus 4Vu - Notebook privacy-filter",
+    "raw_spec": "aftagelig - magnetisk - 15.6\"",
+    "brand": "Targus",
+    "category": "screen_protection",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Skærm \\x26 privatlivsfiltre",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      },
+      {
+        "stockText": "3",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0092636372736",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/Targus/Targus-4Vu---Notebook-privacy-filter---aftagelig--?prodid=13507528",
+    "fetched_at": "2026-11-09T19:12:09.723Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13308860,
+    "part_no": "K54372WW",
+    "name": "Kensington MagPro Elite",
+    "raw_spec": "Notebook privacy-filter - aftagelig - magnetisk - TAA-kompatibel",
+    "brand": "Kensington",
+    "category": "screen_protection",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Skærm \\x26 privatlivsfiltre",
+    "stock": [
+      {
+        "stockText": "1",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "0085896042617",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/Kensington/Kensington-MagPro-Elite---Notebook-privacy-filter-?prodid=13308860",
+    "fetched_at": "2026-11-09T19:12:11.240Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13290379,
+    "part_no": "7100405233",
+    "name": "3M PF240W9EM - Privacy-filter for skærm",
+    "raw_spec": "16:9 - aftagelig - magnetisk - 24\" - sort - TAA-kompatibel",
+    "brand": "3M",
+    "category": "screen_protection",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Skærm \\x26 privatlivsfiltre",
+    "stock": [
+      {
+        "stockText": "12",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5715328450523",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/3M/3M-PF240W9EM---Privacy-filter-for-skrm---169---a?prodid=13290379",
+    "fetched_at": "2026-11-09T19:12:22.303Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13267583,
+    "part_no": "PG49662",
+    "name": "PanzerGlass - Notebook privacy-filter",
+    "raw_spec": "2-vejs - aftagelig - magnetisk - 14.2\"",
+    "brand": "PanzerGlass",
+    "category": "screen_protection",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Skærm \\x26 privatlivsfiltre",
+    "stock": [
+      {
+        "stockText": "0",
+        "isInStock": false,
+        "isIncomingStock": false,
+        "isNotInStock": true,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": null,
+        "incoming": null
+      },
+      {
+        "stockText": "7",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": "Levering fra fjernlager - 3-5 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5715685043215",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/PanzerGlass/PanzerGlass---Notebook-privacy-filter---2-vejs---a?prodid=13267583",
+    "fetched_at": "2026-11-09T19:12:26.185Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 13217446,
+    "part_no": "GLBMMB13-NEO",
+    "name": "eSTUFF - Notebook privacy-filter",
+    "raw_spec": "16:10 - 2-vejs - aftagelig - magnetisk - 13\" - sort",
+    "brand": "eSTUFF",
+    "category": "screen_protection",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Skærm \\x26 privatlivsfiltre",
+    "stock": [
+      {
+        "stockText": "53",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      }
+    ],
+    "ean": "5715328283169",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/eSTUFF/eSTUFF---Notebook-privacy-filter---1610---2-vejs-?prodid=13217446",
+    "fetched_at": "2026-11-09T19:12:32.426Z",
+    "image_url": null,
+    "tags": []
+  },
+  {
+    "prodid": 12965803,
+    "part_no": "4XJ1U03944",
+    "name": "Lenovo - Notebook privacy-filter",
+    "raw_spec": "14\" - for ThinkBook 14 G8 IRL; ThinkPad E14 Gen 7; L14 Gen 6; T14 Gen 6; T14s Gen 6",
+    "brand": "Lenovo",
+    "category": "screen_protection",
+    "shop_main_category": "Tilbehør",
+    "shop_sub_category": "Skærm \\x26 privatlivsfiltre",
+    "stock": [
+      {
+        "stockText": "390",
+        "isInStock": true,
+        "isIncomingStock": false,
+        "isNotInStock": false,
+        "incomingDate": null,
+        "warehouseLabel": "Lokal Distributør",
+        "onStockText": "Levering fra lokal lager - 1-2 dages levering",
+        "incoming": null
+      },
+      {
+        "stockText": "160",
+        "isInStock": false,
+        "isIncomingStock": true,
+        "isNotInStock": false,
+        "incomingDate": "12-11-26",
+        "warehouseLabel": "Fjerndistributør",
+        "onStockText": null,
+        "incoming": {
+          "items": [
+            {
+              "qty": 160,
+              "eta": "12-11-26"
+            }
+          ],
+          "anyItems": true,
+          "multipleItems": false,
+          "first": {
+            "qty": 160,
+            "eta": "12-11-26"
+          }
+        }
+      }
+    ],
+    "ean": "4573681346034",
+    "product_url": "https://shop.ed.dk/product/Tilbehr/Skrm-privatlivsfiltre/Lenovo/Lenovo---Notebook-privacy-filter---14---for-Think?prodid=12965803",
+    "fetched_at": "2026-11-09T19:12:43.216Z",
+    "image_url": null,
+    "tags": []
+  }
+]
