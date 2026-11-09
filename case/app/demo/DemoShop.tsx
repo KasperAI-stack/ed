@@ -1,9 +1,10 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useEffect, useState } from "react";
 import Link from "next/link";
 import { CartDrawer, CartProvider } from "@/components/Cart";
 import { ConceptBanner, ShopHeader } from "@/components/ShopChrome";
+import { HeroBanner } from "@/components/HeroBanner";
 import { ProductGrid } from "@/components/ProductGrid";
 import { RoleChat } from "@/components/RoleChat";
 import { SettingsModal } from "@/components/SettingsModal";
@@ -38,7 +39,62 @@ export function DemoShop() {
   const [nav, setNav] = useState<string | null>(null);
   const [settings, setSettings] = useState(false);
   const [prefill, setPrefill] = useState("");
-  const chatRef = useRef<HTMLDivElement>(null);
+  const [open, setOpen] = useState(false);
+  const [scrollTick, setScrollTick] = useState(0);
+
+  // Rul ned til rolle-agenten, når den foldes ud
+  useEffect(() => {
+    if (!open) return;
+    const t = setTimeout(() => document.getElementById("rolle-agent")?.scrollIntoView({ behavior: "smooth", block: "start" }), 60);
+    return () => clearTimeout(t);
+  }, [open, scrollTick]);
+
+  const openAgent = () => {
+    setOpen(true);
+    setScrollTick((n) => n + 1);
+  };
+
+  const panel = (
+    <div className="grid gap-5 rounded-3xl border border-line bg-light p-4 md:p-5 lg:grid-cols-[minmax(0,1fr)_minmax(0,2.4fr)]">
+      <div>
+        <h2 className="text-2xl font-extrabold leading-tight">Hvem skal have udstyr?</h2>
+        <p className="mt-2 text-sm text-navy/80">
+          Vælg en rolle, eller skriv frit. Agenten sammensætter en pakke pr. person og viser produkterne i chatten.
+        </p>
+        <ul className="mt-4 space-y-2.5">
+          {ROLE_TILES.map((r) => (
+            <li key={r.title}>
+              <button
+                onClick={() => setPrefill(r.prompt + " ")}
+                className="group w-full rounded-2xl border border-line bg-white p-3.5 text-left transition hover:border-coral hover:shadow-md"
+              >
+                <div className="font-bold group-hover:text-coral-dark">{r.title}</div>
+                <div className="mt-0.5 text-sm text-navy/75">{r.text}</div>
+              </button>
+            </li>
+          ))}
+        </ul>
+        <p className="mt-4 text-xs text-muted">
+          Produkter, varenumre og lager er hentet fra de offentlige sider på shop.ed.dk den 9. november 2026. Priserne
+          er opdigtede demopriser.
+        </p>
+      </div>
+      <div className="h-[calc(100vh-110px)] max-h-[860px] min-h-[600px]">
+        <RoleChat
+          items={agent.items}
+          busy={agent.busy}
+          live={agent.live}
+          offline={agent.offline}
+          onSend={agent.send}
+          onQuick={agent.startFresh}
+          onStop={agent.stop}
+          onReset={agent.reset}
+          onOpenSettings={() => setSettings(true)}
+          prefill={prefill}
+        />
+      </div>
+    </div>
+  );
 
   return (
     <CartProvider>
@@ -54,55 +110,9 @@ export function DemoShop() {
       />
 
       <main className="flex-1">
-        <section className="bg-light">
-          <div className="mx-auto grid max-w-7xl gap-6 px-4 py-8 md:px-6 lg:grid-cols-[minmax(0,1fr)_minmax(0,2fr)]">
-            <div>
-              <h1 className="text-3xl font-extrabold leading-tight">Vælg IT-udstyr efter din rolle</h1>
-              <p className="mt-2 text-navy/80">
-                Vælg en rolle, eller skriv til rolle-agenten. Den sammensætter en pakke pr. person ud fra produkter,
-                lager og kompatibilitet.
-              </p>
-              <ul className="mt-5 space-y-3">
-                {ROLE_TILES.map((r) => (
-                  <li key={r.title}>
-                    <button
-                      onClick={() => {
-                        setPrefill(r.prompt + " ");
-                        chatRef.current?.scrollIntoView({ behavior: "smooth", block: "start" });
-                      }}
-                      className="group w-full rounded-2xl border border-line bg-white p-4 text-left transition hover:border-coral hover:shadow-md"
-                    >
-                      <div className="font-bold group-hover:text-coral-dark">{r.title}</div>
-                      <div className="mt-1 text-sm text-navy/75">{r.text}</div>
-                    </button>
-                  </li>
-                ))}
-              </ul>
-              <p className="mt-5 text-xs text-muted">
-                Produkter, varenumre og lager er hentet fra de offentlige sider på shop.ed.dk den 9. november 2026.
-                Priserne er opdigtede demopriser.
-              </p>
-            </div>
-
-            <div ref={chatRef} className="h-[720px] scroll-mt-16 lg:h-[calc(100vh-225px)] lg:min-h-[600px]">
-              <RoleChat
-                items={agent.items}
-                busy={agent.busy}
-                live={agent.live}
-                offline={agent.offline}
-                onSend={agent.send}
-                onQuick={agent.startFresh}
-                onStop={agent.stop}
-                onReset={agent.reset}
-                onOpenSettings={() => setSettings(true)}
-                prefill={prefill}
-              />
-            </div>
-          </div>
-        </section>
-
-        <div id="produkter">
-          <ProductGrid query={query} nav={nav} />
+        <HeroBanner onCta={openAgent} />
+        <div id="produkter" className="scroll-mt-10">
+          <ProductGrid query={query} nav={nav} open={open} onToggle={() => (open ? setOpen(false) : openAgent())} panel={panel} />
         </div>
       </main>
 

@@ -6,14 +6,15 @@ import { QUICK_PROMPTS, pickRecording, playRecording, saveLocalRecording } from 
 import { KEY_STORAGE, readLocal, takeRateLimitSlot, writeLocal } from "./storage";
 import type { AgentEvent, Bundle } from "./types";
 
+/** Et svar består af dele i den rækkefølge, de kom: tekst, statuslinjer og produktkort */
+export type Part = { type: "text"; text: string } | { type: "status"; text: string } | { type: "bundle"; bundle: Bundle };
+
 export type ChatItem =
   | { id: number; role: "user"; text: string }
   | {
       id: number;
       role: "assistant";
-      text: string;
-      statuses: string[];
-      bundles: Bundle[];
+      parts: Part[];
       done: boolean;
       source: "live" | "recorded";
       notice?: string;
@@ -57,13 +58,17 @@ export function useRoleAgent() {
     (e: AgentEvent) => {
       switch (e.type) {
         case "status":
-          updateLast((a) => ({ statuses: [...a.statuses, e.text] }));
+          updateLast((a) => ({ parts: [...a.parts, { type: "status", text: e.text }] }));
           break;
         case "text":
-          updateLast((a) => ({ text: a.text + e.delta }));
+          updateLast((a) => {
+            const last = a.parts[a.parts.length - 1];
+            if (last?.type === "text") return { parts: [...a.parts.slice(0, -1), { type: "text", text: last.text + e.delta }] };
+            return { parts: [...a.parts, { type: "text", text: e.delta }] };
+          });
           break;
         case "bundle":
-          updateLast((a) => ({ bundles: [...a.bundles, e.bundle] }));
+          updateLast((a) => ({ parts: [...a.parts, { type: "bundle", bundle: e.bundle }] }));
           break;
         case "error":
           updateLast(() => ({ error: e.message }));
@@ -78,7 +83,7 @@ export function useRoleAgent() {
   const playFallback = useCallback(
     async (text: string, notice?: string) => {
       const rec = pickRecording(text);
-      updateLast(() => ({ text: "", statuses: [], bundles: [], error: undefined, source: "recorded", notice }));
+      updateLast(() => ({ parts: [], error: undefined, source: "recorded", notice }));
       if (!rec) {
         updateLast(() => ({ error: "Der er ingen gemte forløb endnu.", done: true }));
         return;
@@ -99,7 +104,7 @@ export function useRoleAgent() {
       setItems((prev) => [
         ...prev,
         { id: nextId++, role: "user", text: msg },
-        { id: nextId++, role: "assistant", text: "", statuses: [], bundles: [], done: false, source: live ? "live" : "recorded" },
+        { id: nextId++, role: "assistant", parts: [], done: false, source: live ? "live" : "recorded" },
       ]);
 
       try {

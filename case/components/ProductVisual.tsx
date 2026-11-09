@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import type { Product, StockStatus } from "@/lib/types";
 import { CategoryIcon } from "./Icons";
 import { formatDate } from "@/lib/brain";
@@ -8,12 +8,19 @@ import { formatDate } from "@/lib/brain";
 /** Produktbillede fra shoppen, med et ikon som reserve, hvis billedet mangler eller ikke kan hentes */
 export function ProductImage({ product, size = "md" }: { product: Product; size?: "sm" | "md" }) {
   const [failed, setFailed] = useState(false);
+  const imgRef = useRef<HTMLImageElement>(null);
+  // Fejler billedet, før siden er startet, når onError ikke at blive kaldt. Derfor tjekkes det også her.
+  useEffect(() => {
+    const img = imgRef.current;
+    if (img && img.complete && img.naturalWidth === 0) setFailed(true);
+  }, []);
   const box = size === "sm" ? "h-16 w-16" : "h-28 w-full";
   if (product.image_url && !failed) {
     return (
       <div className={`${box} flex items-center justify-center rounded-xl bg-white`}>
         {/* eslint-disable-next-line @next/next/no-img-element */}
         <img
+          ref={imgRef}
           src={product.image_url}
           alt={product.name}
           loading="lazy"

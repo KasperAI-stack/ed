@@ -3,58 +3,69 @@
 import { useState } from "react";
 import type { Bundle } from "@/lib/types";
 import { CATEGORY_LABEL, formatKr } from "@/lib/brain";
-import { DemoPrice, ProductImage, StockBadge } from "./ProductVisual";
+import { ProductImage, StockBadge } from "./ProductVisual";
 import { useCart } from "./Cart";
 import { QuoteModal } from "./QuoteModal";
 
+/** Agentens anbefalinger vist som produktkort direkte i chatten */
 export function BundleView({ bundle }: { bundle: Bundle }) {
   const { add, setOpen } = useCart();
   const [added, setAdded] = useState(false);
   const [quote, setQuote] = useState(false);
+  const perPerson = bundle.people > 1 ? Math.round(bundle.total / bundle.people / 100) * 100 : null;
 
   return (
-    <section className="rise rounded-3xl border border-line bg-white p-5 shadow-sm">
-      <div className="flex flex-wrap items-baseline justify-between gap-2">
-        <h3 className="text-lg font-bold">{bundle.title}</h3>
-        <span className="text-sm text-muted">
-          {bundle.people} {bundle.people === 1 ? "medarbejder" : "medarbejdere"}
+    <section className="space-y-3" aria-label={bundle.title} data-bundle>
+      <div className="flex flex-wrap items-baseline justify-between gap-2 px-1">
+        <h3 className="font-bold">{bundle.title}</h3>
+        <span className="text-xs text-muted">
+          {bundle.lines.length} varer · {bundle.people} {bundle.people === 1 ? "medarbejder" : "medarbejdere"}
         </span>
       </div>
 
-      <ul className="mt-4 grid gap-3 sm:grid-cols-2">
-        {bundle.lines.map((l) => (
+      <ul className="grid gap-3 sm:grid-cols-2 xl:grid-cols-3">
+        {bundle.lines.map((l, i) => (
           <li
             key={l.product.id}
-            className={`flex gap-3 rounded-2xl border p-3 ${l.upsell ? "border-coral bg-light" : "border-line bg-white"}`}
+            style={{ animationDelay: `${i * 90}ms` }}
+            className={`rise flex flex-col rounded-2xl border bg-white p-3 ${l.upsell ? "border-coral ring-2 ring-coral/20" : "border-line"}`}
           >
-            <ProductImage product={l.product} size="sm" />
-            <div className="min-w-0 flex-1">
-              <div className="flex items-center gap-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
-                {CATEGORY_LABEL[l.product.category]}
-                {l.upsell && <span className="rounded-full bg-coral px-2 py-0.5 text-white normal-case">Forslag</span>}
-              </div>
-              <div className="font-semibold leading-snug">
-                {l.product.name.startsWith(l.product.brand) ? l.product.name : `${l.product.brand} ${l.product.name}`}
-              </div>
-              <p className="mt-1 text-sm text-navy/80">{l.reason}</p>
-              <div className="mt-2 flex flex-wrap items-end justify-between gap-2">
-                <StockBadge status={l.status} text={l.status_text} />
-                <div className="text-right">
-                  <div className="text-sm font-bold">
-                    {l.qty} × {formatKr(l.product.demo_price)}
-                  </div>
-                  <div className="text-[11px] text-muted">Demopris</div>
-                </div>
+            <div className="relative">
+              <ProductImage product={l.product} />
+              {l.upsell && (
+                <span className="absolute left-2 top-2 rounded-full bg-coral px-2 py-0.5 text-[11px] font-bold text-white">
+                  Forslag
+                </span>
+              )}
+              <span className="absolute right-2 top-2 rounded-full bg-navy px-2 py-0.5 text-[11px] font-bold text-white">
+                {l.qty} stk.
+              </span>
+            </div>
+            <div className="mt-2 text-[11px] font-semibold uppercase tracking-wide text-muted">
+              {l.product.brand} · {CATEGORY_LABEL[l.product.category]}
+            </div>
+            <div className="font-semibold leading-snug">{l.product.name}</div>
+            <p className="mt-1 text-sm text-navy/80">{l.reason}</p>
+            <div className="mt-auto space-y-1.5 pt-3">
+              <StockBadge status={l.status} text={l.status_text} />
+              <div className="flex items-baseline justify-between">
+                <span className="font-bold">{formatKr(l.product.demo_price)}</span>
+                <span className="text-[11px] uppercase tracking-wide text-muted">Demopris</span>
               </div>
             </div>
           </li>
         ))}
       </ul>
 
-      {bundle.note && <p className="mt-4 rounded-2xl bg-light px-4 py-3 text-sm">{bundle.note}</p>}
+      {bundle.note && <p className="rounded-2xl bg-light px-4 py-3 text-sm">{bundle.note}</p>}
 
-      <div className="mt-5 flex flex-wrap items-center justify-between gap-4 border-t border-line pt-4">
-        <DemoPrice amount={bundle.total} />
+      <div className="flex flex-wrap items-center justify-between gap-3 rounded-2xl bg-navy px-4 py-3 text-white">
+        <div>
+          <div className="text-lg font-bold">{formatKr(bundle.total)}</div>
+          <div className="text-xs text-white/75">
+            Demopris i alt ekskl. moms{perPerson ? `, ca. ${formatKr(perPerson)} pr. person` : ""}
+          </div>
+        </div>
         <div className="flex flex-wrap gap-2">
           <button
             onClick={() => {
@@ -68,7 +79,7 @@ export function BundleView({ bundle }: { bundle: Bundle }) {
           </button>
           <button
             onClick={() => setQuote(true)}
-            className="rounded-full border-2 border-navy px-5 py-2 font-semibold text-navy hover:bg-navy hover:text-white"
+            className="rounded-full border-2 border-white px-5 py-2 font-semibold text-white hover:bg-white hover:text-navy"
           >
             Lav tilbud
           </button>

@@ -1,7 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
-import type { ChatItem } from "@/lib/useRoleAgent";
+import type { ChatItem, Part } from "@/lib/useRoleAgent";
 import { QUICK_PROMPTS } from "@/lib/fallback";
 import { BundleView } from "./BundleView";
 import { SendIcon, SparkIcon } from "./Icons";
@@ -22,6 +22,70 @@ type Props = {
 /** Fjerner tankestreger, hvis modellen alligevel skriver en */
 const clean = (t: string) => t.replace(/\s[–—]\s/g, ", ").replace(/\n{3,}/g, "\n\n").trim();
 
+type Assistant = Extract<ChatItem, { role: "assistant" }>;
+
+/** Viser svaret i den rækkefølge, det kom: statuslinjer, tekst og produktkort */
+function AssistantMessage({ item }: { item: Assistant }) {
+  // Saml statuslinjer, der står lige efter hinanden, til én liste
+  const blocks: (Part | { type: "statuses"; list: string[] })[] = [];
+  for (const p of item.parts) {
+    const last = blocks[blocks.length - 1];
+    if (p.type === "status") {
+      if (last?.type === "statuses") last.list.push(p.text);
+      else blocks.push({ type: "statuses", list: [p.text] });
+    } else if (p.type === "text" && !clean(p.text)) {
+      continue;
+    } else {
+      blocks.push(p);
+    }
+  }
+  const lastBlock = blocks[blocks.length - 1];
+  const waiting = !item.done && (!lastBlock || lastBlock.type !== "text");
+
+  return (
+    <div className="space-y-3">
+      {item.notice && <div className="text-xs font-medium text-coral-dark">{item.notice}</div>}
+      {blocks.map((b, i) => {
+        if (b.type === "statuses")
+          return (
+            <ul key={i} className="space-y-1">
+              {b.list.map((s, j) => {
+                const active = !item.done && i === blocks.length - 1 && j === b.list.length - 1;
+                return (
+                  <li key={j} className="flex items-center gap-2 text-xs text-muted">
+                    <span className={`h-1.5 w-1.5 rounded-full ${active ? "animate-pulse bg-coral" : "bg-ok"}`} />
+                    {s}
+                  </li>
+                );
+              })}
+            </ul>
+          );
+        if (b.type === "text")
+          return (
+            <div
+              key={i}
+              className={`max-w-[95%] whitespace-pre-wrap rounded-2xl rounded-bl-md bg-light px-4 py-3 leading-relaxed ${
+                !item.done && i === blocks.length - 1 ? "typing-caret" : ""
+              }`}
+            >
+              {clean(b.text)}
+            </div>
+          );
+        if (b.type === "bundle") return <BundleView key={i} bundle={b.bundle} />;
+        return null;
+      })}
+      {waiting && (
+        <div className="flex w-fit items-center gap-1.5 rounded-2xl rounded-bl-md bg-light px-4 py-3" aria-label="Agenten arbejder">
+          <span className="h-2 w-2 animate-bounce rounded-full bg-coral [animation-delay:-0.3s]" />
+          <span className="h-2 w-2 animate-bounce rounded-full bg-coral [animation-delay:-0.15s]" />
+          <span className="h-2 w-2 animate-bounce rounded-full bg-coral" />
+        </div>
+      )}
+      {item.error && <div className="text-sm text-bad">{item.error}</div>}
+    </div>
+  );
+}
+
 export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, onReset, onOpenSettings, prefill }: Props) {
   const [text, setText] = useState("");
   const endRef = useRef<HTMLDivElement>(null);
@@ -31,9 +95,23 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
     if (prefill) setText(prefill);
   }, [prefill]);
 
+  // Rul med, mens agenten skriver. Når produktkortene kommer, vises toppen af dem i stedet.
+  const stick = useRef(true);
+  const seen = useRef({ items: 0, bundles: 0 });
   useEffect(() => {
     const el = scrollRef.current;
-    if (el) el.scrollTop = el.scrollHeight;
+    if (!el) return;
+    const bundles = el.querySelectorAll("[data-bundle]");
+    if (items.length !== seen.current.items) stick.current = true;
+    if (bundles.length > seen.current.bundles) {
+      // Chatfeltet er "relative", så offsetTop er målt fra toppen af feltet
+      const top = (bundles[bundles.length - 1] as HTMLElement).offsetTop - 12;
+      el.scrollTo({ top, behavior: "smooth" });
+      stick.current = false;
+    } else if (stick.current) {
+      el.scrollTop = el.scrollHeight;
+    }
+    seen.current = { items: items.length, bundles: bundles.length };
   }, [items]);
 
   const send = (t: string) => {
@@ -68,7 +146,7 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2 px-5 pt-4">
+      <div className="flex flex-wrap gap-2 border-b border-line px-5 py-3">
         {QUICK_PROMPTS.map((q) => (
           <button
             key={q.id}
@@ -84,7 +162,15 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
         ))}
       </div>
 
-      <div ref={scrollRef} className="min-h-[320px] flex-1 space-y-4 overflow-y-auto px-5 py-4" aria-live="polite">
+      <div
+        ref={scrollRef}
+        onScroll={(e) => {
+          const el = e.currentTarget;
+          stick.current = el.scrollHeight - el.scrollTop - el.clientHeight < 80;
+        }}
+        className="relative min-h-[320px] flex-1 space-y-4 overflow-y-auto px-5 py-4"
+        aria-live="polite"
+      >
         {items.length === 0 && (
           <div className="rounded-2xl bg-light p-4 text-sm text-navy/80">
             Skriv fx hvor mange I er, hvilken rolle I har, og hvad I allerede har. Agenten slår op i produkter, lager og
@@ -97,32 +183,7 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
               <div className="max-w-[85%] rounded-2xl rounded-br-md bg-navy px-4 py-2.5 text-white">{it.text}</div>
             </div>
           ) : (
-            <div key={it.id} className="space-y-3">
-              {it.notice && <div className="text-xs font-medium text-coral-dark">{it.notice}</div>}
-              {it.statuses.length > 0 && (
-                <ul className="space-y-1">
-                  {it.statuses.map((s, i) => (
-                    <li key={i} className="flex items-center gap-2 text-xs text-muted">
-                      <span
-                        className={`h-1.5 w-1.5 rounded-full ${!it.done && i === it.statuses.length - 1 ? "animate-pulse bg-coral" : "bg-ok"}`}
-                      />
-                      {s}
-                    </li>
-                  ))}
-                </ul>
-              )}
-              {(it.text || !it.done) && (
-                <div
-                  className={`max-w-[95%] whitespace-pre-wrap rounded-2xl rounded-bl-md bg-light px-4 py-3 leading-relaxed ${!it.done ? "typing-caret" : ""}`}
-                >
-                  {clean(it.text) || (!it.done ? "Et øjeblik, jeg kigger på det." : "")}
-                </div>
-              )}
-              {it.bundles.map((b, i) => (
-                <BundleView key={i} bundle={b} />
-              ))}
-              {it.error && <div className="text-sm text-bad">{it.error}</div>}
-            </div>
+            <AssistantMessage key={it.id} item={it} />
           ),
         )}
         <div ref={endRef} />
