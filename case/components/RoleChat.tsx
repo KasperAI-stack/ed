@@ -12,6 +12,7 @@ type Props = {
   live: boolean;
   offline: boolean;
   onSend: (text: string) => void;
+  onQuick: (text: string) => void;
   onStop: () => void;
   onReset: () => void;
   onOpenSettings: () => void;
@@ -21,7 +22,7 @@ type Props = {
 /** Fjerner tankestreger, hvis modellen alligevel skriver en */
 const clean = (t: string) => t.replace(/\s[–—]\s/g, ", ").replace(/\n{3,}/g, "\n\n").trim();
 
-export function RoleChat({ items, busy, live, offline, onSend, onStop, onReset, onOpenSettings, prefill }: Props) {
+export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, onReset, onOpenSettings, prefill }: Props) {
   const [text, setText] = useState("");
   const endRef = useRef<HTMLDivElement>(null);
   const scrollRef = useRef<HTMLDivElement>(null);
@@ -72,7 +73,10 @@ export function RoleChat({ items, busy, live, offline, onSend, onStop, onReset, 
           <button
             key={q.id}
             disabled={busy}
-            onClick={() => send(q.prompt)}
+            onClick={() => {
+              setText("");
+              onQuick(q.prompt);
+            }}
             className="rounded-full border border-coral bg-light px-3.5 py-1.5 text-sm font-semibold text-navy hover:bg-coral hover:text-white disabled:opacity-50"
           >
             {q.label}

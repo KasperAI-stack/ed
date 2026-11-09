@@ -172,5 +172,16 @@ export function useRoleAgent() {
     setItems([]);
   }, []);
 
-  return { items, busy, send, stop, reset, live, offline, apiKey, setApiKey };
+  /** Hurtigknapperne starter altid en ny samtale, så forløbet kan gemmes som reserve */
+  const startFresh = useCallback(
+    (text: string) => {
+      if (busy) return;
+      history.current = [];
+      setItems([]);
+      void send(text);
+    },
+    [busy, send],
+  );
+
+  return { items, busy, send, startFresh, stop, reset, live, offline, apiKey, setApiKey };
 }

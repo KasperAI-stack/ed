@@ -91,6 +91,7 @@ export function DemoShop() {
                 live={agent.live}
                 offline={agent.offline}
                 onSend={agent.send}
+                onQuick={agent.startFresh}
                 onStop={agent.stop}
                 onReset={agent.reset}
                 onOpenSettings={() => setSettings(true)}
