@@ -19,6 +19,8 @@ export type ChatItem =
       source: "live" | "recorded";
       notice?: string;
       error?: string;
+      /** Agenten er ikke tændt i denne browser, og der er intet gemt forløb */
+      needsKey?: boolean;
     };
 
 const SLOW_MS = 20_000;
@@ -85,7 +87,11 @@ export function useRoleAgent() {
       const rec = pickRecording(text);
       updateLast(() => ({ parts: [], error: undefined, source: "recorded", notice }));
       if (!rec) {
-        updateLast(() => ({ error: "Der er ingen gemte forløb endnu.", done: true }));
+        updateLast(() =>
+          live
+            ? { error: "Der er ingen gemte forløb endnu.", done: true }
+            : { notice: undefined, needsKey: true, done: true },
+        );
         return;
       }
       const ctrl = new AbortController();
@@ -93,7 +99,7 @@ export function useRoleAgent() {
       await playRecording(rec, handleEvent, ctrl.signal);
       updateLast(() => ({ done: true }));
     },
-    [handleEvent, updateLast],
+    [handleEvent, live, updateLast],
   );
 
   const send = useCallback(

@@ -38,15 +38,30 @@ export function SettingsModal({
     <div className="fixed inset-0 z-50 flex items-center justify-center bg-navy/40 p-4" onClick={onClose}>
       <div className="w-full max-w-lg rounded-3xl bg-white p-7 shadow-2xl" onClick={(e) => e.stopPropagation()}>
         <div className="flex items-center justify-between">
-          <h2 className="text-xl font-bold">Live-agent</h2>
+          <h2 className="text-xl font-bold">{apiKey ? "Agenten er tændt" : "Tænd agenten"}</h2>
           <button onClick={onClose} className="rounded-full p-2 hover:bg-light" aria-label="Luk">
             <CloseIcon className="h-5 w-5" />
           </button>
         </div>
         <p className="mt-3 text-sm text-navy/80">
-          Agenten kører i browseren med en Anthropic-nøgle. Nøglen gemmes kun i denne browser på denne computer og
-          sendes kun til Anthropic. Uden nøgle afspiller demoen gemte forløb.
+          Instruktionerne og produktdatabasen (105 varer og 5 roller fra shop.ed.dk) er bygget ind i siden. Det eneste,
+          agenten mangler, er en Anthropic-nøgle, så den kan tale med Claude. Nøglen gemmes kun i denne browser på denne
+          computer og sendes kun til Anthropic.
         </p>
+        {!apiKey && (
+          <ol className="mt-4 list-decimal space-y-1 pl-5 text-sm">
+            <li>
+              Gå til{" "}
+              <a href="https://console.anthropic.com/settings/keys" target="_blank" rel="noreferrer" className="font-semibold underline">
+                console.anthropic.com
+              </a>{" "}
+              og log ind.
+            </li>
+            <li>Sørg for, at der er credits under Billing, og sæt gerne et loft under Limits.</li>
+            <li>Opret en nøgle under API Keys, og kopiér den.</li>
+            <li>Sæt den ind herunder, og tryk Gem og test.</li>
+          </ol>
+        )}
 
         {apiKey ? (
           <div className="mt-5 rounded-2xl bg-light p-4">

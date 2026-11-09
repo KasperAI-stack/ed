@@ -25,7 +25,7 @@ const clean = (t: string) => t.replace(/\s[–—]\s/g, ", ").replace(/\n{3,}/g,
 type Assistant = Extract<ChatItem, { role: "assistant" }>;
 
 /** Viser svaret i den rækkefølge, det kom: statuslinjer, tekst og produktkort */
-function AssistantMessage({ item }: { item: Assistant }) {
+function AssistantMessage({ item, onOpenSettings }: { item: Assistant; onOpenSettings: () => void }) {
   // Saml statuslinjer, der står lige efter hinanden, til én liste
   const blocks: (Part | { type: "statuses"; list: string[] })[] = [];
   for (const p of item.parts) {
@@ -82,6 +82,23 @@ function AssistantMessage({ item }: { item: Assistant }) {
         </div>
       )}
       {item.error && <div className="text-sm text-bad">{item.error}</div>}
+      {item.needsKey && <TurnOn onOpenSettings={onOpenSettings} />}
+    </div>
+  );
+}
+
+/** Vises, når agenten ikke er tændt i denne browser */
+function TurnOn({ onOpenSettings }: { onOpenSettings: () => void }) {
+  return (
+    <div className="rounded-2xl border-2 border-coral bg-light p-4">
+      <div className="font-bold">Agenten er ikke tændt i denne browser</div>
+      <p className="mt-1 text-sm text-navy/80">
+        Den kører med din egen Anthropic-nøgle, som kun gemmes her på computeren. Instruktionerne og produktdatabasen er
+        allerede bygget ind.
+      </p>
+      <button onClick={onOpenSettings} className="mt-3 rounded-full bg-coral px-5 py-2 font-semibold text-white hover:bg-coral-dark">
+        Tænd agenten
+      </button>
     </div>
   );
 }
@@ -133,10 +150,12 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
         <div className="flex items-center gap-2">
           <button
             onClick={onOpenSettings}
-            className={`rounded-full px-3 py-1 text-xs font-semibold ${live ? "bg-ok/10 text-ok" : "bg-light text-coral-dark"}`}
+            className={`rounded-full px-3 py-1.5 text-xs font-semibold ${
+              live ? "bg-ok/10 text-ok" : offline ? "bg-light text-coral-dark" : "bg-coral text-white hover:bg-coral-dark"
+            }`}
             title="Indstillinger for live-agenten"
           >
-            {live ? "● Live" : offline ? "● Offline" : "● Gemte forløb"}
+            {live ? "● Live" : offline ? "● Offline" : "Tænd agenten"}
           </button>
           {items.length > 0 && (
             <button onClick={onReset} className="text-xs font-semibold text-muted underline">
@@ -171,6 +190,7 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
         className="relative min-h-[320px] flex-1 space-y-4 overflow-y-auto px-5 py-4"
         aria-live="polite"
       >
+        {items.length === 0 && !live && !offline && <TurnOn onOpenSettings={onOpenSettings} />}
         {items.length === 0 && (
           <div className="rounded-2xl bg-light p-4 text-sm text-navy/80">
             Skriv fx hvor mange I er, hvilken rolle I har, og hvad I allerede har. Agenten slår op i produkter, lager og
@@ -183,7 +203,7 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
               <div className="max-w-[85%] rounded-2xl rounded-br-md bg-navy px-4 py-2.5 text-white">{it.text}</div>
             </div>
           ) : (
-            <AssistantMessage key={it.id} item={it} />
+            <AssistantMessage key={it.id} item={it} onOpenSettings={onOpenSettings} />
           ),
         )}
         <div ref={endRef} />
