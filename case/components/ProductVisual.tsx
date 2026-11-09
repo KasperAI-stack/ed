@@ -3,7 +3,7 @@
 import { useEffect, useRef, useState } from "react";
 import type { Product, StockStatus } from "@/lib/types";
 import { CategoryIcon } from "./Icons";
-import { formatDate } from "@/lib/brain";
+import { stockStatus } from "@/lib/brain";
 
 /** Produktbillede fra shoppen, med et ikon som reserve, hvis billedet mangler eller ikke kan hentes */
 export function ProductImage({ product, size = "md" }: { product: Product; size?: "sm" | "md" }) {
@@ -56,9 +56,7 @@ export function StockBadge({ status, text }: { status: StockStatus; text: string
 
 /** Lagerstatus for ét stk., som på shoppens produktkort */
 export function productStock(p: Product): { status: StockStatus; text: string } {
-  if (p.stock_qty > 0) return { status: "in_stock", text: p.stock_qty >= 500 ? "500+ på lager" : `${p.stock_qty} på lager` };
-  if (p.incoming_date) return { status: "incoming", text: `Indgående, forventes ${formatDate(p.incoming_date)}` };
-  return { status: "out_of_stock", text: "Ikke på lager" };
+  return stockStatus(p, 1);
 }
 
 export function DemoPrice({ amount, className }: { amount: number; className?: string }) {

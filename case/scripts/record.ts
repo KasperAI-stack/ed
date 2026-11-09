@@ -26,13 +26,27 @@ async function main() {
     const events: AgentEvent[] = [];
     const t0 = Date.now();
     let firstEvent = 0;
-    await runAgent({
+    // Agenten kan stille opfølgende spørgsmål. Her svares det første tilbudte svar, højst 3 gange.
+    let state = { history: [] as Awaited<ReturnType<typeof runAgent>>["history"], pending: null as Awaited<ReturnType<typeof runAgent>>["pending"] };
+    let userText: string = q.prompt;
+    let lastOptions: string[] = [];
+    for (let turn = 0; turn < 4; turn++) {
+    if (turn > 0) {
+      events.push({ type: "user_answer", text: userText });
+      console.log(`\n  KUNDE: ${userText}`);
+    }
+    state = await runAgent({
       apiKey,
-      messages: [{ role: "user", content: q.prompt }],
+      history: state.history,
+      pending: state.pending,
+      userText,
       onEvent: (e) => {
+        if (e.type === "question") lastOptions = e.options;
         if (!firstEvent) firstEvent = Date.now() - t0;
         events.push(e);
-        if (e.type === "status") console.log(`  [${e.text}]`);
+        if (e.type === "tool_call") console.log(`  [${e.label}${e.detail ? `: ${e.detail}` : ""}]`);
+        if (e.type === "tool_result") console.log(`    -> ${e.summary}`);
+        if (e.type === "question") console.log(`\n  SPØRGSMÅL: ${e.question} ${JSON.stringify(e.options)}`);
         if (e.type === "text") process.stdout.write(e.delta);
         if (e.type === "error") console.log(`\n  FEJL: ${e.message}`);
         if (e.type === "bundle") {
@@ -45,6 +59,9 @@ async function main() {
         }
       },
     });
+    if (!state.pending || events.some((e) => e.type === "bundle")) break;
+    userText = lastOptions[0] ?? "Lav bare et forslag";
+    }
     const secs = ((Date.now() - t0) / 1000).toFixed(1);
     console.log(`\n  (første tegn efter ${(firstEvent / 1000).toFixed(1)} s, færdig efter ${secs} s)`);
     if (!events.some((e) => e.type === "bundle")) console.log("  ADVARSEL: ingen pakke i dette forløb");

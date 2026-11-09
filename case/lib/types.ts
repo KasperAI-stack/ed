@@ -23,8 +23,16 @@ export type Product = {
   compatible_with: string[];
   /** Fra "500+ på lager" -> 500, "Ikke på lager" -> 0 */
   stock_qty: number;
+  /** Fordelt på lagre: eds eget lager, lokal distributør (1-2 dage) og fjerndistributør (3-5 dage) */
+  stock_ed?: number;
+  stock_local?: number;
+  stock_remote?: number;
   /** Fra "Indgående, forventes 30-12-26" (ISO-dato) */
   incoming_date: string | null;
+  /** Antal på vej til incoming_date */
+  incoming_qty?: number;
+  /** Skærmstørrelse i tommer (bærbare, skærme, tasker og filtre) */
+  size_inch?: number | null;
   /** Rundt, opdigtet beløb. Ikke eds pris. */
   demo_price: number;
   image_url: string | null;
@@ -67,9 +75,18 @@ export type Bundle = {
 
 /** Begivenheder fra agenten til brugerfladen. Bruges også til de optagede forløb. */
 export type AgentEvent =
-  | { type: "status"; text: string }
+  /** Claudes tankegang (resumé), mens den tænker */
+  | { type: "thinking"; delta: string }
+  /** Agenten slår op i company brain */
+  | { type: "tool_call"; id: string; name: string; label: string; detail?: string }
+  /** Hvad opslaget gav */
+  | { type: "tool_result"; id: string; summary: string; ok: boolean }
   | { type: "text"; delta: string }
   | { type: "bundle"; bundle: Bundle }
+  /** Opfølgende spørgsmål til kunden med svarmuligheder */
+  | { type: "question"; id: string; question: string; options: string[] }
+  /** Kundens svar. Bruges kun i optagede forløb, så de kan afspilles med flere ture */
+  | { type: "user_answer"; text: string }
   | { type: "turn_end" }
   | { type: "error"; message: string };
 

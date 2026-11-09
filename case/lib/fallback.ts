@@ -100,25 +100,35 @@ const wait = (ms: number, signal?: AbortSignal) =>
 
 /** Afspiller et forløb med realistisk tempo */
 export async function playRecording(rec: Recording, onEvent: (e: AgentEvent) => void, signal?: AbortSignal) {
-  // Saml tekststykker, så de kan skrives ud i et jævnt tempo
+  // Saml tekst og tankegang, så de kan skrives ud i et jævnt tempo
   const merged: AgentEvent[] = [];
   for (const e of rec.events) {
     const last = merged[merged.length - 1];
-    if (e.type === "text" && last?.type === "text") last.delta += e.delta;
-    else merged.push(e.type === "text" ? { type: "text", delta: e.delta } : e);
+    if ((e.type === "text" || e.type === "thinking") && last?.type === e.type) last.delta += e.delta;
+    else merged.push(e.type === "text" || e.type === "thinking" ? { ...e } : e);
   }
   for (const e of merged) {
     if (signal?.aborted) return;
-    if (e.type === "text") {
-      const chunk = 4;
+    if (e.type === "text" || e.type === "thinking") {
+      // Tankegangen vises hurtigere end teksten
+      const chunk = e.type === "thinking" ? 12 : 4;
       for (let i = 0; i < e.delta.length; i += chunk) {
         if (signal?.aborted) return;
-        onEvent({ type: "text", delta: e.delta.slice(i, i + chunk) });
+        onEvent({ type: e.type, delta: e.delta.slice(i, i + chunk) });
         await wait(14, signal);
       }
-    } else if (e.type === "status") {
+    } else if (e.type === "tool_call") {
       onEvent(e);
-      await wait(550, signal);
+      await wait(350, signal);
+    } else if (e.type === "tool_result") {
+      onEvent(e);
+      await wait(250, signal);
+    } else if (e.type === "question") {
+      onEvent(e);
+      await wait(1400, signal);
+    } else if (e.type === "user_answer") {
+      onEvent(e);
+      await wait(500, signal);
     } else if (e.type === "bundle") {
       await wait(300, signal);
       onEvent(e);

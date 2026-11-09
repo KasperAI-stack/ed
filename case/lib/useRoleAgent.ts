@@ -1,30 +1,35 @@
 "use client";
 
 import { useCallback, useEffect, useRef, useState } from "react";
-import { runAgent, describeError, type AgentMessage } from "./agent";
+import { runAgent, describeError, type AgentMessage, type PendingQuestion } from "./agent";
 import { QUICK_PROMPTS, pickRecording, playRecording, saveLocalRecording } from "./fallback";
 import { KEY_STORAGE, readLocal, takeRateLimitSlot, writeLocal } from "./storage";
 import type { AgentEvent, Bundle } from "./types";
 
-/** Et svar består af dele i den rækkefølge, de kom: tekst, statuslinjer og produktkort */
-export type Part = { type: "text"; text: string } | { type: "status"; text: string } | { type: "bundle"; bundle: Bundle };
+/** Et svar består af dele i den rækkefølge, de kom */
+export type Part =
+  | { type: "text"; text: string }
+  | { type: "thinking"; text: string }
+  | { type: "tool"; id: string; label: string; detail?: string; summary?: string; ok?: boolean }
+  | { type: "bundle"; bundle: Bundle }
+  | { type: "question"; id: string; question: string; options: string[] };
 
-export type ChatItem =
-  | { id: number; role: "user"; text: string }
-  | {
-      id: number;
-      role: "assistant";
-      parts: Part[];
-      done: boolean;
-      source: "live" | "recorded";
-      notice?: string;
-      error?: string;
-      /** Agenten er ikke tændt i denne browser, og der er intet gemt forløb */
-      needsKey?: boolean;
-    };
+export type AssistantItem = {
+  id: number;
+  role: "assistant";
+  parts: Part[];
+  done: boolean;
+  source: "live" | "recorded";
+  notice?: string;
+  error?: string;
+  /** Agenten er ikke tændt i denne browser, og der er intet gemt forløb */
+  needsKey?: boolean;
+};
+export type ChatItem = { id: number; role: "user"; text: string } | AssistantItem;
 
 const SLOW_MS = 20_000;
 let nextId = 1;
+const newAssistant = (source: "live" | "recorded"): AssistantItem => ({ id: nextId++, role: "assistant", parts: [], done: false, source });
 
 export function useRoleAgent() {
   const [items, setItems] = useState<ChatItem[]>([]);
@@ -32,7 +37,10 @@ export function useRoleAgent() {
   const [apiKey, setApiKeyState] = useState<string | null>(null);
   const [offline, setOffline] = useState(false);
   const history = useRef<AgentMessage[]>([]);
+  const pending = useRef<PendingQuestion | null>(null);
   const abortRef = useRef<AbortController | null>(null);
+  /** Optagelse af et af de tre eksempler, så det kan bruges som reserve */
+  const recording = useRef<{ quickId: string; events: AgentEvent[] } | null>(null);
 
   useEffect(() => {
     setApiKeyState(readLocal(KEY_STORAGE));
@@ -46,12 +54,13 @@ export function useRoleAgent() {
 
   const live = !!apiKey && !offline;
 
-  const updateLast = useCallback((fn: (a: Extract<ChatItem, { role: "assistant" }>) => Partial<Extract<ChatItem, { role: "assistant" }>>) => {
+  const updateLast = useCallback((fn: (a: AssistantItem) => Partial<AssistantItem>) => {
     setItems((prev) => {
-      const copy = [...prev];
-      const last = copy[copy.length - 1];
+      const i = prev.length - 1;
+      const last = prev[i];
       if (last?.role !== "assistant") return prev;
-      copy[copy.length - 1] = { ...last, ...fn(last) };
+      const copy = [...prev];
+      copy[i] = { ...last, ...fn(last) };
       return copy;
     });
   }, []);
@@ -59,18 +68,37 @@ export function useRoleAgent() {
   const handleEvent = useCallback(
     (e: AgentEvent) => {
       switch (e.type) {
-        case "status":
-          updateLast((a) => ({ parts: [...a.parts, { type: "status", text: e.text }] }));
-          break;
-        case "text":
+        case "thinking":
+        case "text": {
+          const kind = e.type;
+          const add = e.delta;
           updateLast((a) => {
             const last = a.parts[a.parts.length - 1];
-            if (last?.type === "text") return { parts: [...a.parts.slice(0, -1), { type: "text", text: last.text + e.delta }] };
-            return { parts: [...a.parts, { type: "text", text: e.delta }] };
+            if (last?.type === kind) return { parts: [...a.parts.slice(0, -1), { type: kind, text: last.text + add }] };
+            return { parts: [...a.parts, { type: kind, text: add }] };
           });
+          break;
+        }
+        case "tool_call":
+          updateLast((a) => ({ parts: [...a.parts, { type: "tool", id: e.id, label: e.label, detail: e.detail }] }));
+          break;
+        case "tool_result":
+          updateLast((a) => ({
+            parts: a.parts.map((p) => (p.type === "tool" && p.id === e.id ? { ...p, summary: e.summary, ok: e.ok } : p)),
+          }));
           break;
         case "bundle":
           updateLast((a) => ({ parts: [...a.parts, { type: "bundle", bundle: e.bundle }] }));
+          break;
+        case "question":
+          updateLast((a) => ({ parts: [...a.parts, { type: "question", id: e.id, question: e.question, options: e.options }] }));
+          break;
+        case "user_answer":
+          // Kun i optagede forløb: kundens svar og et nyt svar fra agenten
+          setItems((prev) => {
+            const copy = prev.map((it, i) => (i === prev.length - 1 && it.role === "assistant" ? { ...it, done: true } : it));
+            return [...copy, { id: nextId++, role: "user", text: e.text }, newAssistant("recorded")];
+          });
           break;
         case "error":
           updateLast(() => ({ error: e.message }));
@@ -88,9 +116,7 @@ export function useRoleAgent() {
       updateLast(() => ({ parts: [], error: undefined, source: "recorded", notice }));
       if (!rec) {
         updateLast(() =>
-          live
-            ? { error: "Der er ingen gemte forløb endnu.", done: true }
-            : { notice: undefined, needsKey: true, done: true },
+          live ? { error: "Der er ingen gemte forløb endnu.", done: true } : { notice: undefined, needsKey: true, done: true },
         );
         return;
       }
@@ -108,14 +134,14 @@ export function useRoleAgent() {
       if (!msg || busy) return;
       setBusy(true);
       setItems((prev) => [
-        ...prev,
+        ...prev.map((it) => (it.role === "assistant" ? { ...it, done: true } : it)),
         { id: nextId++, role: "user", text: msg },
-        { id: nextId++, role: "assistant", parts: [], done: false, source: live ? "live" : "recorded" },
+        newAssistant(live ? "live" : "recorded"),
       ]);
 
       try {
         if (!live) {
-          await playFallback(msg, offline ? "Offline-tilstand: gemt forløb." : "Gemt forløb. Live-agenten er ikke slået til på denne computer.");
+          await playFallback(msg, offline ? "Offline-tilstand: gemt forløb." : "Gemt forløb. Agenten er ikke tændt på denne computer.");
           return;
         }
         const slot = takeRateLimitSlot();
@@ -123,6 +149,9 @@ export function useRoleAgent() {
           await playFallback(msg, "Grænsen på 20 kald i timen er nået, så her er det gemte forløb.");
           return;
         }
+
+        const rec = recording.current;
+        if (rec && rec.events.length > 0) rec.events.push({ type: "user_answer", text: msg });
 
         const ctrl = new AbortController();
         abortRef.current = ctrl;
@@ -135,15 +164,15 @@ export function useRoleAgent() {
           }
         }, 1000);
 
-        const recorded: AgentEvent[] = [];
-        const firstTurn = history.current.length === 0;
         try {
-          history.current = await runAgent({
+          const result = await runAgent({
             apiKey: apiKey!,
-            messages: [...history.current, { role: "user", content: msg }],
+            history: history.current,
+            userText: msg,
+            pending: pending.current,
             onEvent: (e) => {
               last = Date.now();
-              recorded.push(e);
+              rec?.events.push(e);
               handleEvent(e);
             },
             onActivity: () => {
@@ -151,18 +180,25 @@ export function useRoleAgent() {
             },
             signal: ctrl.signal,
           });
+          history.current = result.history;
+          pending.current = result.pending;
           updateLast(() => ({ done: true }));
-          // Gem et vellykket live-forløb af et af de tre eksempler som reserve på denne computer
-          const quick = QUICK_PROMPTS.find((q) => q.prompt === msg);
-          if (quick && firstTurn && recorded.some((e) => e.type === "bundle") && !recorded.some((e) => e.type === "error")) {
-            saveLocalRecording({ id: quick.id, label: quick.label, prompt: quick.prompt, recorded_at: new Date().toISOString(), events: recorded });
+
+          // Når et af de tre eksempler har vist en pakke, gemmes hele forløbet som reserve på denne computer
+          if (rec && rec.events.some((e) => e.type === "bundle") && !rec.events.some((e) => e.type === "error")) {
+            const lastBundle = rec.events.map((e) => e.type).lastIndexOf("bundle");
+            const events = rec.events.filter((e, i) => !(i > lastBundle && e.type === "question"));
+            const q = QUICK_PROMPTS.find((x) => x.id === rec.quickId)!;
+            saveLocalRecording({ id: q.id, label: q.label, prompt: q.prompt, recorded_at: new Date().toISOString(), events });
+            recording.current = null;
           }
         } catch (err) {
           if (ctrl.signal.aborted && !tooSlow) {
             updateLast(() => ({ done: true, error: "Stoppet." }));
             return;
           }
-          const why = tooSlow ? "Svaret tog over 20 sekunder" : describeError(err);
+          recording.current = null;
+          const why = tooSlow ? "Svaret tog over 20 sekunder." : describeError(err);
           await playFallback(msg, `${why} Her er det gemte forløb i stedet.`);
         } finally {
           clearInterval(watchdog);
@@ -180,6 +216,8 @@ export function useRoleAgent() {
   const reset = useCallback(() => {
     abortRef.current?.abort();
     history.current = [];
+    pending.current = null;
+    recording.current = null;
     setItems([]);
   }, []);
 
@@ -188,10 +226,13 @@ export function useRoleAgent() {
     (text: string) => {
       if (busy) return;
       history.current = [];
+      pending.current = null;
+      const q = QUICK_PROMPTS.find((x) => x.prompt === text);
+      recording.current = q && live ? { quickId: q.id, events: [] } : null;
       setItems([]);
       void send(text);
     },
-    [busy, send],
+    [busy, live, send],
   );
 
   return { items, busy, send, startFresh, stop, reset, live, offline, apiKey, setApiKey };

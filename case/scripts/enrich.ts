@@ -63,15 +63,46 @@ export function parseDanishDate(text: string | null | undefined): string | null 
   return iso ? `${iso[1]}-${iso[2]}-${iso[3]}` : null;
 }
 
+/** Lager pr. lager: eds eget lager, lokal distributør (1-2 dage) og fjerndistributør (3-5 dage) */
 function stockOf(r: Raw) {
   let qty = 0;
+  let ed = 0;
+  let local = 0;
+  let remote = 0;
   let incoming: string | null = null;
-  for (const s of r.stock) {
-    if (s.isInStock) qty += parseQty(s.stockText);
-    const date = parseDanishDate(s.incomingDate) ?? parseDanishDate(JSON.stringify(s.incoming ?? ""));
-    if ((s.isIncomingStock || s.incoming) && date && (!incoming || date < incoming)) incoming = date;
+  let incomingQty = 0;
+  for (const s of r.stock as (RawStock & { warehouseLabel?: string | null })[]) {
+    const label = (s.warehouseLabel ?? "").toLowerCase();
+    if (s.isInStock) {
+      const n = parseQty(s.stockText);
+      qty += n;
+      if (label.includes("ed-lager")) ed += n;
+      else if (label.includes("fjern")) remote += n;
+      else local += n;
+    }
+    // Varer på vej: { items: [{ qty, eta: "23-11-26" }] }
+    const items: { qty?: number; eta?: string }[] = s.incoming?.items ?? [];
+    for (const it of items) {
+      const date = parseDanishDate(it.eta);
+      if (date && (!incoming || date < incoming)) {
+        incoming = date;
+        incomingQty = Number(it.qty) || 0;
+      }
+    }
+    const d2 = parseDanishDate(s.incomingDate);
+    if (s.isIncomingStock && d2 && (!incoming || d2 < incoming)) {
+      incoming = d2;
+      incomingQty = parseQty(s.stockText);
+    }
   }
-  return { stock_qty: Math.min(qty, 999), incoming_date: incoming };
+  return {
+    stock_qty: Math.min(qty, 9999),
+    stock_ed: ed,
+    stock_local: local,
+    stock_remote: remote,
+    incoming_date: incoming,
+    incoming_qty: incoming ? incomingQty : 0,
+  };
 }
 
 // ---------- Kompatibilitet ----------
@@ -124,9 +155,11 @@ function portsOf(r: Raw): string[] {
   return ports;
 }
 
-function sizeInch(t: string): number | null {
-  const m = t.match(/(\d{2}(?:[.,]\d)?)\s*(?:"|″|''|tommer|inch|in\b)/i);
-  return m ? Number(m[1].replace(",", ".")) : null;
+function sizeInch(t: string, largest = false): number | null {
+  const all = [...t.matchAll(/(\d{2}(?:[.,]\d)?)\s*(?:"|″|''|tommer|inch|in\b)/gi)].map((m) => Number(m[1].replace(",", ".")));
+  if (!all.length) return null;
+  // En taske til "13" - 16"" passer op til 16 tommer
+  return largest ? Math.max(...all) : all[0];
 }
 
 // ---------- Demopris ----------
@@ -245,7 +278,7 @@ async function main() {
   }
 
   const products: Product[] = raw.map((r) => {
-    const { stock_qty, incoming_date } = stockOf(r);
+    const stock = stockOf(r);
     const prev = prevById.get(r.part_no);
     const name = r.name.trim();
     return {
@@ -256,9 +289,9 @@ async function main() {
       raw_spec: r.raw_spec,
       description_da: prev?.description_da ?? null,
       compatible_with: extractCompatible(r.raw_spec),
-      stock_qty,
-      incoming_date,
+      ...stock,
       demo_price: demoPrice(r),
+      size_inch: sizeInch(`${name} ${r.raw_spec}`, r.category === "bag"),
       image_url: r.image_url ?? null,
       product_url: r.product_url,
       tags: r.tags ?? [],

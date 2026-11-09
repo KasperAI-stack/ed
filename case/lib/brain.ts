@@ -98,26 +98,46 @@ export function getCompatible(productId: string) {
       }
     }
   }
+  // Tasker og skærmfiltre passer ud fra skærmstørrelsen
+  const size = base.size_inch ?? null;
+  const bags = size
+    ? PRODUCTS.filter((p) => p.category === "bag" && p.size_inch != null && p.size_inch >= size - 0.2 && p.size_inch <= size + 2.5)
+    : [];
+  const filters = size
+    ? PRODUCTS.filter(
+        (p) => p.category === "screen_protection" && p.size_inch != null && Math.abs(p.size_inch - size) <= 0.3 && !specific.includes(p),
+      )
+    : [];
   return {
     product: compact(base),
     model_key: base.model_key ?? null,
+    screen_size_inch: size,
     made_for_this_model: specific.map(compact),
     universal_docks: universal.slice(0, 6).map(compact),
+    bags_that_fit_screen_size: bags.map(compact),
+    screen_filters_that_fit_screen_size: filters.map(compact),
     note:
       "Headsets, mus, tastaturer og skærme er generelt universelle via USB-C, Bluetooth, HDMI eller DisplayPort. Tasker og skærmfiltre skal passe til skærmstørrelsen.",
   };
 }
 
-export function stockStatus(p: Product, qty: number): { status: StockStatus; text: string } {
+const fmtQty = (n: number) => (n >= 500 ? "500+" : String(n));
+
+/** Lagerstatus for et antal, inkl. leveringstid ud fra hvilket lager varen ligger på */
+export function stockStatus(p: Product, qty: number): { status: StockStatus; text: string; delivery: string | null } {
+  const near = (p.stock_ed ?? 0) + (p.stock_local ?? 0);
+  const total = p.stock_qty;
   const inc = p.incoming_date ? formatDate(p.incoming_date) : null;
-  if (p.stock_qty >= qty) return { status: "in_stock", text: p.stock_qty >= 500 ? "500+ på lager" : `${p.stock_qty} på lager` };
-  if (p.stock_qty > 0)
+  if (near >= qty) return { status: "in_stock", text: `${fmtQty(total)} på lager, levering 1-2 dage`, delivery: "1-2 dage" };
+  if (total >= qty) return { status: "in_stock", text: `${fmtQty(total)} på lager, levering 3-5 dage`, delivery: "3-5 dage" };
+  if (total > 0)
     return {
       status: "partial",
-      text: `${p.stock_qty} på lager af ${qty}${inc ? `, resten forventes ${inc}` : ""}`,
+      text: `${total} af ${qty} på lager${inc && (p.incoming_qty ?? 0) > 0 ? `, ${fmtQty(p.incoming_qty ?? 0)} mere forventes ${inc}` : ""}`,
+      delivery: null,
     };
-  if (inc) return { status: "incoming", text: `Indgående, forventes ${inc}` };
-  return { status: "out_of_stock", text: "Ikke på lager" };
+  if (inc) return { status: "incoming", text: `${fmtQty(p.incoming_qty ?? 0)} på vej, forventes ${inc}`, delivery: null };
+  return { status: "out_of_stock", text: "Ikke på lager", delivery: null };
 }
 
 export function checkStock(ids: string[], qty: number) {
@@ -134,6 +154,9 @@ export function checkStock(ids: string[], qty: number) {
       enough: s.status === "in_stock",
       status: s.status,
       status_text: s.text,
+      delivery: s.delivery,
+      stock_by_warehouse: { ed_lager: p.stock_ed ?? 0, lokal_1_2_dage: p.stock_local ?? 0, fjern_3_5_dage: p.stock_remote ?? 0 },
+      incoming_qty: p.incoming_qty ?? 0,
       incoming_date: p.incoming_date,
     };
   });
@@ -183,7 +206,10 @@ export function compact(p: Product) {
     compatible_with: p.compatible_with,
     model_key: p.model_key ?? undefined,
     ports: p.ports?.length ? p.ports : undefined,
+    size_inch: p.size_inch ?? undefined,
     stock_qty: p.stock_qty,
+    delivery: stockStatus(p, 1).delivery,
+    incoming_qty: p.incoming_qty || undefined,
     incoming_date: p.incoming_date,
     demo_price: p.demo_price,
   };

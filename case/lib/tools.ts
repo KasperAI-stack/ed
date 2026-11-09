@@ -19,7 +19,27 @@ import type { Bundle, Category } from "./types";
 
 const CATEGORIES = Object.keys(CATEGORY_LABEL) as [Category, ...Category[]];
 
+/** Navnet på værktøjet, hvor agenten stiller kunden et opfølgende spørgsmål */
+export const ASK_TOOL = "ask_customer";
+
 export const TOOLS: Anthropic.Tool[] = [
+  {
+    name: ASK_TOOL,
+    description:
+      "Stiller kunden ét kort opfølgende spørgsmål og venter på svaret. Brug det, når svaret vil ændre dit valg af udstyr. Giv 2 til 4 korte svarmuligheder, som kunden kan klikke på. Kunden kan også svare frit. Kald ikke andre værktøjer i samme tur.",
+    input_schema: {
+      type: "object",
+      properties: {
+        question: { type: "string", description: "Spørgsmålet på dansk, én sætning" },
+        options: {
+          type: "array",
+          items: { type: "string" },
+          description: "2 til 4 korte svarmuligheder på dansk, fx ['Windows', 'Mac', 'Ved ikke']",
+        },
+      },
+      required: ["question", "options"],
+    },
+  },
   {
     name: "get_role",
     description:
@@ -148,61 +168,103 @@ const Inputs = {
 
 export type ToolName = keyof typeof Inputs;
 
-/** Kort statuslinje til brugerfladen, mens værktøjet kører */
-export function toolStatus(name: string, input: unknown): string {
+/** Kort beskrivelse af opslaget til "Bag kulissen" i chatten */
+export function toolLabel(name: string, input: unknown): { label: string; detail?: string } {
   const i = (input ?? {}) as Record<string, unknown>;
+  const name_ = (id: unknown) => {
+    const p = getProduct(String(id ?? ""));
+    return p ? p.name : String(id ?? "");
+  };
   switch (name) {
     case "get_role":
-      return "Henter rollens behov";
+      return { label: "Henter rollens behov", detail: String(i.role_id ?? "") };
     case "search_products": {
       const cat = CATEGORY_LABEL[i.category as Category] ?? "produkter";
-      return `Søger i ${cat.toLowerCase()}${i.query ? `: ${String(i.query)}` : ""}`;
+      const extra = [i.query ? `"${String(i.query)}"` : null, i.min_stock ? `mindst ${String(i.min_stock)} på lager` : null]
+        .filter(Boolean)
+        .join(", ");
+      return { label: `Søger i ${cat.toLowerCase()}`, detail: extra || undefined };
     }
     case "get_product":
-      return `Slår varenummer ${String(i.id ?? "")} op`;
+      return { label: "Slår en vare op", detail: name_(i.id) };
     case "get_compatible":
-      return "Tjekker kompatibilitet med den bærbare";
-    case "check_stock":
-      return `Tjekker lager for ${String(i.qty ?? "")} stk.`;
+      return { label: "Tjekker kompatibilitet", detail: name_(i.product_id) };
+    case "check_stock": {
+      const ids = Array.isArray(i.product_ids) ? i.product_ids : [];
+      return { label: `Tjekker lager for ${String(i.qty ?? "")} stk.`, detail: `${ids.length} varer` };
+    }
     case "build_bundle":
-      return "Sammensætter pakken";
+      return { label: "Sammensætter pakken", detail: String(i.title ?? "") };
     default:
-      return "Arbejder";
+      return { label: name };
   }
 }
 
-export type ToolOutcome = { content: string; isError?: boolean; bundle?: Bundle };
+/** content går til Claude, summary vises for kunden under "Bag kulissen" */
+export type ToolOutcome = { content: string; summary: string; isError?: boolean; bundle?: Bundle };
 
 export function executeTool(name: string, rawInput: unknown): ToolOutcome {
-  if (!(name in Inputs)) return { content: `Ukendt værktøj: ${name}`, isError: true };
+  if (!(name in Inputs)) return { content: `Ukendt værktøj: ${name}`, summary: "Ukendt opslag", isError: true };
   const parsed = Inputs[name as ToolName].safeParse(rawInput);
   if (!parsed.success) {
-    return { content: JSON.stringify({ INVALID_INPUT: parsed.error.issues.map((x) => x.message) }), isError: true };
+    return {
+      content: JSON.stringify({ INVALID_INPUT: parsed.error.issues.map((x) => x.message) }),
+      summary: "Ugyldigt opslag, agenten prøver igen",
+      isError: true,
+    };
   }
   const input = parsed.data as any;
   switch (name as ToolName) {
     case "get_role": {
       const r = getRole(input.role_id);
-      return r ? { content: JSON.stringify(r) } : { content: "Rollen findes ikke.", isError: true };
+      return r
+        ? { content: JSON.stringify(r), summary: `${r.name}: ${Object.keys(r.base_bundle).length} kategorier i basispakken` }
+        : { content: "Rollen findes ikke.", summary: "Rollen findes ikke", isError: true };
     }
     case "search_products": {
-      const list = searchProducts(input).map(compact);
-      return { content: JSON.stringify({ count: list.length, products: list }) };
+      const found = searchProducts(input);
+      const list = found.map(compact);
+      const inStock = found.filter((p) => p.stock_qty > 0).length;
+      const top = found.slice(0, 3).map((p) => p.name).join(", ");
+      return {
+        content: JSON.stringify({ count: list.length, products: list }),
+        summary: list.length ? `${list.length} fundet, ${inStock} på lager. Fx ${top}` : "Ingen varer fundet",
+      };
     }
     case "get_product": {
       const p = getProduct(input.id);
-      return p ? { content: JSON.stringify(compact(p)) } : { content: "Varenummeret findes ikke.", isError: true };
+      return p
+        ? { content: JSON.stringify(compact(p)), summary: `${p.name}, ${p.stock_qty > 0 ? `${p.stock_qty} på lager` : "ikke på lager"}` }
+        : { content: "Varenummeret findes ikke.", summary: "Varenummeret findes ikke", isError: true };
     }
     case "get_compatible": {
       const r = getCompatible(input.product_id);
-      return r ? { content: JSON.stringify(r) } : { content: "Varenummeret findes ikke.", isError: true };
+      if (!r) return { content: "Varenummeret findes ikke.", summary: "Varenummeret findes ikke", isError: true };
+      const parts = [
+        `${r.made_for_this_model.length} lavet til ${r.model_key ?? "modellen"}`,
+        `${r.universal_docks.length} universelle docks`,
+        r.screen_size_inch ? `${r.bags_that_fit_screen_size.length} tasker og ${r.screen_filters_that_fit_screen_size.length} filtre til ${r.screen_size_inch}"` : null,
+      ].filter(Boolean);
+      return { content: JSON.stringify(r), summary: parts.join(", ") };
     }
-    case "check_stock":
-      return { content: JSON.stringify(checkStock(input.product_ids, input.qty)) };
+    case "check_stock": {
+      const rows = checkStock(input.product_ids, input.qty);
+      const ok = rows.filter((r) => r.found && r.enough).length;
+      const notOk = rows.filter((r) => r.found && !r.enough).map((r) => r.name);
+      const unknown = rows.filter((r) => !r.found).length;
+      return {
+        content: JSON.stringify(rows),
+        summary: `${ok} af ${rows.length} kan leveres i ${input.qty} stk.${notOk.length ? ` Ikke nok af: ${notOk.join(", ")}.` : ""}${unknown ? ` ${unknown} varenummer findes ikke.` : ""}`,
+      };
+    }
     case "build_bundle": {
       const { bundle, missing } = buildBundle(input);
       if (bundle.lines.length === 0) {
-        return { content: "Ingen af varenumrene findes. Søg igen og brug kun varenumre fra værktøjerne.", isError: true };
+        return {
+          content: "Ingen af varenumrene findes. Søg igen og brug kun varenumre fra værktøjerne.",
+          summary: "Ingen gyldige varenumre, agenten søger igen",
+          isError: true,
+        };
       }
       const summary = {
         ok: true,
@@ -211,7 +273,11 @@ export function executeTool(name: string, rawInput: unknown): ToolOutcome {
         lines: bundle.lines.map((l) => ({ id: l.product.id, qty: l.qty, status: l.status_text })),
         missing_ids: missing,
       };
-      return { content: JSON.stringify(summary), bundle };
+      return {
+        content: JSON.stringify(summary),
+        summary: `${bundle.lines.length} varer, ${bundle.total.toLocaleString("da-DK")} kr. i demopris${missing.length ? `. ${missing.length} ukendte varenumre sorteret fra` : ""}`,
+        bundle,
+      };
     }
   }
 }
