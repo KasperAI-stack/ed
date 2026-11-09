@@ -3,9 +3,52 @@
  * hvis der ikke er en nøgle, eller hvis adressen har ?offline=1.
  */
 import recordingsData from "@/data/fallback.json";
+import { readLocal, writeLocal } from "./storage";
 import type { AgentEvent, Recording } from "./types";
 
+/** Forløb, der følger med siden (optaget på forhånd) */
 export const RECORDINGS = recordingsData as Recording[];
+
+const LOCAL_RECORDINGS = "ed-demo-recordings";
+
+/** Forløb optaget live i denne browser. De bruges før de medfølgende. */
+export function localRecordings(): Recording[] {
+  try {
+    const data = JSON.parse(readLocal(LOCAL_RECORDINGS) ?? "{}") as Record<string, Recording>;
+    return QUICK_PROMPTS.map((q) => data[q.id]).filter(Boolean);
+  } catch {
+    return [];
+  }
+}
+
+export function saveLocalRecording(rec: Recording) {
+  let data: Record<string, Recording> = {};
+  try {
+    data = JSON.parse(readLocal(LOCAL_RECORDINGS) ?? "{}");
+  } catch {
+    data = {};
+  }
+  data[rec.id] = rec;
+  writeLocal(LOCAL_RECORDINGS, JSON.stringify(data));
+}
+
+/** Alle forløb: lokale først, derefter de medfølgende for de eksempler, der mangler */
+export function allRecordings(): Recording[] {
+  const local = localRecordings();
+  const ids = new Set(local.map((r) => r.id));
+  return [...local, ...RECORDINGS.filter((r) => !ids.has(r.id))];
+}
+
+/** Hent forløbene som fil i samme format som data/fallback.json */
+export function downloadRecordings() {
+  const list = QUICK_PROMPTS.map((q) => allRecordings().find((r) => r.id === q.id)).filter(Boolean);
+  const blob = new Blob([JSON.stringify(list, null, 2)], { type: "application/json" });
+  const a = document.createElement("a");
+  a.href = URL.createObjectURL(blob);
+  a.download = "fallback.json";
+  a.click();
+  setTimeout(() => URL.revokeObjectURL(a.href), 1000);
+}
 
 export const QUICK_PROMPTS = [
   {
@@ -27,6 +70,7 @@ export const QUICK_PROMPTS = [
 
 /** Finder det gemte forløb, der passer bedst til en besked */
 export function pickRecording(text: string): Recording | null {
+  const RECORDINGS = allRecordings();
   if (RECORDINGS.length === 0) return null;
   const t = text.toLowerCase();
   const exact = RECORDINGS.find((r) => r.prompt.toLowerCase() === t.trim());

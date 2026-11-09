@@ -2,7 +2,7 @@
 
 import { useCallback, useEffect, useRef, useState } from "react";
 import { runAgent, describeError, type AgentMessage } from "./agent";
-import { pickRecording, playRecording } from "./fallback";
+import { QUICK_PROMPTS, pickRecording, playRecording, saveLocalRecording } from "./fallback";
 import { KEY_STORAGE, readLocal, takeRateLimitSlot, writeLocal } from "./storage";
 import type { AgentEvent, Bundle } from "./types";
 
@@ -124,12 +124,15 @@ export function useRoleAgent() {
           }
         }, 1000);
 
+        const recorded: AgentEvent[] = [];
+        const firstTurn = history.current.length === 0;
         try {
           history.current = await runAgent({
             apiKey: apiKey!,
             messages: [...history.current, { role: "user", content: msg }],
             onEvent: (e) => {
               last = Date.now();
+              recorded.push(e);
               handleEvent(e);
             },
             onActivity: () => {
@@ -138,6 +141,11 @@ export function useRoleAgent() {
             signal: ctrl.signal,
           });
           updateLast(() => ({ done: true }));
+          // Gem et vellykket live-forløb af et af de tre eksempler som reserve på denne computer
+          const quick = QUICK_PROMPTS.find((q) => q.prompt === msg);
+          if (quick && firstTurn && recorded.some((e) => e.type === "bundle") && !recorded.some((e) => e.type === "error")) {
+            saveLocalRecording({ id: quick.id, label: quick.label, prompt: quick.prompt, recorded_at: new Date().toISOString(), events: recorded });
+          }
         } catch (err) {
           if (ctrl.signal.aborted && !tooSlow) {
             updateLast(() => ({ done: true, error: "Stoppet." }));

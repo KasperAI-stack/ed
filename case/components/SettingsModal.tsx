@@ -3,6 +3,7 @@
 import { useState } from "react";
 import Anthropic from "@anthropic-ai/sdk";
 import { MODEL } from "@/lib/agent";
+import { QUICK_PROMPTS, RECORDINGS, downloadRecordings, localRecordings } from "@/lib/fallback";
 import { CloseIcon } from "./Icons";
 
 export function SettingsModal({
@@ -17,6 +18,7 @@ export function SettingsModal({
   const [value, setValue] = useState("");
   const [state, setState] = useState<"idle" | "testing" | "ok" | "fail">("idle");
   const [msg, setMsg] = useState("");
+  const [local] = useState(() => localRecordings());
 
   async function test(key: string) {
     setState("testing");
@@ -95,6 +97,29 @@ export function SettingsModal({
           </form>
         )}
         {msg && <p className={`mt-3 text-sm ${state === "fail" ? "text-bad" : "text-navy"}`}>{msg}</p>}
+        <div className="mt-6 border-t border-line pt-4">
+          <div className="text-sm font-semibold">Gemte forløb til reserve-tilstanden</div>
+          <ul className="mt-2 space-y-1 text-sm">
+            {QUICK_PROMPTS.map((q) => {
+              const here = local.find((r) => r.id === q.id);
+              const bundled = RECORDINGS.find((r) => r.id === q.id);
+              return (
+                <li key={q.id} className="flex justify-between gap-3">
+                  <span>{q.label}</span>
+                  <span className={here || bundled ? "text-ok" : "text-bad"}>
+                    {here ? "optaget i denne browser" : bundled ? "følger med siden" : "mangler"}
+                  </span>
+                </li>
+              );
+            })}
+          </ul>
+          <p className="mt-2 text-xs text-muted">
+            Når du kører et af de tre eksempler live, gemmes forløbet automatisk her og bruges, hvis nettet svigter.
+          </p>
+          <button onClick={downloadRecordings} className="mt-3 rounded-full border-2 border-navy px-4 py-1.5 text-sm font-semibold">
+            Hent forløbene som fil
+          </button>
+        </div>
         <p className="mt-5 text-xs text-muted">
           Tip: Tilføj <code className="rounded bg-light px-1">?offline=1</code> til adressen for altid at bruge de gemte forløb.
         </p>
