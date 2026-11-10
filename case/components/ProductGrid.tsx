@@ -7,6 +7,41 @@ import { DemoPrice, ProductImage, StockBadge, productStock } from "./ProductVisu
 import { useCart } from "./Cart";
 import { NAV } from "./ShopChrome";
 import { SparkIcon } from "./Icons";
+import Link from "next/link";
+import { AI_PRODUCTS, type AiProduct } from "@/lib/aiProducts";
+import { AiArt } from "./AiIllustrations";
+
+/** Kort til en af agenterne, opbygget som de andre produktkort */
+function AiProductCard({ p }: { p: AiProduct }) {
+  const href = `/demo/produkt/${p.slug}/`;
+  return (
+    <li className="flex flex-col rounded-2xl border border-line bg-white p-4 transition hover:shadow-md">
+      <Link href={href} className="block h-28 overflow-hidden rounded-xl bg-[#f2f2f8]" aria-label={p.name}>
+        <AiArt kind={p.illustration} className="h-full w-full" />
+      </Link>
+      <div className="mt-3 text-[11px] font-semibold uppercase tracking-wide text-muted">ed · AI-agenter</div>
+      <Link href={href} className="mt-0.5 font-semibold leading-snug hover:text-coral-dark">
+        {p.name}
+      </Link>
+      <p className="mt-1 line-clamp-2 text-sm text-navy/70" title={p.shortText}>
+        {p.shortText}
+      </p>
+      <div className="mt-1 text-xs text-muted">Varenr. {p.id}</div>
+      <div className="mt-auto pt-3">
+        <StockBadge status="in_stock" text={p.stockText} />
+        <div className="mt-2 flex items-end justify-between gap-2">
+          <div>
+            <div className="text-lg font-bold text-navy">Efter aftale</div>
+            <div className="text-xs font-medium uppercase tracking-wide text-muted">Pris</div>
+          </div>
+          <Link href={href} className="rounded-full bg-coral px-4 py-2 text-sm font-semibold text-white hover:bg-coral-dark">
+            Se produkt
+          </Link>
+        </div>
+      </div>
+    </li>
+  );
+}
 
 function ProductCard({ p }: { p: Product }) {
   const { add } = useCart();
@@ -108,18 +143,29 @@ export function ProductGrid({
   panel: ReactNode;
 }) {
   const cols = useColumns();
+  const q = query.trim().toLowerCase();
+  const aiList = useMemo(
+    () =>
+      nav && nav !== "ai"
+        ? []
+        : AI_PRODUCTS.filter((p) => !q || q.split(/\s+/).every((t) => `${p.name} ${p.shortText} ${p.specs.join(" ")} ${p.id} ai agent`.toLowerCase().includes(t))),
+    [nav, q],
+  );
   const list = useMemo(() => {
+    if (nav === "ai") return [];
     const cats = nav ? NAV.find((n) => n.id === nav)?.cats ?? [] : null;
-    const q = query.trim().toLowerCase();
     return PRODUCTS.filter((p) => !cats || cats.includes(p.category))
       .filter((p) => !q || q.split(/\s+/).every((t) => `${p.brand} ${p.name} ${p.raw_spec} ${p.id}`.toLowerCase().includes(t)))
       .sort((a, b) => Number(!!b.image_url) - Number(!!a.image_url) || Number(b.stock_qty > 0) - Number(a.stock_qty > 0));
-  }, [query, nav]);
+  }, [q, nav]);
 
   // Boksen står som nr. 2 i gitteret. Panelet foldes ud som en hel række lige under boksens række.
   const shown = list.slice(0, 40);
-  const boxAt = Math.min(BOX_INDEX, shown.length);
-  const cells: ReactNode[] = shown.map((p) => <ProductCard key={p.id} p={p} />);
+  const cells: ReactNode[] = [
+    ...aiList.map((p) => <AiProductCard key={p.id} p={p} />),
+    ...shown.map((p) => <ProductCard key={p.id} p={p} />),
+  ];
+  const boxAt = Math.min(BOX_INDEX, cells.length);
   cells.splice(boxAt, 0, <RoleBox key="rolebox" open={open} onToggle={onToggle} />);
   if (open) {
     const rowEnd = Math.min((Math.floor(boxAt / cols) + 1) * cols, cells.length);
@@ -137,9 +183,9 @@ export function ProductGrid({
     <section className="mx-auto max-w-7xl px-4 py-10 md:px-6">
       <div className="flex items-baseline justify-between">
         <h2 className="text-2xl font-bold">{title}</h2>
-        <span className="text-sm text-muted">{list.length} varer</span>
+        <span className="text-sm text-muted">{list.length + aiList.length} varer</span>
       </div>
-      {list.length === 0 && <p className="mt-3 text-muted">Ingen varer matcher søgningen.</p>}
+      {list.length + aiList.length === 0 && <p className="mt-3 text-muted">Ingen varer matcher søgningen.</p>}
       <ul className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">{cells}</ul>
     </section>
   );

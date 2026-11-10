@@ -42,6 +42,16 @@ export function DemoShop() {
   const [open, setOpen] = useState(false);
   const [scrollTick, setScrollTick] = useState(0);
 
+  // Links fra produktsiderne: ?kat=ai viser AI-agenterne, ?agent=1 åbner rolle-agenten
+  useEffect(() => {
+    const q = new URLSearchParams(window.location.search);
+    if (q.get("kat")) setNav(q.get("kat"));
+    if (q.get("agent") === "1") {
+      setOpen(true);
+      setScrollTick((n) => n + 1);
+    }
+  }, []);
+
   // Rul ned til rolle-agenten, når den foldes ud
   useEffect(() => {
     if (!open) return;

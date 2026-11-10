@@ -14,7 +14,8 @@ export function ConceptBanner() {
   );
 }
 
-export const NAV: { id: Category | "mus-tastatur" | "tasker"; label: string; cats: Category[] }[] = [
+export const NAV: { id: Category | "mus-tastatur" | "tasker" | "ai"; label: string; cats: Category[] }[] = [
+  { id: "ai", label: "AI-agenter", cats: [] },
   { id: "laptop", label: "Bærbare", cats: ["laptop"] },
   { id: "dock", label: "Dockingstationer", cats: ["dock"] },
   { id: "monitor", label: "Skærme", cats: ["monitor"] },
