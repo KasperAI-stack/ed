@@ -80,7 +80,7 @@ function BehindScenes({ steps, running }: { steps: Step[]; running: boolean }) {
   );
 }
 
-/** Opfølgende spørgsmål med svarknapper */
+/** Alle opfølgende spørgsmål på én gang. Kunden vælger et svar til hvert og sender dem samlet. */
 function QuestionCard({
   q,
   canAnswer,
@@ -90,24 +90,94 @@ function QuestionCard({
   canAnswer: boolean;
   onAnswer: (t: string) => void;
 }) {
+  const [picked, setPicked] = useState<Record<number, string>>({});
+  const [other, setOther] = useState<Record<number, string>>({});
+  const answerOf = (i: number) => (other[i]?.trim() ? other[i].trim() : picked[i]);
+  const answered = q.questions.filter((_, i) => answerOf(i)).length;
+  const submit = () => {
+    const lines = q.questions.map((x, i) => `${x.question} ${answerOf(i) ?? "Ved ikke"}`);
+    onAnswer(lines.join("\n"));
+  };
+
   return (
-    <div className="max-w-[95%] rounded-2xl rounded-bl-md border-2 border-coral bg-light px-4 py-3">
-      <div className="font-semibold leading-snug">{q.question}</div>
-      {q.options.length > 0 && (
-        <div className="mt-3 flex flex-wrap gap-2">
-          {q.options.map((o) => (
-            <button
-              key={o}
-              disabled={!canAnswer}
-              onClick={() => onAnswer(o)}
-              className="rounded-full border border-coral bg-white px-3.5 py-1.5 text-sm font-semibold text-navy hover:bg-coral hover:text-white disabled:cursor-default disabled:opacity-50 disabled:hover:bg-white disabled:hover:text-navy"
-            >
-              {o}
-            </button>
-          ))}
+    <div className="max-w-[95%] rounded-2xl rounded-bl-md border-2 border-coral bg-light px-4 py-4">
+      {q.intro && <p className="mb-3 leading-relaxed">{q.intro}</p>}
+      <ol className="space-y-4">
+        {q.questions.map((x, i) => (
+          <li key={i}>
+            <div className="font-semibold leading-snug">
+              <span className="mr-1.5 text-coral">{i + 1}.</span>
+              {x.question}
+            </div>
+            <div className="mt-2 flex flex-wrap gap-2">
+              {x.options.map((o) => {
+                const on = picked[i] === o && !other[i]?.trim();
+                return (
+                  <button
+                    key={o}
+                    disabled={!canAnswer}
+                    onClick={() => {
+                      setPicked((p) => ({ ...p, [i]: o }));
+                      setOther((p) => ({ ...p, [i]: "" }));
+                    }}
+                    className={`rounded-full border px-3.5 py-1.5 text-sm font-semibold disabled:cursor-default disabled:opacity-60 ${
+                      on ? "border-coral bg-coral text-white" : "border-coral bg-white text-navy hover:bg-coral/10"
+                    }`}
+                  >
+                    {o}
+                  </button>
+                );
+              })}
+              {canAnswer && (
+                <input
+                  value={other[i] ?? ""}
+                  onChange={(e) => setOther((p) => ({ ...p, [i]: e.target.value }))}
+                  placeholder="Andet"
+                  className="w-32 rounded-full border border-line bg-white px-3.5 py-1.5 text-sm outline-none focus:border-coral"
+                  aria-label={`Andet svar på spørgsmål ${i + 1}`}
+                />
+              )}
+            </div>
+          </li>
+        ))}
+      </ol>
+      {canAnswer && (
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          <button onClick={submit} disabled={answered === 0} className="rounded-full bg-navy px-5 py-2 font-semibold text-white disabled:opacity-40">
+            Send svar
+          </button>
+          <span className="text-xs text-muted">
+            {answered} af {q.questions.length} besvaret. Spørgsmål uden svar sendes som &quot;Ved ikke&quot;.
+          </span>
         </div>
       )}
-      {canAnswer && <div className="mt-2 text-xs text-muted">Eller skriv dit eget svar nedenfor.</div>}
+    </div>
+  );
+}
+
+/** Første spørgsmål i chatten */
+const TITLES = ["Sælger", "Kundeservice eller administration", "Grafiker eller marketing", "Udvikler eller IT", "Leder eller økonomi"];
+
+function TitleQuestion({ disabled, onAnswer }: { disabled: boolean; onAnswer: (t: string) => void }) {
+  return (
+    <div className="max-w-[95%] rounded-2xl rounded-bl-md bg-light px-4 py-4">
+      <p className="leading-relaxed">
+        Hej. Jeg sammensætter IT-udstyr ud fra, hvad man laver i hverdagen, og tjekker lager og kompatibilitet undervejs.
+      </p>
+      <div className="mt-3 text-lg font-bold">Hvad er din titel?</div>
+      <div className="mt-3 flex flex-wrap gap-2">
+        {TITLES.map((t) => (
+          <button
+            key={t}
+            disabled={disabled}
+            onClick={() => onAnswer(`Titel: ${t}`)}
+            className="rounded-full border border-coral bg-white px-3.5 py-1.5 text-sm font-semibold text-navy hover:bg-coral hover:text-white disabled:opacity-50"
+          >
+            {t}
+          </button>
+        ))}
+      </div>
+      <div className="mt-2 text-xs text-muted">Eller skriv din titel nedenfor, fx salgschef eller indkøber.</div>
     </div>
   );
 }
@@ -254,7 +324,8 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
         </div>
       </div>
 
-      <div className="flex flex-wrap gap-2 border-b border-line px-5 py-3">
+      <div className="flex flex-wrap items-center gap-2 border-b border-line px-5 py-3">
+        <span className="text-xs font-semibold text-muted">Prøv et eksempel:</span>
         {QUICK_PROMPTS.map((q) => (
           <button
             key={q.id}
@@ -280,16 +351,11 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
         aria-live="polite"
       >
         {items.length === 0 && !live && !offline && <TurnOn onOpenSettings={onOpenSettings} />}
-        {items.length === 0 && (
-          <div className="rounded-2xl bg-light p-4 text-sm text-navy/80">
-            Skriv fx hvor mange I er, hvilken rolle I har, og hvad I allerede har. Agenten slår op i produkter, lager og
-            kompatibilitet og sammensætter en pakke pr. person.
-          </div>
-        )}
+        {items.length === 0 && <TitleQuestion disabled={busy} onAnswer={(t) => send(t)} />}
         {items.map((it) =>
           it.role === "user" ? (
             <div key={it.id} className="flex justify-end">
-              <div className="max-w-[85%] rounded-2xl rounded-br-md bg-navy px-4 py-2.5 text-white">{it.text}</div>
+              <div className="max-w-[85%] whitespace-pre-line rounded-2xl rounded-br-md bg-navy px-4 py-2.5 text-white">{it.text}</div>
             </div>
           ) : (
             <AssistantMessage
@@ -315,7 +381,7 @@ export function RoleChat({ items, busy, live, offline, onSend, onQuick, onStop, 
         <input
           value={text}
           onChange={(e) => setText(e.target.value)}
-          placeholder="Fx: Vi har 3 nye i kundeservice, der starter i januar"
+          placeholder={items.length === 0 ? "Skriv din titel, eller beskriv hvem der skal have udstyr" : "Skriv til rolle-agenten"}
           className="flex-1 rounded-full border border-line px-5 py-3 outline-none focus:border-coral"
           aria-label="Besked til rolle-agenten"
         />

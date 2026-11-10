@@ -83,8 +83,8 @@ export type AgentEvent =
   | { type: "tool_result"; id: string; summary: string; ok: boolean }
   | { type: "text"; delta: string }
   | { type: "bundle"; bundle: Bundle }
-  /** Opfølgende spørgsmål til kunden med svarmuligheder */
-  | { type: "question"; id: string; question: string; options: string[] }
+  /** Alle opfølgende spørgsmål til kunden på én gang, hver med svarmuligheder */
+  | { type: "question"; id: string; intro?: string; questions: { question: string; options: string[] }[] }
   /** Kundens svar. Bruges kun i optagede forløb, så de kan afspilles med flere ture */
   | { type: "user_answer"; text: string }
   | { type: "turn_end" }

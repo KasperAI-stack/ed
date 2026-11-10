@@ -12,7 +12,7 @@ export type Part =
   | { type: "thinking"; text: string }
   | { type: "tool"; id: string; label: string; detail?: string; summary?: string; ok?: boolean }
   | { type: "bundle"; bundle: Bundle }
-  | { type: "question"; id: string; question: string; options: string[] };
+  | { type: "question"; id: string; intro?: string; questions: { question: string; options: string[] }[] };
 
 export type AssistantItem = {
   id: number;
@@ -90,9 +90,13 @@ export function useRoleAgent() {
         case "bundle":
           updateLast((a) => ({ parts: [...a.parts, { type: "bundle", bundle: e.bundle }] }));
           break;
-        case "question":
-          updateLast((a) => ({ parts: [...a.parts, { type: "question", id: e.id, question: e.question, options: e.options }] }));
+        case "question": {
+          // Ældre optagelser havde ét spørgsmål pr. begivenhed
+          const legacy = e as unknown as { question?: string; options?: string[] };
+          const questions = e.questions ?? (legacy.question ? [{ question: legacy.question, options: legacy.options ?? [] }] : []);
+          updateLast((a) => ({ parts: [...a.parts, { type: "question", id: e.id, intro: e.intro, questions }] }));
           break;
+        }
         case "user_answer":
           // Kun i optagede forløb: kundens svar og et nyt svar fra agenten
           setItems((prev) => {

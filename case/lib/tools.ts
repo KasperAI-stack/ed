@@ -26,18 +26,29 @@ export const TOOLS: Anthropic.Tool[] = [
   {
     name: ASK_TOOL,
     description:
-      "Stiller kunden ét kort opfølgende spørgsmål og venter på svaret. Brug det, når svaret vil ændre dit valg af udstyr. Giv 2 til 4 korte svarmuligheder, som kunden kan klikke på. Kunden kan også svare frit. Kald ikke andre værktøjer i samme tur.",
+      "Stiller kunden alle dine opfølgende spørgsmål på én gang og venter på svarene. Brug det, når svarene vil ændre dit valg af udstyr. 1 til 4 spørgsmål, hver med 2 til 4 korte svarmuligheder, som kunden kan klikke på. Kunden kan også svare frit. Kald ikke andre værktøjer i samme tur.",
     input_schema: {
       type: "object",
       properties: {
-        question: { type: "string", description: "Spørgsmålet på dansk, én sætning" },
-        options: {
+        intro: { type: "string", description: "Én kort sætning om, hvad du har forstået indtil nu" },
+        questions: {
           type: "array",
-          items: { type: "string" },
-          description: "2 til 4 korte svarmuligheder på dansk, fx ['Windows', 'Mac', 'Ved ikke']",
+          description: "1 til 4 spørgsmål",
+          items: {
+            type: "object",
+            properties: {
+              question: { type: "string", description: "Spørgsmålet på dansk, én sætning" },
+              options: {
+                type: "array",
+                items: { type: "string" },
+                description: "2 til 4 korte svarmuligheder på dansk, fx ['Windows', 'Mac', 'Ved ikke']",
+              },
+            },
+            required: ["question", "options"],
+          },
         },
       },
-      required: ["question", "options"],
+      required: ["questions"],
     },
   },
   {

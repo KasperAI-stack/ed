@@ -7,8 +7,8 @@
  * Gangen i én tur:
  * 1. Claude tænker (resuméet vises som "tankegang" i chatten) og kalder værktøjer.
  * 2. Værktøjerne slår op i company brain, og et kort resultat vises under "Bag kulissen".
- * 3. Kalder Claude ask_customer, stopper turen, og spørgsmålet vises med svarknapper.
- *    Kundens svar sendes som resultatet af ask_customer i næste tur.
+ * 3. Kalder Claude ask_customer, stopper turen, og alle spørgsmålene vises på én gang med svarknapper.
+ *    Kundens svar sendes samlet som resultatet af ask_customer i næste tur.
  * 4. Kalder Claude build_bundle, vises pakken som produktkort i chatten.
  */
 import Anthropic from "@anthropic-ai/sdk";
@@ -55,7 +55,7 @@ function userMessage(text: string, pending?: PendingQuestion | null): AgentMessa
   if (!pending) return { role: "user", content: text };
   return {
     role: "user",
-    content: [...pending.otherResults, { type: "tool_result", tool_use_id: pending.toolUseId, content: `Kundens svar: ${text}` }],
+    content: [...pending.otherResults, { type: "tool_result", tool_use_id: pending.toolUseId, content: `Kundens svar:\n${text}` }],
   };
 }
 
@@ -149,7 +149,7 @@ export async function runAgent(opts: RunOptions): Promise<RunResult> {
         continue;
       }
       if (tu.name === ASK_TOOL) {
-        results.push({ type: "tool_result", tool_use_id: tu.id, content: "Stil ét spørgsmål ad gangen.", is_error: true });
+        results.push({ type: "tool_result", tool_use_id: tu.id, content: "Saml alle spørgsmål i ét kald.", is_error: true });
         continue;
       }
       const out = executeTool(tu.name, tu.input);
@@ -160,9 +160,16 @@ export async function runAgent(opts: RunOptions): Promise<RunResult> {
 
     if (question) {
       // Turen stopper her. Kundens svar bliver resultatet af ask_customer i næste tur.
-      const input = (question.input ?? {}) as { question?: unknown; options?: unknown };
-      const options = Array.isArray(input.options) ? input.options.map(String).slice(0, 4) : [];
-      onEvent({ type: "question", id: question.id, question: String(input.question ?? ""), options });
+      const input = (question.input ?? {}) as { intro?: unknown; questions?: unknown };
+      const list = Array.isArray(input.questions) ? input.questions : [];
+      const questions = list
+        .map((q) => {
+          const x = (q ?? {}) as { question?: unknown; options?: unknown };
+          return { question: String(x.question ?? "").trim(), options: Array.isArray(x.options) ? x.options.map(String).slice(0, 4) : [] };
+        })
+        .filter((q) => q.question)
+        .slice(0, 4);
+      onEvent({ type: "question", id: question.id, intro: input.intro ? String(input.intro) : undefined, questions });
       onEvent({ type: "turn_end" });
       return { history: messages, pending: { toolUseId: question.id, otherResults: results } };
     }
