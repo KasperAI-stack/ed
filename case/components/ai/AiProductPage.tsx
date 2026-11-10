@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import Link from "next/link";
+import { EdLogo } from "../EdLogo";
 import { AI_PRODUCTS, aiBySlug } from "@/lib/aiProducts";
 import { KEY_STORAGE, readLocal, writeLocal } from "@/lib/storage";
 import { CartButton, CartDrawer, CartProvider } from "../Cart";
@@ -30,10 +31,9 @@ export function AiProductPage({ slug }: { slug: string }) {
       <ConceptBanner />
       <header className="border-b border-line bg-white">
         <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-4 py-4 md:px-6">
-          <Link href="/demo/" className="flex items-baseline gap-1.5" aria-label="ed demo, forsiden">
-            <span className="text-3xl font-extrabold tracking-tight text-navy">ed</span>
-            <span className="rounded-md bg-coral px-1.5 py-0.5 text-xs font-bold uppercase tracking-wide text-white">demo</span>
-          </Link>
+          <Link href="/demo/" className="flex items-center" aria-label="ed, til forsiden">
+          <EdLogo className="h-9 w-auto" />
+        </Link>
           <nav className="flex flex-1 gap-1 text-sm font-semibold">
             <Link href="/demo/" className="rounded-full px-4 py-2 hover:bg-light">
               Alle produkter

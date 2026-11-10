@@ -3,6 +3,7 @@
 import type { Bundle } from "@/lib/types";
 import { formatKr } from "@/lib/brain";
 import { CloseIcon } from "./Icons";
+import { EdLogo } from "./EdLogo";
 
 export function QuoteModal({ bundle, onClose }: { bundle: Bundle; onClose: () => void }) {
   const today = new Date().toLocaleDateString("da-DK", { day: "numeric", month: "long", year: "numeric" });
@@ -19,7 +20,7 @@ export function QuoteModal({ bundle, onClose }: { bundle: Bundle; onClose: () =>
 
         <div className="mt-6 flex flex-wrap justify-between gap-6">
           <div>
-            <div className="text-2xl font-bold">ed demo</div>
+            <EdLogo className="h-9 w-auto" />
             <div className="text-sm text-muted">Konceptdemo, ikke et rigtigt tilbud</div>
           </div>
           <div className="text-sm">

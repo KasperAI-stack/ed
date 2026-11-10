@@ -3,6 +3,7 @@
 import { PRODUCTS } from "@/lib/brain";
 import type { Category } from "@/lib/types";
 import { ProductImage } from "./ProductVisual";
+import { EdLogo } from "./EdLogo";
 
 /** Ét produkt med billede pr. kategori til banneret */
 function pick(category: Category) {
@@ -28,6 +29,7 @@ export function HeroBanner({ onCta }: { onCta: () => void }) {
 
         <div className="relative grid items-center gap-8 px-8 py-10 md:px-12 lg:grid-cols-[1.15fr_1fr] lg:py-12">
           <div className="text-white">
+            <EdLogo color="#ffffff" className="mb-6 h-12 w-auto" />
             <div className="text-sm font-semibold uppercase tracking-[0.18em] text-coral">Vælg IT-udstyr efter din rolle</div>
             <h1 className="mt-3 text-4xl font-extrabold leading-[1.1] md:text-5xl">
               Udstyr til nye kolleger, sat sammen efter rolle

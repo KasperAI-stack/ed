@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { EdLogo } from "./EdLogo";
 import { CartButton } from "./Cart";
 import { SearchIcon } from "./Icons";
 import { CATEGORY_LABEL } from "@/lib/brain";
@@ -38,9 +39,8 @@ export function ShopHeader({
   return (
     <header className="border-b border-line bg-white">
       <div className="mx-auto flex max-w-7xl flex-wrap items-center gap-4 px-4 py-4 md:px-6">
-        <Link href="/demo/" className="flex items-baseline gap-1.5" aria-label="ed demo, forsiden">
-          <span className="text-3xl font-extrabold tracking-tight text-navy">ed</span>
-          <span className="rounded-md bg-coral px-1.5 py-0.5 text-xs font-bold uppercase tracking-wide text-white">demo</span>
+        <Link href="/demo/" className="flex items-center" aria-label="ed, til forsiden">
+          <EdLogo className="h-9 w-auto" />
         </Link>
         <label className="relative min-w-[220px] flex-1">
           <SearchIcon className="pointer-events-none absolute left-4 top-1/2 h-5 w-5 -translate-y-1/2 text-muted" />
