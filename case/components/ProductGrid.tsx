@@ -161,9 +161,10 @@ export function ProductGrid({
 
   // Boksen står som nr. 2 i gitteret. Panelet foldes ud som en hel række lige under boksens række.
   const shown = list.slice(0, 40);
+  // Hardware først, AI-agenterne i bunden. Rolle-boksen står stadig som nr. 2 øverst.
   const cells: ReactNode[] = [
-    ...aiList.map((p) => <AiProductCard key={p.id} p={p} />),
     ...shown.map((p) => <ProductCard key={p.id} p={p} />),
+    ...aiList.map((p) => <AiProductCard key={p.id} p={p} />),
   ];
   const boxAt = Math.min(BOX_INDEX, cells.length);
   cells.splice(boxAt, 0, <RoleBox key="rolebox" open={open} onToggle={onToggle} />);
